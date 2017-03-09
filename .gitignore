@@ -1,0 +1,17 @@
+# Ignore everything
+
+*
+
+# Whitelist subdirectories
+
+!*/
+
+# Whitelist the gitignore itself
+
+!.gitignore
+
+# Allowed Files
+
+!*.tex
+
+!*.pdf

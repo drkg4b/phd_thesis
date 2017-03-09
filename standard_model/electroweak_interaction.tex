@@ -1,0 +1,57 @@
+As stated before, interactions are mediated by a gauge boson, we now want to
+find out those for the electroweak interaction, to this end let us consider
+\emph{local} gauge transformations
+\begin{equation}
+  \label{eq:11}
+  \begin{split}
+    \chi_{L} \rightarrow \chi'_{L} &= e^{i \vec\epsilon(x) \cdot \vec T
+      + i \beta(x) Y} \chi_{L} \\
+    \psi_{R} \to \psi'_{R} &= e^{i \beta(x) Y} \psi_{R},
+  \end{split}
+\end{equation}
+introducing four gauge bosons,
+$W_{\mu}^{(1)}, W_{\mu}^{(2)}, W_{\mu}^{(3)}, B_{\mu}$ (same as the number of
+generators) and the \emph{covariant derivative}
+\begin{equation}
+  \label{eq:12}
+  \begin{split}
+    D_{\mu} \chi_{L} &= (\partial_{\mu} + i g \frac{\vec \tau}{2} \cdot
+    \overrightarrow{W}_{\mu}(x) + i \frac{g'}{2} y_{L} B_{\mu}(x)) \chi_{L}
+    \\
+    &= (\partial_{\mu} + i g \frac{\vec \tau}{2}
+    \cdot \overrightarrow{W}_{\mu}(x) - i \frac{g'}{2} B_{\mu}(x)) \chi_{L} \\
+    D_{\mu} \psi_{R} &= (\partial_{\mu} + i \frac{g'}{2} y_{R} B_{\mu}(x))
+    \psi_{R} \\
+    &= (\partial_{\mu} - i \frac{g'}{2} B_{\mu}(x)) e_{R}
+  \end{split}
+\end{equation}
+the Lagrangian \eqref{eq:2} reads
+\begin{equation}
+  \label{eq:13}
+  \begin{split}
+    \mathcal{L} &= \bar{\chi}_{L} i \gamma \partial \chi_{L} + \bar{e}_{R} i
+    \gamma \partial e_{R} - g \bar{\chi}_{L} \gamma^{\mu} \frac{\vec{\tau}}{2}
+    \chi_{L} \overrightarrow{W}_{\mu} + \frac{g'}{2} (\bar{\chi}_{L}
+    \gamma^{\mu} \chi_{L} + 2 \bar{e}_{R} \gamma^{\mu} e_{R}) B_{\mu} \\
+    &- \frac{1}{4} \overrightarrow{W}_{\mu\nu} \overrightarrow{W}^{\mu\nu} -
+    \frac{1}{4} B_{\mu\nu}B^{\mu\nu}
+  \end{split}
+\end{equation}
+where
+\begin{equation}
+  \label{eq:14}
+  \begin{split}
+    \overrightarrow{W}_{\mu\nu} &= \partial_{\mu} \overrightarrow{W}_{\nu}
+    - \partial_{\nu} \overrightarrow{W}_{\nu}
+    - g \overrightarrow{W}_{\mu} \times \overrightarrow{W}_{\nu} \\
+    B_{\mu\nu} &= \partial_{\mu} B_{\nu} - \partial_{\nu} B_{\nu}
+  \end{split}
+\end{equation}
+are the kinetic plus non abelian interaction term for the $SU(2)_{L}$ symmetry
+(first equation) and the kinetic term for the abelian symmetry group
+$U(1)_{Y}$. We can now split the Lagrangian terms to find out the field of the
+vector bosons coupled to the charged current and to the neutral current.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

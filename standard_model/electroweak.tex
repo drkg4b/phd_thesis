@@ -1,0 +1,168 @@
+We can now see how to find out the weak interaction symmetry group, to this end,
+let us start by writing out the \emph{Hamiltonian} for the weak interaction:
+\begin{equation}
+  H_{weak} = \frac{4 G_F}{\sqrt{2}} J_\mu^\dagger J^\mu
+\end{equation}
+where
+\begin{equation}
+  \begin{split}
+    J_\mu & \equiv J_\mu^{(+)} = \bar{\psi}_{\nu_e} \gamma_\mu \frac{1}{2} (1 -
+    \gamma_5) \psi_e \equiv \bar{\nu}_{e_L}
+    \gamma_\mu e_L \\
+    J_\mu^\dagger & \equiv J_\mu^{(-)} = \bar{\psi}_e \gamma_\mu \frac{1}{2} (1
+    - \gamma_5) \psi_{\nu_e} \equiv \bar{e}_L \gamma_\mu \nu_{e_L},
+  \end{split}
+\end{equation}
+here $J_\mu^{(+)}$ and $J_\mu^{(-)}$ are the charge weak currents, $\gamma_\mu$
+($\mu =$ 0, 1, 2, 3) are the Dirac matrices and
+$\gamma_5 = i \gamma_0 \gamma_1 \gamma_2 \gamma_3$. To easy the notation, let us
+write:
+\begin{equation}
+  \chi_L =
+  \begin{pmatrix}
+    \nu_{e_L} \\ e^-_L
+  \end{pmatrix}
+  \equiv
+  \begin{pmatrix}
+    \nu_e \\ e^-
+  \end{pmatrix}
+\end{equation}
+and using the Pauli matrices
+\begin{equation}
+  \tau_\pm = \frac{1}{2}( \tau_1 \pm i \tau_2)
+\end{equation}
+we have:
+\begin{equation}
+  \begin{split}
+    J_\mu^{(+)} &= \bar{\chi}_L \gamma_\mu \tau_+ \chi_L \\
+    J_\mu^{(-)} &= \bar{\chi}_L \gamma_\mu \tau_- \chi_L
+  \end{split}
+\end{equation}
+by introducing a ``neutral'' current:
+\begin{equation}
+  J_\mu^{(3)} = \bar{\chi}_L \gamma_\mu \frac{\tau_3}{2} \chi_L = \frac{1}{2}
+  \bar{\nu}_L \gamma_\mu \nu_L - \frac{1}{2} \bar{e}_L \gamma e_L
+\end{equation}
+we have a ``triplet'' of currents:
+\begin{equation}
+  \label{eq:1}
+  J_\mu^i = \bar{\chi}_L \gamma_\mu \frac{\tau_i}{2} \chi_L.
+\end{equation}
+
+Now if chose an $SU(2)_L$ transformation:
+\begin{equation}
+  \chi_L (x) \to \chi'_L (x) = e^{i \vec{\varepsilon} \cdotp \vec{T}} \chi_L(x)
+  = e^{i \vec{\varepsilon} \cdotp \frac{\vec{\tau}}{2}} \chi_L(x),
+\end{equation}
+where $T_i = \tau_i / 2$ are the $SU(2)_L$ \emph{generators}, and think the
+$\chi_L$ as the \emph{fundamental representation}, then the current triplet is a
+triplet of $SU(2)_L$, the \emph{weak isotopic spin}.
+
+The right handed fermions are singlet for the $SU(2)_{L}$, thus:
+\begin{equation}
+  e_{R} \to e'_{R}= e_{R}.
+\end{equation}
+Since we are considering the global transformations, we have no interaction, so
+the Lagrangian reads:
+\begin{equation}
+  \label{eq:2}
+  \mathcal{L} = \bar{e} i \gamma^{\mu} \partial_{\mu} e + \bar{\nu} i
+  \gamma^{\mu} \partial_{\mu} \nu \equiv \bar{\chi_{L}} i
+  \gamma \partial \chi_{L} + \bar{e}_{R} i \gamma \partial e_{R};
+\end{equation}
+for now we are bounded to set $m_{e} = 0$, in fact the mass term couples right
+and left fermion's components and it is not $SU(2)_{L}$ invariant.  In 1973,
+experiments detected events of the type:
+\begin{equation}
+  \label{eq:3}
+  \bar{\nu}_{\mu}\eminus \rightarrow \bar{\nu}_{\mu}\eminus \\
+\end{equation}
+\begin{equation}
+  \label{eq:4}
+  \begin{cases}
+    \nu_{\mu} N \rightarrow \nu_{\mu} X \\
+    \bar{\nu}_{\mu} N \rightarrow \bar{\nu}_{\mu} X
+  \end{cases}
+\end{equation}
+which are evidence of a neutral current. Further investigations yielded that the
+neutral weak current is predominantly $V-A$ (i.e. left-handed) but not purely
+$V-A$ so the $J^{(3)}_{\mu}(x)$ current introduced above can not be used as it
+involves only left handed fermions.  We know a neutral current that mixes left
+and right components namely the electromagnetic current:
+\begin{equation}
+  \label{eq:5}
+  J_{\mu} \equiv e J_{\mu}^{(em)} = e \bar{\psi} \gamma_{\mu} Q \psi
+\end{equation}
+where $Q$ is the charge operator with eigenvalue $Q = -1$ for the electron. $Q$
+is the generator of the $U(1)_{(em)}$ group. So we have an isospin triplet and
+we have included the right hand components, the isospin singlet, what we want to
+do, is to combine them and define the hypercharge operator:
+\begin{equation}
+  \label{eq:6}
+  Y = 2 ( Q - T_{3}) \rightarrow Q = T_{3} + \frac{Y}{2},
+\end{equation}
+for the current we have
+\begin{equation}
+  \label{eq:7}
+  J_{\mu}^{(em)} = J_{\mu}^{(3)} + \frac{1}{2} J_{\mu}^{Y}
+\end{equation}
+where
+\begin{equation}
+  \label{eq:8}
+  J_{\mu}^{Y} = \bar{\psi} \gamma_{\mu} Y \psi
+\end{equation}
+so, by analogy, the hypercharge $Y$ generates a $U(1)_{Y}$ symmetry, and, as it
+is a $SU(2)_{L}$ singlet, leaves \eqref{eq:2} invariant under the
+transformations:
+\begin{equation}
+  \label{eq:9}
+  \begin{split}
+    \chi_{L}(x) \rightarrow \chi'_{L}(x) = e^{i \beta Y} \chi_{L}(x)
+    \equiv e^{i \beta y_{L}} \chi_{L} \\
+    e_{R}(x) \rightarrow e'_{R}(x) = e^{i \beta Y}e_{R}(x) \equiv e^{i \beta
+      y_{R}}e_{R}.
+  \end{split}
+\end{equation}
+We thus have incorporated the electromagnetic interactions extending the group
+to $SU(2)_{L} \times U(1)_{Y}$ and instead of having a single symmetry group we
+have a direct product of groups, each with his own \emph{coupling constant}, so,
+in addition to $e$ we will have another coupling to be found.  Since we have a
+direct product of symmetry groups, the generators of $SU(2)_{L}$, $T_{i}$, and
+the generators of $U(1)_{Y}$, $Y$ commute, the commutation relations are:
+\begin{equation}
+  \label{eq:10}
+  [T_{+},T_{-}] = 2 T_{3} \quad ; \quad [T_{3},T_{\pm}] = \pm T_{\pm}
+  \quad ; \quad [Y,T_{\pm}] = [Y,T_{3}] = 0,
+\end{equation}
+member of the same isospin triplet, have same hypercharge eigenvalue; the
+relevant quantum numbers are summarized in the table ~\ref{tab:hyper}.
+\begin{table}[htb]
+  \renewcommand{\arraystretch}{1.25}
+  \centering
+  \begin{tabular}{l c c c c}
+    \hline
+    {\bf Lepton} & $T$ & $T^{(3)}$ & $Q$ & $Y$ \\ \hline\hline
+    $\nu_{e}$ & $\frac{1}{2}$ & $ \phantom{-}\frac{1}{2}$ & 0 & -1 \\
+    $e_{L}^{-}$ & $\frac{1}{2}$ & $-\frac{1}{2}$ & -1 & -1 \\
+    \\
+    $e_{R}^{+}$ & 0 & $\phantom{-}0$ & -1 & -2 \\ \hline
+  \end{tabular} \quad
+  \begin{tabular}{l c c c c}
+    \hline
+    {\bf Quark} & $T$ & $T^{(3)}$ & $Q$ & $Y$ \\ \hline\hline
+    $u_{L}$ & $\frac{1}{2}$ & $\phantom{-}\frac{1}{2}$ & $\phantom{-}\frac{2}{3}$ &
+                                                                                    $\phantom{-}\frac{1}{3}$ \\
+    $d_{L}$ & $\frac{1}{2}$ & $-\frac{1}{2}$ & $-\frac{1}{2}$ &
+                                                                $\phantom{-}\frac{1}{3}$ \\
+    $u_{R}$ & 0 & $\phantom{-}0$ & $\phantom{-}\frac{2}{3}$ & $\phantom{-}\frac{4}{3}$ \\
+    $d_{R}$ & 0 & $\phantom{-}0$  $$ & $-\frac{1}{3}$ & $-\frac{2}{3}$ \\ \hline
+
+
+  \end{tabular}
+  \caption{Weak Isospin and Hypercharge Quantum Numbers of Leptons and Quarks}
+  \label{tab:hyper}
+\end{table}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

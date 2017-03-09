@@ -1,0 +1,30 @@
+The seven samples are used to reconstruct the amplitude of the pulse using the
+\gls{of} method. The estimate of the amplitude is given by:
+\begin{equation}
+  \label{eq:66}
+  \hat{A} = \sum_{i = 0}^7 a_i S_i
+\end{equation}
+where $S_i$ are the digitized samples expressed in ADC counts and $a_i$ are
+computed weights that minimize the effect of the electronic noise on the
+amplitude reconstruction. The procedure minimizes the variance of the amplitude
+distribution. In order to make the amplitude reconstruction independent from
+phase and signal baseline due to electronic noise (\emph{pedestal}), the
+following constraints are used:
+\begin{equation}
+  \label{eq:67}
+  \sum_{i = 0}^7 g_i a_i = 0
+\end{equation}
+\begin{equation}
+  \label{eq:68}
+  \sum_{i = 0}^7 g'_i a_i = 0
+\end{equation}
+\begin{equation}
+  \label{eq:69}
+  \sum_{i = 0}^7 a_i = 0
+\end{equation}
+where $g_i$ and $g'_i$ are the pulse shape function from the shaper and its
+derivative~\cite{OptimalFilter}.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

@@ -1,0 +1,45 @@
+Due to the conservation of momentum and the fact that the proton bunches are
+parallel to the $z$-axis, the sum of the momenta of the collision products in
+the transverse plane should sum to zero. Any energy imbalance is known as
+\gls{met}, it may indicate weakly interacting stable particles (neutrinos within
+the SM, new particles in beyond SM models) or non reconstructed physical objects
+that escape the detector acceptance like for example a muon that goes into a
+hole of the muon system (e.g.\ supports for ATLAS) cannot be detected and give
+rise to fake $\met$.  Physical objects that are fully reconstructed and
+calibrated such as electrons, photons, hadronically decaying tau-leptons, jets
+or muons are called \emph{hard objects} and are used to compute the missing
+transverse momentum in an event~\cite{MET}. The $x$ and $y$ components of the
+$\met$ can be written as:
+\begin{equation}
+  \label{eq:62}
+  E_\mathrm{\, x(y)}^\mathrm{\, miss} = E_\mathrm{\, x(y)}^\mathrm{\, miss,\, e} +
+  E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \gamma} + E_\mathrm{\, x(y)}^\mathrm{\,
+    miss,\, \tau} + E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \text{jets}} +
+  E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \mu} + E_\mathrm{\, x(y)}^\mathrm{\, miss,\,
+    \text{soft}}
+\end{equation}
+where the terms for jets, charged leptons and photons are the negative sum of
+the momenta of the respective calibrated object while the \emph{soft term} is
+reconstructed from the transverse momentum deposited in the detector that is not
+already associated to hard objects. It may be reconstructed by means of
+calorimeter-based methods, the so called \gls{cst}, or using track-based methods
+known as \gls{tst}.
+
+The CST is reconstructed using energy deposits in the calorimeters which are not
+associated to hard objects, it arise from soft radiation accompanying the hard
+scatter event and from underlying event activity. A downside of the CST is its
+vulnerability to pile up.
+
+The TST is built from tracks not associated to any hard object, tracks can be
+associated to vertices and thus to a particular $pp$ collision, making this
+method robust against pile-up. This method is, however, insensitive to soft
+terms coming from neutral particles that do not leave a track in the ID, thus
+the TST $\met$ is combined with calorimeter-based measurements for hard objects.
+
+Due to its stability against pile-up, this analysis uses the TST $\met$ term.
+Moreover, the muons are treated as invisible particles in the $\met$
+reconstruction (i.e. $E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \mu} = 0$).
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

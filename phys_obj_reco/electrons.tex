@@ -1,0 +1,57 @@
+Electrons are identified in the central part of the ATLAS detector
+($|\eta| < 2.47$) by an energy deposit in the electromagnetic calorimeter and an
+associated track in the inner detector. Signal electrons are defined as prompt
+electrons coming from the decay of a $W, Z$ boson or a top quark while
+background non--prompt electrons come from hadron decays, photon conversion,
+semi-leptonic heavy flavor hadron decay and highly electromagnetic jets. A
+likelihood discriminant is formed using different information: the shower shape
+in the EM calorimeter, the track-cluster matching, some of the track quality
+distributions from signal and background simulation and cuts on the number of
+hits in the ID\@. Cuts that depend on $|\eta|$ and $\et$ on the likelihood
+estimator allow to distinguish between signal and background electrons.
+
+Electron identification efficiencies are measured in $pp$ collision data and
+compared to efficiencies measured in $\zee$ simulations. Signal electrons can
+furthermore be selected with different sets of cuts for the likelihood-based
+criteria with $\sim 95\%, \sim 90\%$ and $\sim 80\%$ efficiency for electrons
+with $\pt = 40~$GeV. The different criteria are referred to as \emph{loose},
+\emph{medium} and \emph{tight} operating points respectively~\cite{ATL-EL-IDENT}
+where, for example, the tight criterion leads to a higher purity of signal
+electrons but has a lower efficiency than the looser criteria.
+
+In this analysis, the \emph{baseline electrons} are selected requiring a
+transverse energy $\et > 20$~GeV, $|\eta| < 2.47$, they need to satisfy the
+\emph{loose} likelihood selection criteria, it is required that no dead EM
+calorimeter \gls{feb} or \gls{hv} channels in the calorimeter cluster are
+present and that the baseline electron survives the overlap removal with other
+particles as described in \cref{sec:overlap-removal}. The baseline electron
+criteria is used to veto electrons used in the muon control regions and the
+signal region definition. In addition to all the baseline criteria, the
+\emph{good electron} definition requires the electrons to satisfy the
+\emph{tight} likelihood selection criteria, the electron track
+$d_0 / \sigma_{d0} < 5$ and $|z_0| < 0.5$~mm and the \emph{LooseTrackOnly}
+electron isolation criteria which is based only on tracks and is set to be 99\%
+efficient.
+\begin{table}[!th]
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    \multicolumn{2}{c}{Electron Definition} \\
+    \midrule \midrule
+    \textbf{Baseline electron} & \textbf{Good electron} \\
+    \midrule
+    $\et > 20$~GeV & \emph{baseline} \\
+    $|\eta| < 2.47$ & \emph{tight} working point \\
+    \emph{loose} working point & $d_0 / \sigma_{d0} < 5$ \\
+    No dead FEB in the EM calo cluster & $|z_0| < 0.5$~mm \\
+    No dead HV in the EM calo cluster & \emph{LooseTrackOnly} \\
+    passes the overlap removal & \\
+    \bottomrule
+  \end{tabular}
+  \caption{Electron definition for the monojet analysis.}
+  \label{tab:ele_def}
+\end{table}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

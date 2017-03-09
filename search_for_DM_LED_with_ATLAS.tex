@@ -1,0 +1,479 @@
+\documentclass[10pt,twoside,cucitura,classica,english,openany]{toptesi}
+
+\usepackage{hyperref}
+\hypersetup{%
+  pdfpagemode={UseOutlines},
+  bookmarksopen,
+  pdfstartview={FitH},
+  colorlinks,
+  linkcolor={blue},
+  citecolor={red},
+  urlcolor={blue}
+}
+\usepackage[latin1, utf8]{inputenc}
+\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage{layaureo}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{newunicodechar}
+\usepackage[titletoc]{appendix}
+\usepackage[capitalize]{cleveref}
+\usepackage[shortlabels]{enumitem}
+\usepackage[acronym, nomain]{glossaries}
+\usepackage[font=footnotesize]{caption}
+\usepackage[font=footnotesize]{subcaption}
+\usepackage[style=numeric, sorting=none, backend=biber]{biblatex}
+
+
+\DeclareUnicodeCharacter{FFFD}{?????}
+
+\crefname{figure}{Figure}{Figures}
+
+\glsdisablehyper
+
+\makeglossaries
+
+\input{command}
+\input{acronyms}
+
+% To change the bullet type of itemize environment
+\def\labelitemi{--}
+
+\addbibresource{references.bib}
+
+\bibliography{bibliography}
+
+\logosede{logo}
+
+\ateneo{Stockholm University}
+\facolta{Department of Physics}
+
+\titolo{Search for Supersymmetry in Monojet Final States with the ATLAS Experiment}
+
+\TesiDiLaurea{Licentiate Thesis \\ \scriptsize{Akademisk avhandling för avläggande av
+  filosifie \\ licetiatexamen vid Stockholm universitet}}
+
+\CorsoDiLaureaIn{Doctoral Studies in }
+\corsodilaurea{Physics}
+
+\CandidateName{Candidate:}
+\candidato{Gabriele \textsc{Bertoli}}
+\AdvisorName{Advisor:}
+\relatore{doc.~Christophe \textsc{Clement}}
+\CoAdvisorName{Co-Supervisor}
+\secondorelatore{doc.~David \textsc{Milstead}}
+\sedutadilaurea{September 2016}
+\sedutadilaurea{\textsc{September 29,} 2016}
+
+\newtheorem{osservazione}{Osservazione}
+\ExtendCaptions{english}{Abstract}{Acknowledgments}
+
+\graphicspath{{images/}}
+
+\begin{document}
+
+\numberwithin{equation}{section}
+
+\english
+
+\cleardoublepage
+
+% \expandafter\ifx\csname StileTrieste\endcsname\relax
+\frontespizio
+% \else
+\paginavuota
+\begin{dedica}
+\end{dedica}
+% \tomo \fi
+
+%\ringraziamenti
+
+\tablespagetrue\figurespagetrue \indici
+
+% \expandafter\ifx\csname StileTrieste\endcsname\relax \else
+\begin{citazioni}
+  \textit{Si sta, \\
+    come d'autunno, \\
+    sugli alberi, \\
+    le foglie.}
+
+  [\textsc{G.~Ungaretti}, Soldati]
+\end{citazioni}
+
+% \fi
+
+\sommario
+
+\input{abstract.tex}
+
+\mainmatter
+
+\chapter{Introduction}
+\label{cha:intro}
+
+\input{introduction/intro}
+
+\section{Author's Contribution}
+\label{sec:authors-contribution}
+
+\input{introduction/contribution}
+
+\chapter{Theoretical overview}
+\label{cha:theoretical-overview}
+
+\section{The Standard Model}
+\label{sec:standard-model}
+
+\input{standard_model/sm}
+
+\subsection{Electroweak Symmetry Group}
+\label{sec:electro-weak-symm}
+
+\input{standard_model/electroweak}
+
+\subsection{Electroweak Interactions}
+\label{sec:electro-weak-inter}
+
+\input{standard_model/electroweak_interaction}
+
+\paragraph{Charged Currents Interaction}
+\label{sec:charg-curr-inter}
+
+\input{standard_model/charged_currents}
+
+\paragraph{Neutral Current Interaction}
+\label{sec:neutr-curr-inter}
+
+\input{standard_model/neutral_current}
+
+\section{The Higgs mechanism}
+\label{sec:higgs-mechanism}
+
+\input{standard_model/higgs}
+
+\chapter{Beyond the Standard Model}
+\label{cha:beyond-stand-model}
+
+\section{Open Questions of the Standard Model}
+\label{sec:open-quest-stand}
+
+\input{bsm/bsm_intro}
+
+\subsection{The Hierarchy Problem and Naturalness}
+\label{sec:hier-probl-natur}
+
+\input{bsm/hier_probl_natur}
+
+\subsection{Dark Matter}
+\label{sec:dark-matter}
+
+\input{bsm/dark_matter}
+
+\section{Supersymmetry}
+\label{sec:supersymmetry}
+
+\input{bsm/susy}
+
+\chapter{Experimental Apparatus}
+\label{cha:exper-appar}
+
+\section{The Large Hadron Collider}
+\label{sec:large-hadr-coll}
+
+\input{exp_apparatus/lhc}
+
+\section{The ATLAS Detector}
+\label{sec:atlas-detector}
+
+\input{exp_apparatus/atlas}
+
+\subsection{The Coordinate System}
+\label{sec:coordinate-system}
+
+\input{exp_apparatus/coordinate}
+
+\subsection{The Inner Detector}
+\label{sec:inner-detector}
+
+\input{exp_apparatus/inner_detector}
+
+\subsection{The Calorimeter}
+\label{sec:calorimeters}
+
+\input{exp_apparatus/calorimeters}
+
+\subsection{The Muon Spectrometer}
+\label{sec:muon-spectrometer}
+
+\input{exp_apparatus/muon_spectro}
+
+\subsection{The Forward Detectors}
+\label{sec:forward-detectors}
+
+\input{exp_apparatus/forward}
+
+\subsection{The Trigger System}
+\label{sec:trigger-system}
+
+\input{exp_apparatus/trigger}
+
+\chapter{Noise Studies with the Tile Calorimeter}
+\label{cha:noise-studies-with}
+
+\section{Calorimetry}
+\label{sec:calorimetry}
+
+\input{tile_noise/introduction}
+
+\subsection{Electromagnetic Shower}
+\label{sec:electr-show}
+
+\input{tile_noise/el_shower}
+
+\subsection{Hadronic Shower}
+\label{sec:hadronic-shower}
+
+\input{tile_noise/had_shower}
+
+\subsection{Energy Resolution}
+\label{sec:energy-resolution}
+
+\input{tile_noise/energy_resolution}
+
+\section{The ATLAS TileCal}
+\label{sec:atlas-tilecal}
+
+\input{tile_noise/tilecal}
+
+\subsection{Signal Reconstruction}
+\label{sec:sign-reconstr}
+
+\input{tile_noise/sig_recon}
+
+\subsubsection{Optimal Filtering}
+\label{sec:optimal-filtering}
+
+\input{tile_noise/of}
+
+\subsubsection{The TileCal Calibration}
+\label{sec:tilecal-calibration}
+
+\input{tile_noise/calibration}
+
+\subsection{Electronic Noise}
+\label{sec:electronic-noise}
+
+\input{tile_noise/noise_intro}
+
+\subsubsection{Digital Noise}
+\label{sec:digital-noise}
+
+\input{tile_noise/digi_noise}
+
+\subsubsection{Cell Noise}
+\label{sec:cell-noise}
+
+\input{tile_noise/cell_noise}
+
+\section{The 2011 TileCal Run I Reprocessing}
+\label{sec:2011-tilecal-run}
+
+\input{tile_noise/reprocessing}
+
+\subsection{Results}
+\label{sec:results-1}
+
+\input{tile_noise/repro_results}
+
+\section{Time Stability}
+\label{sec:time-stability}
+
+\input{tile_noise/time_stability}
+
+\section{Conclusions}
+\label{sec:conclusions}
+
+\input{tile_noise/tile_conclusions}
+
+\chapter{Physical Objects Reconstruction}
+\label{cha:phys-objects-reconst}
+
+\input{phys_obj_reco/introduction}
+
+\section{Primary Vertex}
+\label{sec:primary-vertex}
+
+\input{phys_obj_reco/pv}
+
+\section{Track reconstruction}
+\label{sec:track-reconstruction}
+
+\input{phys_obj_reco/track_reco}
+
+\section{Electrons}
+\label{sec:electrons}
+
+\input{phys_obj_reco/electrons}
+
+\section{Muons}
+\label{sec:muons}
+
+\input{phys_obj_reco/muons}
+
+\section{Topocluster}
+\label{sec:topocluster}
+
+\input{phys_obj_reco/topocluster}
+
+\section{Jets}
+\label{sec:jets}
+
+\input{phys_obj_reco/jets_intro}
+
+\subsection{The \emph{$\antikt$} Algorithm}
+\label{sec:anti-k_t}
+
+\input{phys_obj_reco/anti_kt}
+
+\subsection{The Jet Vertex Tagger }
+\label{sec:jet-vertex-tagger}
+
+\input{phys_obj_reco/jvt}
+
+\subsection{Jet Calibration}
+\label{sec:jet-calibration}
+
+\input{phys_obj_reco/jet_calib}
+
+\subsection{Jet Selection}
+\label{sec:jet-selection}
+
+\input{phys_obj_reco/jet_selection}
+
+\section{Overlap Removal}
+\label{sec:overlap-removal}
+
+\input{phys_obj_reco/or}
+
+\section{Missing Transverse Energy}
+\label{sec:miss-transv-energy}
+
+\input{phys_obj_reco/met}
+
+\chapter{The Monojet Signature}
+\label{cha:monojet-signature}
+
+\section{Motivation}
+\label{sec:motivation}
+
+\input{monojet_sig/motivation}
+
+\section{Event Selection}
+\label{sec:event-selection}
+
+\input{monojet_sig/event_selection}
+
+\section{Jet Veto }
+\label{sec:jet-veto}
+
+\input{monojet_sig/jet_veto}
+
+\section{Sources of Background}
+\label{sec:sources-background}
+
+\input{monojet_sig/background}
+
+\section{Estimation of the $Z$ + jets and $W$ + jets backgrounds}
+\label{sec:estimation-z-+}
+
+\input{monojet_sig/wz_bg}
+
+\subsection{The Muon Control Region}
+\label{sec:muon-control-region}
+
+\input{monojet_sig/muon_cr}
+
+\subsection{The Electron Control Region}
+\label{sec:electr-contr-regi}
+
+\input{monojet_sig/electron_cr}
+
+\subsection{The Di--Muon Control Region}
+\label{sec:di-muon-control}
+
+\input{monojet_sig/dimuon_cr}
+
+\subsection{The Global Simultaneous Likelihood Fit}
+\label{sec:glob-simult-likel}
+
+\input{monojet_sig/global_fit}
+
+\section{Other Backgrounds}
+\label{sec:other-backgrounds}
+
+\subsection{The Multi-Jet Background}
+\label{sec:multi-jet-background}
+
+\input{monojet_sig/multi_jet_bg}
+
+\subsection{The Non-Collision Background}
+\label{sec:non-coll-backgr}
+
+\input{monojet_sig/ncb}
+
+\section{Systematic Uncertainties}
+\label{sec:syst-uncert}
+
+\input{monojet_sig/systematic}
+
+\subsection{Theoretical Uncertainties}
+\label{sec:theor-uncert}
+
+\input{monojet_sig/theo_syst}
+
+\subsection{Experimental Uncertainties}
+\label{sec:exper-uncert}
+
+\input{monojet_sig/exp_syst}
+
+\section{Results and Interpretations}
+\label{sec:results}
+
+\input{monojet_sig/results_intro}
+
+\subsection{The Signal Hypothesis Exclusion Procedure}
+\label{sec:sign-hypoth-excl}
+
+\input{monojet_sig/exclusion_method}
+
+\subsection{Expected Limits}
+\label{sec:expected-limits}
+
+\input{monojet_sig/expected_limits}
+
+\subsection{Model Independent Limits}
+\label{sec:model-indep-limits}
+
+\input{monojet_sig/model_independent}
+
+\subsection{SUSY Compressed Spectra Interpretation}
+\label{sec:interpretation}
+
+\input{monojet_sig/interpretation}
+
+\chapter{Conclusions}
+\label{cha:conclusions}
+
+\input{conclusions/conclusions}
+
+\printglossaries
+
+\addcontentsline{toc}{chapter}{\bibname} \printbibliography
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

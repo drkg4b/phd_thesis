@@ -1,0 +1,22 @@
+During object reconstruction, it may happen that different algorithms identify
+the same track and cluster as different types of particles, this results in a
+duplicate object. In physics analyses a decision must be made on which
+interpretation to give to the reconstructed object, this process is called
+\gls{or}~\cite{Alison:1536507}.
+
+In this analysis, an overlap removal is applied to electrons, muons and jets
+that pass the baseline criteria and the following objects are removed:
+\begin{itemize}
+\item Remove jet in case any pair of jet and electron satisfies $\Delta R(j,
+  e) < 0.2$.
+\item Remove electron in case any pair of jet and electron satisfies $0.2 <
+  \Delta R(j, e) < 0.4$.
+\item Remove muon in case any pair of muon and jet with at least 3 tracks
+  satisfies $\Delta R(j, \mu) < 0.4$.
+\item Remove jet if any pair of muon and jet with less than 3 tracks satisfies
+  $\Delta~R(j, \mu)~<~0.4$.
+\end{itemize}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

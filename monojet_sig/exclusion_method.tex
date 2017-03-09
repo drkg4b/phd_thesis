@@ -1,0 +1,64 @@
+In general the physics search strategy for new phenomena can be outlined in four
+steps, the first one is to define an \emph{hypothesis test}, the \emph{null
+  hypothesis}, is that no signal is present i.e.~only known SM processes are
+present in the SR and the \emph{alternate hypothesis} is that it exists. The
+next steps are meant to quantify which one of the hypotheses is favored by
+experimental observations. To this end it is necessary to identify the
+observables of the experiment, next a \emph{test--statistic} (a function of
+these observables) of the known background and to be tested signal is defined to
+rank the experiments from the least to the most signal--like. Finally a rule to
+quantify the significance of the exclusion or discovery is chosen.
+
+In the monojet analysis the observable of the experiment is the number of events
+in the signal regions defined with the criteria illustrated in
+Section~\ref{sec:event-selection}, the CL$_\mathrm{\, S}$ described below is the
+test--statistic and a \gls{cl} of 95\% is chosen for the exclusion. The number
+of events observed in the signal region is governed by a Poisson distribution
+\begin{equation}
+  \label{eq:86}
+  P(O|E) = \frac{E^O }{O!} e^{- E}
+\end{equation}
+where $O$ is the number of observed events and $E$ is the number of expected
+events. In absence of signal (background only hypothesis), the expected number
+of events is the total number of predicted background events from SM
+processes. If some signal is present (signal plus background hypothesis), the
+expected number of events is given by the predicted number of background events
+plus the predicted number of signal events. In terms of Poisson distribution,
+the probability of observing up to $N_\mathrm{\, SR}$ events in the SR in a
+signal plus background hypothesis is:
+\begin{equation}
+  \label{eq:87}
+  P(N_\mathrm{\, SR}|\mu_S + B) = \sum^{N_\mathrm{\, SR}}_{k = 0} \frac{(\mu_S + B)^k}{k!}
+  e^{- (\mu_S + B)},
+\end{equation}
+where $\mu_S$ is the \emph{signal strength} and represents the number of
+expected signal events. The lower this probability is, the more likely it is
+that the tested signal is not present in the SR and the hypothesis of it
+explaining some physics process can be excluded. To quantify the significance of
+the exclusion a CL is calculated as:
+\begin{equation}
+  \label{eq:88}
+  CL_\mathrm{\, S+B} = 1 - P(N_\mathrm{\, SR}|S+B) = 1 - \alpha
+\end{equation}
+where typically $\alpha = 0.05$ and a 95\% CL$_\mathrm{\, S+B}$ is quoted. The
+maximum number of expected signal events (S$_\mathrm{\, max}$) for which
+CL$_\mathrm{\, S+B}$ < 0.95 can be calculated and if the number of expected
+signal events ($S$) exceeds this value (S > S$_\mathrm{\, max}$), the model can
+be excluded~\cite{PawelThesis} with a confidence level $\alpha$. In the monojet
+analysis the CL$_\mathrm{\, S}$ method~\cite{CLsMethod} is used, where:
+\begin{equation}
+  \label{eq:89}
+  CL_\mathrm{\, S} = \frac{CL_\mathrm{\, S+B}}{CL_\mathrm{\, B}}.
+\end{equation}
+The CL$_\mathrm{\, S}$ method is preferred in high energy physics. It is
+designed to address situations where the observed data could fluctuate below the
+predicted SM background. This can happen in the case of low statistics, using
+CL$_\mathrm{S + B}$ in this case can lead to exclude BSM signals even if the
+experiment has no real sensitivity. The CL$_\mathrm{\, S}$ method allows to deal
+with such situations and yields more conservative limits on the signal
+hypothesis by normalizing the confidence level obtained in the signal plus
+background hypothesis to the confidence level in the background only hypothesis.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

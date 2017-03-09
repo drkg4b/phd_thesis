@@ -1,0 +1,19 @@
+The cell noise described in \cref{sec:cell-noise} is used in the
+\emph{topological clustering} algorithm~\cite{JetCluster}, for identification of
+the real energy deposits in the calorimeters. The algorithm assumes that the
+noise in all the calorimeter cells is normally distributed with significance
+(the ratio between the deposited energy and the parameter $\sigma$ used to
+describe the cell noise) expressed in units of Gaussian sigmas. In the
+algorithm, cluster of cells called \emph{topoclusters}, are formed by comparing
+the energy deposit in a cell for a significant incompatibility with a noise only
+hypothesis. The algorithm starts by finding the \emph{seed cells} with
+$E > 4 \sigma$ where $\sigma$ is the measured RMS of the energy distribution for
+every cell in the pedestal run. The second step is to add to the seeds neighbor
+cells that satisfy the $E > 2 \sigma$ condition. Finally an additional level of
+cells with $E > 0$ is added to the perimeter of the cluster and the algorithm is
+ended. At this point the splitting algorithm is applied to separate the
+topoclusters based on the local energy maxima.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

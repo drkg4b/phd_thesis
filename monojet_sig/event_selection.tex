@@ -1,0 +1,69 @@
+The search for squark pair production with compressed mass spectrum is carried
+out in $pp$ collisions using the data collected by the ATLAS experiment during
+the 2015 Run II corresponding to a total integrated luminosity of 3.2 \ifb. The
+signal region is defined by the following selection criteria:
+\begin{enumerate}[A -]
+\item The HLT\_xe70 trigger was used in the whole 2015 dataset.
+\item In order to assure that the event originated from a $pp$ collision, a
+  primary vertex with at least two associated tracks with $\pt > 0.4$~GeV is
+  required.
+\item Events in which any jet fails the \emph{loose} jet cleaning criteria are
+  rejected. This suppress noise from non-collision background.
+\item The most energetic jet in the event (the \emph{leading jet}) must have
+  $\pt > 250~$GeV and $|\eta| < 2.4$. Moreover, in order to reject beam-induced
+  and cosmic particles background, the event is rejected if the leading jet
+  fails the \emph{tight} cleaning criteria.
+\item In order to suppresses $Z (\rightarrow \ell \bar{\ell})$ + jets and
+  $W (\rightarrow \ell \nu)$ background, events with an identified electron of
+  $\pt > 20~$GeV or muon of $\pt > 10~$GeV are rejected, see
+  \cref{sec:electrons,sec:muons} for the lepton definitions.
+\item In order not to overlap with other ATLAS SUSY searches, events with more
+  than four jets are rejected, see \cref{sec:jet-veto} for more details on this
+  selection.
+\item The $\met$ trigger can select multi--jet events in case of a
+  mis--reconstructed jet. In these cases the missing transverse momentum points
+  in the direction of one of the jets, this background can be suppressed by
+  imposing a minimum azimuthal angle separation between the missing transverse
+  momentum and any jet of $\Delta \phi (\mathrm{jets}, \met) > 0.4$.
+\item A $\met > 250~$GeV requirement is imposed in order to be able to test
+  different BSM signals with different sensitivities to the missing energy.
+\end{enumerate}
+Inclusive (IM1--IM7) and exclusive (EM1--EM6) \glspl{sr} are defined in the
+monojet analysis with increasing $\met$ thresholds from 250~GeV to 700~GeV, see
+Table~\ref{tab:event_selection} for the exact definition of the signal
+regions. These different $\met$ bins are defined in order to address different
+BSM signals tested with the monojet signature. In this chapter special emphasis
+is placed on the compressed squark--neutralino model which has been studied by
+the author of this thesis.
+\begin{table}[!th]
+  \centering
+  % The @{} is to avoid extra horizontal space
+  \begin{tabular}{@{}l@{}c@{}c@{}c@{}c@{}c@{}c@{}c}
+    \toprule
+    \multicolumn{8}{c}{Event Selection Criteria} \\
+    \midrule \midrule
+    \multicolumn{8}{l}{HLT\_xe70 trigger} \\
+    \multicolumn{8}{l}{Primary Vertex} \\
+    \multicolumn{8}{l}{$\met > 250~$GeV} \\
+    \multicolumn{8}{l}{Leading jet with $\pt > 250~$GeV and $|\eta| < 2.4$} \\
+    \multicolumn{8}{l}{At most 4 jets} \\
+    \multicolumn{8}{l}{$\Delta \phi (\mathrm{jets}, \met) > 0.4$} \\
+    \multicolumn{8}{l}{Jet quality requirements} \\
+    \multicolumn{8}{l}{No identified muon with $\pt > 10~$GeV or electron of
+    $\pt > 20~$GeV} \\
+    \midrule
+    Inclusive SRs & IM1 & IM2 & IM3 & IM4 & IM5 & IM6 & IM7 \\
+    $\met$~[GeV] & > 250 & > 300 & > 350 & > 400 & > 500 & > 600 & > 700 \\
+    \midrule
+    Exclusive SRs & EM1 & EM2 & EM3 & EM4 & EM5 & EM6 \\
+    $\met$~[GeV] & [250--300] & [300--350] & [350--400] & [400--500] &
+    [500--600] & [600--700] \\
+    \bottomrule
+  \end{tabular}
+  \caption{Definition of the signal region.}
+  \label{tab:event_selection}
+\end{table}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:
