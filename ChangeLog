@@ -1,4 +1,9 @@
 Author: Gabriele Bertoli <gbertoli@cern.ch>
+Date:   Thu Apr 20 12:02:13 2017 +0200
+
+    command.tex: Adding new Z + jets processes and CR commands
+
+Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 11:58:53 2017 +0200
 
     monojet_sig/interpretation.tex, search_for_DM_LED_with_ATLAS.tex, references.bib, acronyms.tex: Added PDF systematic section.
