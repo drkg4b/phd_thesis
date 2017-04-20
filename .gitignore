@@ -17,3 +17,7 @@
 !*.pdf
 
 !ChangeLog
+
+# Ignore specific files
+
+logo.pdf
