@@ -1,4 +1,9 @@
 Author: Gabriele Bertoli <gbertoli@cern.ch>
+Date:   Thu Apr 20 12:22:22 2017 +0200
+
+    monojet_sig/th_syst_intro.tex: Adding theoretical systematics section introduction.
+
+Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 12:02:42 2017 +0200
 
     gitignore: Allowing ChangeLog
