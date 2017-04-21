@@ -1,7 +1,14 @@
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Fri Apr 21 17:20:45 2017 +0200
 
-    acronyms.tex, standard_model/sm.tex: Adding QCD acronym to this section.
+	acronyms.tex, standard_model/sm.tex: Adding QCD acronym to this
+	section.
+
+Author: Gabriele Bertoli <gbertoli@cern.ch>
+Date:   Fri Apr 21 17:20:09 2017 +0200
+
+	monojet_sig/tune_syst.tex, search_for_DM_LED_with_ATLAS.tex:
+	Adding the tune systematic section.
 
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 12:25:34 2017 +0200
@@ -11,29 +18,33 @@ Date:   Thu Apr 20 12:25:34 2017 +0200
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 12:23:16 2017 +0200
 
-    monojet_sig/add_signal.tex: Adding placeholder section for the ADD signal.
+	monojet_sig/add_signal.tex: Adding placeholder section for the ADD
+	signal.
 
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 12:22:22 2017 +0200
 
-    monojet_sig/th_syst_intro.tex: Adding theoretical systematics section introduction.
+	monojet_sig/th_syst_intro.tex: Adding theoretical systematics
+	section introduction.
 
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 12:02:42 2017 +0200
 
-    gitignore: Allowing ChangeLog
+	gitignore: Allowing ChangeLog
 
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 12:02:13 2017 +0200
 
-    command.tex: Adding new Z + jets processes and CR commands
+	command.tex: Adding new Z + jets processes and CR commands
 
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 11:58:53 2017 +0200
 
-    monojet_sig/interpretation.tex, search_for_DM_LED_with_ATLAS.tex, references.bib, acronyms.tex, monojet_sig/pdf_syst.tex: Added PDF systematic section.
+	monojet_sig/interpretation.tex, search_for_DM_LED_with_ATLAS.tex,
+	references.bib, acronyms.tex, monojet_sig/pdf_syst.tex: Added PDF
+	systematic section.
 
 Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Mar 9 13:19:47 2017 +0100
 
-    Initial commit
+	Initial commit
