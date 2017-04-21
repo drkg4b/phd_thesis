@@ -1,4 +1,9 @@
 Author: Gabriele Bertoli <gbertoli@cern.ch>
+Date:   Fri Apr 21 17:20:45 2017 +0200
+
+    acronyms.tex, standard_model/sm.tex: Adding QCD acronym to this section.
+
+Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 20 12:25:34 2017 +0200
 
     .gitignore: Ignoring logo.pdf
