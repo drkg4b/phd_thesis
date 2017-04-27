@@ -1,4 +1,10 @@
 Author: Gabriele Bertoli <gbertoli@cern.ch>
+Date:   Thu Apr 27 17:41:06 2017 +0200
+
+    bsm/led.tex bsm/kk-cons.tex search_for_DM_LED_with_ATLAS.tex references.bib
+    acronyms.tex: Added the large extra dimension section.
+
+Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Fri Apr 21 17:20:45 2017 +0200
 
 	acronyms.tex, standard_model/sm.tex: Adding QCD acronym to this
