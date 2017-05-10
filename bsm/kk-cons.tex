@@ -1,4 +1,66 @@
+One important fact that naturally arises from the theory developed by Kaluza is
+the charge conservation; to better illustrate this, consider the momentum in
+five dimensions:
+\begin{equation}
+  \label{eq:76}
+  P_\mathrm{\, A} \equiv \frac{\partial \mathcal{L}}{\partial \dot{x}^\mathrm{A}}
+\end{equation}
+where
+\begin{equation}
+  \label{eq:97}
+  \mathcal{L} = \frac{1}{2} m g_{\mathrm{\, MN}} \dot{x}^\mathrm{M} \dot{x}^\mathrm{N}
+\end{equation}
+is the lagrangian of a free particle. Since $\partial_5 g_{\mathrm{\, MN}} = 0$
+then $\partial \mathcal{L}/ \partial \dot{x}^5 = 0$ and then $P_5$ is a constant
+of motion. Solving for the remaining four components leads to:
+\begin{equation}
+  \label{eq:99}
+  P_\mu = m g_{\mu\nu} \dot{x}^\nu + P_5 A_\mu
+\end{equation}
+where the first term is the momentum in four dimensions and, identifying $P_5$
+with the electric charge ($P_5 \equiv e$), the expression of the canonically
+conjugate momentum is recovered. Thus, writing $P_\mathrm{M} \equiv (P_0 \equiv
+E, \vec{P}, P_5 \equiv e)$, the charge conservation is a consequence of the
+space-time geometry~\cite{KKConsequences}.
 
+Another remarkable result is obtained considering the geodesics equation (the
+motion of a free particle with mass $m$) in five dimensions:
+\begin{equation}
+  \label{eq:105}
+  \ddot{x}^\mathrm{\, M} + \Gamma^\mathrm{\, M}_{\mathrm{\, AB}}
+  \dot{x}^\mathrm{\, A} \dot{x}^\mathrm{\, B} = 0
+\end{equation}
+where $\Gamma^\mathrm{\, M}_{\mathrm{\, AB}}$ are the connection
+coefficients. Partitioning the equation with A = $(\mu, 5)$ and solving
+separately for the usual four dimensions and for the fifth one gives:
+\begin{equation}
+  \label{eq:106}
+  \ddot{x}^\mu + \Gamma^\mu_{\alpha \beta} \dot{x}^\alpha \dot{x}^\beta =
+  \frac{e}{m} g^{\mu\nu} F_{\nu \rho} \dot{x}^\rho
+\end{equation}
+where $F_{\nu \rho}$ is the electromagnetic field strength tensor. \cref{eq:106}
+is the Lorentz equation for a charged particle of mass $m$ propagating in a
+curved space-time which shows how gravity in five dimensions manifests itself in
+four dimensions as motion governed by electromagnetic and gravitational
+interaction~\cite{KKConsequences}.
+
+Finally if we consider a mass-less scalar field $\Phi(x^\mu, x^5)$ that
+propagates in a space where the fifth dimension is a circle, as proposed by
+Klein, we can impose the periodic condition:
+\begin{equation}
+  \label{eq:107}
+  \Phi(x^\mu, x^5 = 0) = \Phi(x^\mu, x^5 = 2 \pi R)
+\end{equation}
+where $R$ is the radius of the circle, to the Fourier expansion of the field
+($\Phi(x^\mu, x^5) = \sum_{- \infty}^{+ \infty} \Phi_n(x^\mu) e^{i P_5 x^5}$) it
+is possible to see that P$_5$ is quantized, in particular P$_5$ = $n /
+R$. Solving then the equation of motion $\Box_5 \Phi (x^\mu, x^5) = 0$ where
+$\Box = g^{\mathrm{\, MN}} \nabla_M \nabla_N$ one finds in four dimensions
+infinite wave functions, one for each Fourier mode of $\Phi (x^\mu, x^5)$ where
+only the 0 mode describes a mass-less scalar field while the others, called
+Kaluza-Klein states, have a charge and a mass which are quantized by
+construction thanks to the compactification and periodicity of the fifth
+dimension.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
