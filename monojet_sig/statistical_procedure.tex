@@ -1,0 +1,68 @@
+The \emph{p-value} is the quantity used in the \gls{lhc} frequentist
+approach~\cite{StatProcedure} to quantify the level of agreement between the
+observed data and some hypothesis $H$. Assuming that $H$ is true, the p-value is
+defined as the probability to observe data of equal or greater incompatibility
+with $H$. In order to \emph{discover} a new physics signal, the \emph{null
+  hypothesis}, $H_0$, is defined to include only known \gls{sm} processes
+(background) and tested against an \emph{alternate hypothesis}, $H_1$, that
+describes both the looked after signal and the background. If the signal cannot
+be discovered the roles of the two hypotheses are inverted (the \emph{signal plus
+  background} hypothesis becomes the null hypothesis and the \emph{background
+  only} hypothesis becomes the alternate one) and \emph{exclusion limits} are
+set instead. The conventionally accepted p-value to claim a discovery is set at
+$2.87 \times 10^{-7}$ while to exclude a signal hypothesis a threshold p-value
+of 0.005, often quoted as 95\%~\gls{cl}, is used.
+
+In an experiment that measures a variable $x$ for each event in the signal
+sample and constructs an histogram $\boldsymbol{n} = (n_1, \dots, n_N)$ out of
+these measurements, the expectation value of $n_i$ can be written as:
+\begin{equation}
+  \label{eq:88}
+  E[n_i] = \mu s_i + b_i
+\end{equation}
+where $s_i$ and $b_i$ are the mean number of signal and background entries in
+the $i$-th bin and $\mu$ is the \emph{signal strength} parameter of the signal
+process with $\mu = 0$ indicating the background only hypothesis and $\mu = 1$
+the nominal signal one. The parameters of the physical model, unknown properties
+of the response of the detector as well as other parameters that are not of
+interest for the physics search are called \emph{nuisance parameters} and
+indicated with $\boldsymbol{\theta}$. These can be evaluated constructing
+histograms of some kinematic variable of interest in a control region where
+mostly background events are expected. Indicating as
+$\boldsymbol{m} = (m_1, \dots, m_M)$ one of such histograms, the expectation
+value of the $i$-th bin, $m_i$, is given by:
+\begin{equation}
+  \label{eq:89}
+  E[m_i] = u_i(\boldsymbol{\theta})
+\end{equation}
+where $u_i$ are calculable quantities that depend on the nuisance parameters
+$\boldsymbol{\theta}$. With these definitions, the \emph{likelihood} function
+can be written as the product of Poisson probabilities for the different bins:
+\begin{equation}
+  \label{eq:115}
+  L(\mu, \boldsymbol{\theta}) = \prod_{j = 1}^N \frac{(\mu s_j +
+    b_j)^{n_j}}{n_j!} e^{-(\mu s_j + b_j)} \prod_{k = 1}^M
+  \frac{u_k^{m_k}}{m_k!} e^{-u_k}
+\end{equation}
+
+The p-value is determined at \gls{lhc} using the \emph{test
+  statistics}~\cite{StatProcedure}:
+\begin{equation}
+  \label{eq:86}
+  t_\mu = - 2 \ln \lambda(\mu)
+\end{equation}
+where $\lambda(\mu)$ is the \emph{profile likelihood ratio} defined as:
+\begin{equation}
+  \label{eq:87}
+  \lambda(\mu) = \frac{L(\mu, \hat{\hat{\boldsymbol{\theta}}})}{L(\hat{\mu},
+    \hat{\boldsymbol{\theta}})}.
+\end{equation}
+Here $\hat{\mu}$ and $\hat{\boldsymbol{\theta}}$ are the maximum likelihood
+estimators, $L(\hat{\mu}, \hat{\boldsymbol{\theta}})$ is the maximized likelihood
+function and $\hat{\hat{\boldsymbol{\theta}}}$ is the value of the parameters
+$\boldsymbol{\theta}$ that maximizes the likelihood for a fixed value of the
+signal strength $\mu$.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:
