@@ -11,7 +11,7 @@ be discovered the roles of the two hypotheses are inverted (the \emph{signal plu
   only} hypothesis becomes the alternate one) and \emph{exclusion limits} are
 set instead. The conventionally accepted p-value to claim a discovery is set at
 $2.87 \times 10^{-7}$ while to exclude a signal hypothesis a threshold p-value
-of 0.005, often quoted as 95\%~\gls{cl}, is used.
+of 0.05, often quoted as 95\%~\gls{cl}, is used.
 
 In an experiment that measures a variable $x$ for each event in the signal
 sample and constructs an histogram $\boldsymbol{n} = (n_1, \dots, n_N)$ out of
@@ -61,7 +61,65 @@ Here $\hat{\mu}$ and $\hat{\boldsymbol{\theta}}$ are the maximum likelihood
 estimators, $L(\hat{\mu}, \hat{\boldsymbol{\theta}})$ is the maximized likelihood
 function and $\hat{\hat{\boldsymbol{\theta}}}$ is the value of the parameters
 $\boldsymbol{\theta}$ that maximizes the likelihood for a fixed value of the
-signal strength $\mu$.
+signal strength $\mu$. It can be seen that $0 \leq \lambda(\mu) \leq 1$ with a
+value close to one corresponding to a good agreement between the data and $\mu$,
+this means that high values of the test statistic in \cref{eq:86} correspond to
+bigger incompatibility between data and the hypothesized $\mu$.
+
+For the discovery of new physics signals, the test statistics in \cref{eq:86} is
+modified to:
+\begin{equation}
+  \label{eq:116}
+  q_0 =
+  \left\{
+    \begin{array}{lr}
+      - 2 \ln(0)  & \hat{\mu} \geq 0 \\
+      0 & \hat{\mu} < 0
+    \end{array}
+    \right.
+\end{equation}
+where in the model it is assumed that $\mu \geq 0$ and the likelihood ratio in
+\cref{eq:87} is evaluated for $\mu = 0$ (the background only hypothesis). The
+p-value is given in this case by:
+\begin{equation}
+  \label{eq:117}
+  p_0 = \int_{q_0, \mathrm{obs}}^\infty f(q_0 | 0) \ud q_0
+\end{equation}
+where $f(q_0 | 0)$ is the \gls{pdf} of $q_0$ under the background only
+hypothesis. Excluding the $\mu = 0$ hypothesis corresponds to the discovery of a
+new signal. In the large sample limit it is possible to use the result from
+Wald~\cite{WaldApproximation}:
+\begin{equation}
+  \label{eq:118}
+  - 2 \ln \lambda(\mu) = \frac{(\mu - \hat{\mu})^2}{\sigma^2} + \mathcal{O}(1/\sqrt{N}),
+\end{equation}
+where $N$ is the sample size and $\hat{\mu}$ follows a Gaussian distribution
+with mean $\mu'$ and standard deviation $\sigma$, to approximate the test
+statistics in \cref{eq:117} to:
+\begin{equation}
+  \label{eq:119}
+  q_0 = \left\{
+    \begin{array}{lr}
+      \hat{\mu}^2/\sigma & \hat{\mu} \geq 0 \\
+      0 & \hat{\mu} < 0
+    \end{array}
+    \right.
+\end{equation}
+where $\hat{\mu}$ is distributed with a Gaussian shape with mean $\mu'$ and
+standard deviation $\sigma$. From this result it is possible to
+show~\cite{StatProcedure} that the p-value for the background only hypothesis
+($\mu = 0$)is given by:
+\begin{equation}
+  \label{eq:120}
+  p_0 = 1 - F(q_0|0)
+\end{equation}
+where $F(q_0|0) = \Phi \left( \sqrt{q_0} - \mu' / \sigma \right)$ is the
+cumulative distribution function of $f(q_0|0)$ and $\Phi$ is the cumulative
+distribution function of a standard Gaussian with zero mean and unit standard
+deviation.
+
+Similarly in order to exclude a signal strength $\mu$ the base test statistic
+given in \cref{eq:86}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
