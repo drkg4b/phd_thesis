@@ -1,4 +1,4 @@
-The calibration constants used in \cref{eq:70}, as mentioned in
+The calibration constants used in \cref{eq:84}, as mentioned in
 \cref{sec:tilecal-calibration}, are determined with the help of several
 dedicated calibration systems and runs. Each calibration constant is valid over
 a period of time called \gls{iov}. The cell noise can vary over time for several
@@ -15,7 +15,7 @@ to visually display the relative change of the cell noise and digital noise
 constants, the channel status and the ratio between the cell noise and a
 variable called RMS$_\text{eff}$ and defined as:
 \begin{equation}
-  \label{eq:73}
+  \label{eq:87}
   \text{RMS}_{\text{eff}} = \sqrt{(1 - R) \sigma_1^2 + R \sigma_2^2}
 \end{equation}
 where $\sigma_1$, $\sigma_2$ and R are the free parameter in the double Gaussian
@@ -192,7 +192,7 @@ and missing transverse energy reconstruction. In order to remedy this a Tile
 Noise Filter was employed. The TNF calculates for each motherboard the pedestal
 average:
 \begin{equation}
-  \label{eq:92}
+  \label{eq:88}
   d = \frac{\sum_i^N d_i}{N}
 \end{equation}
 where the index $i$ runs over all the channels belonging to a certain
@@ -201,7 +201,7 @@ number of channels. Variations in this average baseline can be regarded as an
 estimation of the coherent noise and is subtracted from the channel data of each
 channel ($d_i - d$) on an event--by--event basis. In order to be able to perform
 this noise filter calculation only channels without signal from physics are
-taken into account in the sum of \cref{eq:92}.
+taken into account in the sum of \cref{eq:88}.
 
 The cell noise was recalculated without noise filter and the corresponding
 distribution re-fitted. \cref{fig:no_filter_fit} show the double Gaussian fit

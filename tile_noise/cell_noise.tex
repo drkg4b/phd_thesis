@@ -1,7 +1,7 @@
 Excluding the E layer cells that are connected only to one PMT, the cell noise
 is the combination of the two readout channels of a cell where the digital noise
 from the PMTs is added quadratically and converted in MeV using the calibration
-constants and eq.~\eqref{eq:70}. There are four possible gain combinations:
+constants and eq.~\eqref{eq:84}. There are four possible gain combinations:
 \gls{hghg}, \gls{lglg}, \gls{lghg} and \gls{hglg}. When the energy deposit is
 large, the two channels belonging to the cell are readout in low gain thus
 giving rise to the LGLG combination, for small signals the HGHG combination is
@@ -21,7 +21,7 @@ behavior of the electronic noise. For this reason a double Gaussian distribution
 is used to fit the energy distribution with the probability density function
 defined as:
 \begin{equation}
-  \label{eq:71}
+  \label{eq:85}
   f_{2g} = \frac{1}{1 + R} \left( \frac{1}{\sqrt{2 \pi} \sigma_1} e^{-
       \frac{x^2}{2 \sigma_1^2}} + \frac{R}{\sqrt{2 \pi} \sigma_2} e^{-
       \frac{x^2}{2 \sigma_2^2}} \right)
@@ -36,12 +36,12 @@ $\int_{- \sigma_{\text{eff}}}^{\sigma_{\text{eff}}} f_{2g} =
 In terms of $\sigma_{\text{eff}}$, for an energy deposit $E$, the significance
 can be expressed as:
 \begin{equation}
-  \label{eq:72}
+  \label{eq:86}
   \frac{E}{\sigma_{\text{eff}}(E)} = \sqrt{2}\ \text{Erf}^{- 1} \left( \frac{\sigma_1
       \text{Erf} \left(\frac{E}{\sqrt{2 \sigma_1}} \right) + R \sigma_2 \text{Erf}
     \left( \frac{E}{\sqrt{2 \sigma_2}} \right)}{\sigma_1 + R \sigma_2} \right)
 \end{equation}
-where Erf is the error function. Equation~\ref{eq:72} is the input to the
+where Erf is the error function. Equation~\ref{eq:86} is the input to the
 calorimeter cell clustering algorithm discussed in more details in
 \cref{sec:topocluster}, moreover this definition allows to use the same unit to
 describe the noise for both the TileCal and LAr calorimeters. The region

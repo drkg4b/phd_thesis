@@ -17,7 +17,7 @@ In an experiment that measures a variable $x$ for each event in the signal
 sample and constructs an histogram $\boldsymbol{n} = (n_1, \dots, n_N)$ out of
 these measurements, the expectation value of $n_i$ can be written as:
 \begin{equation}
-  \label{eq:88}
+  \label{eq:103}
   E[n_i] = \mu s_i + b_i
 \end{equation}
 where $s_i$ and $b_i$ are the mean number of signal and background entries in
@@ -32,14 +32,14 @@ mostly background events are expected. Indicating as
 $\boldsymbol{m} = (m_1, \dots, m_M)$ one of such histograms, the expectation
 value of the $i$-th bin, $m_i$, is given by:
 \begin{equation}
-  \label{eq:89}
+  \label{eq:104}
   E[m_i] = u_i(\boldsymbol{\theta})
 \end{equation}
 where $u_i$ are calculable quantities that depend on the nuisance parameters
 $\boldsymbol{\theta}$. With these definitions, the \emph{likelihood} function
 can be written as the product of Poisson probabilities for the different bins:
 \begin{equation}
-  \label{eq:115}
+  \label{eq:105}
   L(\mu, \boldsymbol{\theta}) = \prod_{j = 1}^N \frac{(\mu s_j +
     b_j)^{n_j}}{n_j!} e^{-(\mu s_j + b_j)} \prod_{k = 1}^M
   \frac{u_k^{m_k}}{m_k!} e^{-u_k}
@@ -48,12 +48,12 @@ can be written as the product of Poisson probabilities for the different bins:
 The p-value is determined at \gls{lhc} using the \emph{test
   statistics}~\cite{StatProcedure}:
 \begin{equation}
-  \label{eq:86}
+  \label{eq:106}
   t_\mu = - 2 \ln \lambda(\mu)
 \end{equation}
 where $\lambda(\mu)$ is the \emph{profile likelihood ratio} defined as:
 \begin{equation}
-  \label{eq:87}
+  \label{eq:107}
   \lambda(\mu) = \frac{L(\mu, \hat{\hat{\boldsymbol{\theta}}})}{L(\hat{\mu},
     \hat{\boldsymbol{\theta}})}.
 \end{equation}
@@ -63,13 +63,13 @@ function and $\hat{\hat{\boldsymbol{\theta}}}$ is the value of the parameters
 $\boldsymbol{\theta}$ that maximizes the likelihood for a fixed value of the
 signal strength $\mu$. It can be seen that $0 \leq \lambda(\mu) \leq 1$ with a
 value close to one corresponding to a good agreement between the data and $\mu$,
-this means that high values of the test statistic in \cref{eq:86} correspond to
+this means that high values of the test statistic in \cref{eq:106} correspond to
 bigger incompatibility between data and the hypothesized $\mu$.
 
-For the discovery of new physics signals, the test statistics in \cref{eq:86} is
+For the discovery of new physics signals, the test statistics in \cref{eq:106} is
 modified to:
 \begin{equation}
-  \label{eq:116}
+  \label{eq:108}
   q_0 =
   \left\{
     \begin{array}{lr}
@@ -79,10 +79,10 @@ modified to:
     \right.
 \end{equation}
 where in the model it is assumed that $\mu \geq 0$ and the likelihood ratio in
-\cref{eq:87} is evaluated for $\mu = 0$ (the background only hypothesis). The
+\cref{eq:107} is evaluated for $\mu = 0$ (the background only hypothesis). The
 p-value is given in this case by:
 \begin{equation}
-  \label{eq:117}
+  \label{eq:109}
   p_0 = \int_{q_0, \mathrm{obs}}^\infty f(q_0 | 0) \ud q_0
 \end{equation}
 where $f(q_0 | 0)$ is the \gls{pdf} of $q_0$ under the background only
@@ -90,14 +90,14 @@ hypothesis. Excluding the $\mu = 0$ hypothesis corresponds to the discovery of a
 new signal. In the large sample limit it is possible to use the result from
 Wald~\cite{WaldApproximation}:
 \begin{equation}
-  \label{eq:118}
+  \label{eq:110}
   - 2 \ln \lambda(\mu) = \frac{(\mu - \hat{\mu})^2}{\sigma^2} + \mathcal{O}(1/\sqrt{N}),
 \end{equation}
 where $N$ is the sample size and $\hat{\mu}$ follows a Gaussian distribution
 with mean $\mu'$ and standard deviation $\sigma$, to approximate the test
-statistics in \cref{eq:117} to:
+statistics in \cref{eq:109} to:
 \begin{equation}
-  \label{eq:119}
+  \label{eq:111}
   q_0 = \left\{
     \begin{array}{lr}
       \hat{\mu}^2/\sigma & \hat{\mu} \geq 0 \\
@@ -110,7 +110,7 @@ standard deviation $\sigma$. From this result it is possible to
 show~\cite{StatProcedure} that the p-value for the background only hypothesis
 ($\mu = 0$)is given by:
 \begin{equation}
-  \label{eq:120}
+  \label{eq:112}
   p_0 = 1 - F(q_0|0)
 \end{equation}
 where $F(q_0|0) = \Phi \left( \sqrt{q_0} - \mu' / \sigma \right)$ is the
@@ -119,7 +119,7 @@ distribution function of a standard Gaussian with zero mean and unit standard
 deviation.
 
 Similarly in order to exclude a signal strength $\mu$ the base test statistic
-given in \cref{eq:86}
+given in \cref{eq:106}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
