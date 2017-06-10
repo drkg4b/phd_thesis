@@ -6,12 +6,12 @@ with $H$. In order to \emph{discover} a new physics signal, the \emph{null
   hypothesis}, $H_0$, is defined to include only known \gls{sm} processes
 (background) and tested against an \emph{alternate hypothesis}, $H_1$, that
 describes both the looked after signal and the background. If the signal cannot
-be discovered the roles of the two hypotheses are inverted (the \emph{signal plus
-  background} hypothesis becomes the null hypothesis and the \emph{background
-  only} hypothesis becomes the alternate one) and \emph{exclusion limits} are
-set instead. The conventionally accepted p-value to claim a discovery is set at
-$2.87 \times 10^{-7}$ while to exclude a signal hypothesis a threshold p-value
-of 0.05, often quoted as 95\%~\gls{cl}, is used.
+be discovered the roles of the two hypotheses are inverted (the \emph{signal
+  plus background} hypothesis becomes the null hypothesis and the
+\emph{background only} hypothesis becomes the alternate one) and \emph{exclusion
+  limits} are set instead. The conventionally accepted p-value to claim a
+discovery is set at $2.87 \times 10^{-7}$ while to exclude a signal hypothesis a
+threshold p-value of 0.05 is used.
 
 In an experiment that measures a variable $x$ for each event in the signal
 sample and constructs an histogram $\boldsymbol{n} = (n_1, \dots, n_N)$ out of
@@ -73,7 +73,7 @@ modified to:
   q_0 =
   \left\{
     \begin{array}{lr}
-      - 2 \ln(0)  & \hat{\mu} \geq 0 \\
+      - 2 \ln \lambda(0)  & \hat{\mu} \geq 0 \\
       0 & \hat{\mu} < 0
     \end{array}
     \right.
@@ -83,7 +83,7 @@ where in the model it is assumed that $\mu \geq 0$ and the likelihood ratio in
 p-value is given in this case by:
 \begin{equation}
   \label{eq:109}
-  p_0 = \int_{q_0, \mathrm{obs}}^\infty f(q_0 | 0) \ud q_0
+  p_0 = \int_{q_0, \mathrm{obs}}^\infty f(q_0 | 0)~\ud q_0
 \end{equation}
 where $f(q_0 | 0)$ is the \gls{pdf} of $q_0$ under the background only
 hypothesis. Excluding the $\mu = 0$ hypothesis corresponds to the discovery of a
@@ -95,7 +95,7 @@ Wald~\cite{WaldApproximation}:
 \end{equation}
 where $N$ is the sample size and $\hat{\mu}$ follows a Gaussian distribution
 with mean $\mu'$ and standard deviation $\sigma$, to approximate the test
-statistics in \cref{eq:109} to:
+statistics in \cref{eq:108} to:
 \begin{equation}
   \label{eq:111}
   q_0 = \left\{
@@ -118,8 +118,67 @@ cumulative distribution function of $f(q_0|0)$ and $\Phi$ is the cumulative
 distribution function of a standard Gaussian with zero mean and unit standard
 deviation.
 
-Similarly in order to exclude a signal strength $\mu$ the base test statistic
-given in \cref{eq:106}
+In order to exclude a signal strength $\mu$ upward fluctuations of the data are
+not regarded as less compatible with $\mu$ than the obtained data and for this
+reason the test statistic is set to zero for $\hat{\mu} > \mu$ and the base test
+statistic given in \cref{eq:106} is modified to:
+\begin{equation}
+  \label{eq:121}
+  q_\mu =
+  \left\{
+    \begin{array}{lr}
+      - 2 \ln \lambda(\mu)  & \hat{\mu} \leq \mu \\
+      0 & \hat{\mu} > \mu
+    \end{array}
+    \right.
+\end{equation}
+where $\lambda(\mu)$ is the likelihood ration of \cref{eq:107}. The p-value can
+be calculated with:
+\begin{equation}
+  \label{eq:109}
+  p_\mu = \int_{q_\mu, \mathrm{obs}}^\infty f(q_\mu | \mu)~\ud q_\mu
+\end{equation}
+where $f(q_\mu | \mu)$ is the \gls{pdf} of $q_\mu$ under the hypothesis
+$\mu$. Using the result from Wald~\cite{WaldApproximation}, \eqref{eq:121} can
+be approximated to a chi-square distribution with one degree of
+freedom~\cite{StatProcedure}:
+\begin{equation}
+  \label{eq:122}
+  q_\mu =
+  \left\{
+    \begin{array}{lr}
+      \frac{(\mu - \hat{\mu})^2}{\sigma^2}  & \hat{\mu} < \mu \\
+      0 & \hat{\mu} > \mu
+    \end{array}
+    \right.
+\end{equation}
+where $\hat{\mu}$ follows a normal distribution centered around $\mu'$ and
+standard deviation $\sigma$. In this approximation the p-value for the $\mu$
+hypothesis is~\cite{StatProcedure}:
+\begin{equation}
+  \label{eq:123}
+  p_\mu = 1 - F(q_\mu|\mu) = 1 - \Phi(\sqrt{q_\mu})
+\end{equation}
+where $F(q_\mu|\mu)$ is the cumulative distribution function of $f(q_\mu|\mu)$
+and $\Phi$ is the cumulative distribution function of a Gaussian centered around
+zero and with unit variance. If the calculated p-value $p_\mu$ is below some
+threshold $\alpha$:
+\begin{equation}
+  \label{eq:124}
+  p_\mu < \alpha
+\end{equation}
+then the hypothesis $\mu$ is said to be excluded with a $1 - \alpha$
+\gls{cl}. As mentioned earlier, as a convention, for exclusion purposes, the
+value of $\alpha$ is taken to be 0.05 and the excluded $\mu$ is thus quoted with
+a 95\%~\gls{cl}. The upper limit on $\mu$ is the largest $\mu$ that satisfies
+$p_\mu \leq \alpha$. It can be calculated analytically by setting $p_\mu =
+\alpha$ and solving for $\mu$ obtaining~\cite{StatProcedure}:
+\begin{equation}
+  \label{eq:125}
+  \mu_{\mathrm{up}} = \hat{\mu} + \sigma \Phi^{-1}(1 - \alpha).
+\end{equation}
+Since $\sigma$ depends on $\mu$~\cite{StatProcedure}, it is common to calculate
+the upper limit numerically as the value of $\mu$ for which $p_\mu = \alpha$.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
