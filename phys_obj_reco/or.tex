@@ -6,16 +6,27 @@ interpretation to give to the reconstructed object, this process is called
 
 In this analysis, an overlap removal is applied to electrons, muons and jets
 that pass the baseline criteria and the following objects are removed:
-\begin{itemize}
-\item Remove jet in case any pair of jet and electron satisfies $\Delta R(j,
-  e) < 0.2$.
-\item Remove electron in case any pair of jet and electron satisfies $0.2 <
-  \Delta R(j, e) < 0.4$.
+\begin{enumerate}[A -]
+\item Remove jet in case any pair of jet and electron satisfies
+  $\Delta R(j, e) < 0.2$.
+\item Remove electron in case any pair of jet and electron satisfies
+  $0.2 < \Delta R(j, e) < 0.4$.
 \item Remove muon in case any pair of muon and jet with at least 3 tracks
   satisfies $\Delta R(j, \mu) < 0.4$.
 \item Remove jet if any pair of muon and jet with less than 3 tracks satisfies
   $\Delta~R(j, \mu)~<~0.4$.
-\end{itemize}
+\end{enumerate}
+In the 2016 analysis the A condition is replaced by:
+\begin{enumerate}[E -]
+\item In case any pair of jet and electron or muon satisfy
+  $\Delta R(j, e~\mathrm{or}~\mu ) < 0.2$, the $b$-tagging is adjusted to the 85\%
+  efficiency working point and:
+  \begin{itemize}
+  \item The jet is not a $b$-jet: remove the jet and keep the electron or muon.
+  \item The jet is a $b$-jet: since the jet is likely coming from a
+    semi-leptonic $b$ decay, keep the jet and remove the electron or the muon.
+  \end{itemize}
+\end{enumerate}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"

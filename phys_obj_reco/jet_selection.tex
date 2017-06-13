@@ -8,18 +8,24 @@ In this analysis the jets are reconstructed using the $\antikt$ algorithm with
 the radius parameter R = 0.4. The \emph{baseline jets} are required to have
 $|\eta| < 2.8$ and to make sure they come from a HS vertex, they need to satisfy
 any of the following:
-\begin{itemize}
-\item The $\pt > 50$~GeV.
-\item They have $20 < \pt < 50$~GeV and $|\eta| > 2.4$.
-\item They have $20 < \pt < 50$~GeV, $|\eta| < 2.4$ and JVT > 0.64.
-\end{itemize}
+\begin{enumerate}[A -]
+  \item The $\pt > 50$~GeV.
+  \item They have $20 < \pt < 50$~GeV and $|\eta| > 2.4$.
+  \item They have $20 < \pt < 50$~GeV, $|\eta| < 2.4$ and JVT > 0.64.
+\end{enumerate}
 Furthermore, events in which the jets, after the overlap removal is applied,
 fail the loose selection criteria are disregarded. Finally the most energetic
 jet in the event (the \emph{leading jet}) is required to pass the tight
 selection criteria. The \emph{good jets} require an increased $\pt$ threshold of
 30~GeV and at most 4 HS jet in the event.
 
-\begin{table}[!th]
+In the 2016 analysis the A, B and C conditions above are replaced with:
+\begin{enumerate}[D -]
+\item $\pt$ > 30~GeV and $|\eta| < 2.8$.
+\item $\pt$ > 60~GeV or $|\eta| > 2.4$ or JVT> 0.59.
+\end{enumerate}
+The selection criteria for both analyses are summarized in \cref{tab:jet_def}.
+\begin{table}[!h]
   \centering
   \begin{tabular}{ll}
     \toprule
@@ -29,16 +35,20 @@ selection criteria. The \emph{good jets} require an increased $\pt$ threshold of
     \midrule
     R = 0.4 & \emph{baseline} \\
     $|\eta| < 2.8$ & at most 4 jets \\
-    \emph{Loose} selection criteria & $\pt > 30$~GeV \\
+    \emph{Loose} selection criteria & $\pt > 30$~GeV (2015) \\
     \emph{Tight} on the leading jet & \\
     passes the overlap removal & \\
-    any of: \\
+    any of (2015): \\
     \tabitem $\pt > 50$~GeV \\
     \tabitem $20 < \pt < 50$~GeV, $|\eta| > 2.4$ \\
     \tabitem $20 < \pt < 50$~GeV, $|\eta| < 2.4$, JVT > 0.64 & \\
+    any of (2016): \\
+    \tabitem $\pt$ > 30~GeV and $|\eta| < 2.8$ \\
+    \tabitem $\pt$ > 60~GeV or $|\eta| > 2.4$ or JVT> 0.59 \\
     \bottomrule
   \end{tabular}
-  \caption{Jet definition in the monojet analysis.}
+  \caption{Jet definition in the monojet analysis. The year in parentheses
+    refers to the selection applied in different versions of the analysis.}
   \label{tab:jet_def}
 \end{table}
 %%% Local Variables:
