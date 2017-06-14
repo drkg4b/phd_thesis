@@ -1,0 +1,53 @@
+In order for an event to be assigned to the signal region A - E from
+\cref{sec:event-selection-1} together with the following additional requirements
+must be satisfied:
+\begin{enumerate}[A -]
+\item Events with an identified electron of $\pt > 20~$GeV or muon of
+  $\pt > 10~$GeV are vetoed in order to suppresses
+  $Z (\rightarrow \ell \bar{\ell})$ + jets and $W (\rightarrow \ell \nu)$
+  background. See \cref{sec:electrons,sec:muons} for the lepton definitions.
+\item A $\met > 250~$GeV requirement is imposed in order to be able to test
+  different BSM signals with different sensitivities to the missing energy.
+\end{enumerate}
+Inclusive (IM1-IM10) and exclusive (EM1-EM9) signal regions are defined in the
+monojet analysis with increasing $\met$ thresholds from 250~GeV to 1000~GeV, see
+\cref{tab:sr_2016} for the exact definition of the signal regions. These
+different $\met$ bins are defined in order to address different BSM signals
+tested with the monojet signature. In this chapter special emphasis is placed on
+the \gls{add} model for \gls{led} which has been studied by the author of this
+thesis.
+\begin{table}[!th]
+  \centering
+  % The @{} is to avoid extra horizontal space
+  \resizebox{\linewidth}{!}{\begin{tabular}{@{}l@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c@{}c}
+    \toprule
+    \multicolumn{11}{c}{Event Selection Criteria} \\
+    \midrule \midrule
+    \multicolumn{11}{l}{HLT\_xe70 trigger for 2015 data} \\
+    \multicolumn{11}{l}{HLT\_xe80\_tc\_lcw\_L1XE50, HLT\_xe90\_mht\_L1XE50,} \\
+    \multicolumn{11}{l}{HLT\_xe100\_mht\_L1XE50 and HLT\_xe110\_mht\_L1XE50 triggers for 2016 data.} \\
+    \multicolumn{11}{l}{Primary Vertex} \\
+    \multicolumn{11}{l}{$\met > 250~$GeV} \\
+    \multicolumn{11}{l}{Leading jet with $\pt > 250~$GeV and $|\eta| < 2.4$} \\
+    \multicolumn{11}{l}{At most 4 jets} \\
+    \multicolumn{11}{l}{$\Delta \phi (\mathrm{jets}, \met) > 0.4$} \\
+    \multicolumn{11}{l}{Jet quality requirements} \\
+    \multicolumn{11}{l}{No identified muon with $\pt > 10~$GeV or electron of
+    $\pt > 20~$GeV} \\
+    \midrule
+    Inclusive SRs & IM1 & IM2 & IM3 & IM4 & IM5 & IM6 & IM7 & IM8 & IM9 & IM10\\
+    $\met$~[GeV] & > 250 & > 300 & > 350 & > 400 & > 500 & > 600 & > 700 & > 800
+    & > 900 & > 1000\\
+    \midrule
+    Exclusive SRs & EM1 & EM2 & EM3 & EM4 & EM5 & EM6 & EM7 & EM8 & EM9 \\
+    $\met$~[GeV] & [250--300] & [300--350] & [350--400] & [400--500] &
+    [500--600] & [600--700] & [700--800] & [800-900] & [900-1000] \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Definition of the signal region.}
+  \label{tab:sr_2016}
+\end{table}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:
