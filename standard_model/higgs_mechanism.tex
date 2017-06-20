@@ -1,0 +1,124 @@
+Consider now a local gauge $SU(2)$ symmetry, the field transformations
+are
+\begin{equation}
+  \label{eq:32}
+  \phi(x) \rightarrow \phi'(x) = e^{i \textstyle{\sum_{k = 1}^{3}}
+    \epsilon^{k} T^{k}} \phi(x),
+\end{equation}
+where $T^{k} = \frac{\tau^{k}}{2}$ and $[T^{i},T^{j}] = i
+\epsilon^{ijk}T^{k}$ with $i,j,k = 1,2,3$. To achieve invariance for
+the Lagrangian
+\begin{equation}
+  \label{eq:33}
+  \mathcal{L} =(\partial_{\mu} \phi)^{\dagger}(\partial^{\mu} \phi) -
+  \mu^{2}\phi^{\dagger}\phi - \lambda (\phi^{\dagger}\phi)^{2},
+\end{equation}
+where
+\begin{equation}
+  \label{eq:34}
+  \phi \equiv \binom{\phi_{i}}{\phi_{j}} = \frac{1}{\sqrt{2}}
+  \binom{\phi_{1} + i \phi_{2}}{\phi_{3} + i \phi_{4}},
+\end{equation}
+we need to introduce the covariant derivative
+\begin{equation}
+  \label{eq:35}
+  D_{\mu} = \partial_{\mu} + i g\,\tfrac{\vec \tau}{2} \cdot \vect{W}_{\mu}(x).
+\end{equation}
+In the case of infinitesimal transformations, the fields transform
+like
+\begin{equation}
+  \label{eq:36}
+  \phi(x) \rightarrow \phi'(x) \simeq ( 1 + i \vec \epsilon\, (x) \cdot
+  \tfrac{\vec \tau}{2}) \phi(x)
+\end{equation}
+while the gauge bosons transformations are
+\begin{equation}
+  \label{eq:37}
+  \vect{W}_{\mu} (x) \rightarrow \vect{W}_{\mu}(x) -
+  \frac{1}{g} \partial_{\mu} \vec \epsilon \, (x) - \vec \epsilon\,(x)
+  \times \vect{W}_{\mu} (x).
+\end{equation}
+Replacing everything in the Lagrangian we obtain
+\begin{equation}
+  \label{eq:38}
+  \mathcal{L} = ( \partial_{\mu} \phi + i g\,\tfrac{\vec \tau}{2}
+  \cdot \vect{W}_{\mu} \phi)^{\dagger} (\partial_{\mu} \phi + i
+  g\,\tfrac{\vec \tau}{2} \cdot \vect{W}_{\mu}) - V(\phi) -
+  \frac{1}{4} \vect{W}_{\mu\nu} \cdot \vect{W}^{\mu\nu},
+\end{equation}
+where the potential is given by
+\begin{equation}
+  \label{Esq:40}
+  V(\phi) = \mu^{2} \phi^{\dagger} \phi + \lambda(\phi^{\dagger} \phi)^{2}
+\end{equation}
+and the kinetic term is
+\begin{equation}
+  \label{eq:39}
+  \vect{W}_{\mu\nu} = \partial_{\mu} \vect{W}_{\nu} - \partial_{\nu} \vect{W}_{\mu}
+  - g\,\vect{W}_{\mu} \times \vect{W}_{\nu}.
+\end{equation}
+
+We are interested in the case of the spontaneously broken symmetry,
+thus $\mu^{2} < 0$ and $\lambda > 0$. The minima of the potential lie
+on
+\begin{equation}
+  \label{eq:40}
+  \phi^{\dagger}\,\phi = \frac{1}{2} (\phi_{1}^{2} + \phi_{2}^{2} +
+  \phi_{3}^{2} + \phi_{4}^{2}) = - \frac{\mu^{2}}{2 \lambda}
+\end{equation}
+and we have to choose one of them, let it be
+\begin{equation}
+  \label{eq:41}
+  \phi_{1} = \phi_{2} = \phi_{4} = 0, \quad \phi_{3}^{2} = -
+  \frac{\mu^{2}}{\lambda} \equiv v^{2}.
+\end{equation}
+To expand $\phi$ around this particular vacuum
+\begin{equation}
+  \label{eq:42}
+  \phi_{0} \equiv \frac{1}{\sqrt{2}} \binom{0}{v}
+\end{equation}
+it is sufficient to substitute the expansion
+\begin{equation}
+  \label{eq:43}
+  \phi (x) = \frac{1}{\sqrt{2}} \binom{0}{v + h(x)}
+\end{equation}
+in the Lagrangian \eqref{eq:38} in order to get rid of the,
+unobserved, Goldstone bosons and retain only one neutral scalar field,
+the \emph{Higgs field}.
+
+% To generate the masses for the three gauge bosons one can simply
+% substitute the vacuum expectation value, indeed
+% \begin{equation}
+%   \label{eq:44}
+%   \begin{split}
+%     &( i g\, \tfrac{\vec \tau}{2} \cdot \vect{W}_{\mu}
+%     \phi_{0})^{\dagger} ( i g\, \tfrac{\vec \tau}{2} \cdot
+%     \vect{W}_{\mu}
+%     \phi_{0}) =  \\
+%     &= \frac{g^{2}}{2}
+%     \begin{pmatrix}
+%       0 & v
+%     \end{pmatrix}
+%     \begin{pmatrix}
+%       W^{3} & W^{1} - i W^{2} \\
+%       W^{1} + i W^{2} & - W^{3}
+%     \end{pmatrix}
+%     \begin{pmatrix}
+%       W^{3} & W^{1} - i W^{2} \\
+%       W^{1} + i W^{2} & - W^{3}
+%     \end{pmatrix}
+%     \binom{0}{v} = \\
+%     &= \frac{g^{2}v^{2}}{8} ( W^{1} + i W^{2} ,\; - W^{3})
+%     \binom{W^{1} -
+%       i W^{2}}{- W^{3}} = \\
+%     &= \frac{g^{2} v^{2}}{8} \left[(W_{\mu}^{1})^{2} +
+%       (W_{\mu}^{2})^{2} + (W_{\mu}^{3})^{2}\right]
+%   \end{split}
+% \end{equation}
+% and thus we see three vector gauge bosons with mass $M =
+% \frac{gv}{2}$. To summarize, the Lagrangian \eqref{eq:38} describes
+% three massive gauge fields and a scalar field, the Higgs field.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

@@ -1,0 +1,78 @@
+Let us consider a local symmetry breaking and refer to~\cite{martin:particle}
+for a more complete explanation. Be $\phi$ a complex scalar field,
+\begin{equation}
+  \label{eq:25}
+  \mathcal{L} = (\partial_{\mu} \phi^{*})(\partial_{\mu} \phi) -
+  \underbrace{\mu^{2}\phi^{*}\phi - \lambda(\phi^{*}\phi)^{2}}_{V(\phi^{*}\phi)}
+\end{equation}
+setting
+\begin{equation}
+  \label{eq:26}
+  \begin{split}
+    \phi^{\phantom{*}} &= \frac{\phi_{1} + i \phi_{2}}{\sqrt{2}} \\
+    \phi^{*} &= \frac{\phi_{1} - i \phi_{2}}{\sqrt{2}}
+  \end{split}
+\end{equation}
+we get
+\begin{equation}
+  \label{eq:27}
+  \mathcal{L} = \frac{1}{2} (\partial_{\mu} \phi_{1})^{2} +
+  \frac{1}{2} ( \partial_{\mu} \phi_{2} )^{2} - \frac{\mu^{2}}{2} (
+  \phi_{1}^{2} + \phi_{2}^{2} ) - \frac{\lambda}{4} ( \phi_{1}^{2} +
+  \phi_{2}^{2} )^{2}
+\end{equation}
+the gauge transformations are
+\begin{equation}
+  \label{eq:28}
+  \begin{cases}
+    \phi^{\phantom{\dagger}}(x) \rightarrow \phi^{\phantom{\dagger}'}(x) =
+    e^{\phantom{-} i \epsilon}
+    \phi^{\phantom{\dagger}}(x) \\
+    \phi^{\dagger} (x) \rightarrow \phi^{\dagger '} (x) = e^{- i \epsilon}
+    \phi^{\dagger}(x).
+  \end{cases}
+\end{equation}
+There are two possible choices for the potential
+\begin{itemize}
+\item[-] $\mu^{2} > 0$, which gives a stable configuration around $|\phi| = 0$.
+\item[-] $\mu^{2} < 0$, which gives a circle of minima such that
+  $\phi_{1}^{2} + \phi_{2}^{2} = v^{2}$, with $v^{2} = - \mu^{2} /
+  \lambda$. This minima are not gauge invariant, in fact
+  \begin{equation}
+    \label{eq:29}
+    \phi_{0} = \bra 0 \phi \ket 0 \rightarrow \frac{v}{\sqrt{2}} e^{i
+      \alpha} \quad \mathtt{if} \quad \phi \rightarrow e^{i \alpha} \phi
+  \end{equation}
+\end{itemize}
+To get the particle interaction we make a perturbative expansion around one
+minimum, we chose one, for example $\alpha = 0$, for which $\phi_{1} = v$ and
+$\phi_{2} = 0$ and introduce the two perturbations $\eta(x)$ and $\xi(x)$ so
+that
+\begin{equation}
+  \label{eq:30}
+  \phi (x) = \frac{1}{\sqrt{2}} \overbrace{v + \xi(x)}^{\phi_{1}} + i
+  \overbrace{\eta(x)}^{\phi_{2}}
+\end{equation}
+and plug them in the Lagrangian \eqref{eq:27} to obtain
+\begin{equation}
+  \label{eq:31}
+  \begin{split}
+    \mathcal{L}' (\xi,\eta) &= \frac{1}{2}(\partial_{\mu} \xi)^{2} + \frac{1}{2}
+    (\partial_{\mu} \eta)^{2} - \frac{1}{2}(-2 \mu^{2})\eta^{2} \\ &- \lambda v
+    (\eta^{2} + \xi^{2}) \eta - \frac{1}{4}(\eta^{2} + \xi^{2})^{4} + \cdots
+  \end{split}
+\end{equation}
+as we can see, the third term looks like a mass term so that the field $\eta$
+has mass $m_{\eta}^{2} = -2 \mu^{2}$ while we have no mass term for the field
+$\xi$.
+
+This ``trick'' to give mass to one of the gauge field, is the \emph{braking of
+  the symmetry}. In fact, by choosing one particular vacuum among the infinite
+ones, we lost our gauge invariance; moreover, we ended up with a scalar gauge
+boson, known as \emph{Goldstone boson}. We need to find a way to recover the
+masses of the gauge bosons in a gauge invariant way by getting rid of massless
+scalar fields; the solution is the topic of \cref{sec:higgs-model}.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:

@@ -1,0 +1,113 @@
+% Consider the Higgs Lagrangian
+% \begin{equation}
+%   \label{eq:45}
+%   \mathcal{L}_{\phi} = [(\partial_{\mu} + i g\, \vect{T} \cdot
+%   \vect{W}_{\mu} + i \tfrac{g'}{2}\,Y B_{\mu})\phi]^{\dagger}  [(\partial_{\mu} + i g\, \vect{T} \cdot
+%   \vect{W}_{\mu} + i \tfrac{g'}{2}\,Y B_{\mu})\phi] - V(\phi)
+%  \end{equation}
+%  with $V(\phi) = \mu^{2}\phi^{\dagger} \phi + \lambda (
+%  \phi^{\dagger} \phi )^{2}$ and $\lambda > 0$. To preserve
+%  $SU(2)_{L} \times U(1)_{Y}$ gauge invariance for this Lagrangian,
+%  we can choose four fields to be arranged in an isospin doublet with
+%  $Y = 1$
+%  \begin{equation}
+%   \label{eq:46}
+% \phi = \binom{\phi^{+}}{\phi^{0}} \quad \mbox{with}
+%   \begin{aligned}
+%     &\quad \phi^{+} \equiv
+%     \frac{1}{\sqrt{2}} ( \phi_{1} + i \phi_{2}) \\
+%     &\quad \phi^{0} \equiv \frac{1}{\sqrt{2}} ( \phi_{3} + i
+%     \phi_{4})
+%   \end{aligned}
+% \end{equation}
+% and break the symmetry choosing
+% \begin{equation}
+%   \label{eq:47}
+%   \phi_{0} \equiv \frac{1}{\sqrt{2}} \binom{0}{v}
+% \end{equation}
+% and taking $\mu^{2} < 0$ and $\lambda > 0$ in the potential
+% $V(\phi)$.
+The gauge bosons masses are generated simply substituting the vacuum
+expectation value, $\phi_{0}$, in the Lagrangian, the relevant term is
+\begin{equation}
+  \label{eq:48}
+  \begin{aligned}
+     \MoveEqLeft \left| \left( g\,\tfrac{\vec \tau}{2} \cdot \vect{W}_{\mu} +
+      \tfrac{g'}{2}
+      B_{\mu} \right) \phi \right|^{2} = \\
+    &= \frac{1}{8} \left|
+      \begin{pmatrix}
+        g W^{3}_{\mu} + g' B_{\mu} & g(W^{1}_{\mu} - i W^{2}_{\mu}) \\
+        g(W^{1}_{\mu} + iW^{2}_{\mu}) & -g W^{3}_{\mu} + g' B_{\mu}
+      \end{pmatrix}
+      \binom{0}{v} \right|^{2} \\
+    &= \frac{1}{8} v^{2}g^{2} \left[ \left(W^{1}_{\mu} \right)^{2} + \left(W^{2}_{\mu} \right)^{2} \right]
+    + \frac{1}{8} v^{2} \left(g' B_{\mu} - g W_{\mu}^{3} \right) \left( g' B^{\mu} - g
+    W^{3
+      \mu} \right) \\
+    &= \left(\frac{1}{2} gv \right)^{2} W^{+}_{\mu}W^{- \mu} + \frac{1}{8} v^{2}
+    \begin{pmatrix}
+      W_{\mu}^{3} & B_{\mu}
+    \end{pmatrix}
+    \begin{pmatrix}
+      g^{2} & - g g' \\
+      - g g' & g^{2}
+    \end{pmatrix}
+    \begin{pmatrix}
+      W^{3 \mu} \\ B^{\mu},
+    \end{pmatrix}
+  \end{aligned}
+\end{equation}
+having used $W^{\pm} = ( W^{1} \mp i W^{2} ) / \sqrt{2}$. The mass
+term, lead us to conclude that
+\begin{equation}
+  \label{eq:49}
+  M_{W} = \frac{1}{2} g v.
+\end{equation}
+The remaining term is off diagonal
+\begin{equation}
+  \label{eq:50}
+  \begin{split}
+    \frac{1}{8} v^{2} [g^{2} (W_{\mu}^{3})^{2} - 2 g g' W_{\mu}^{3}
+    B^{\mu} + g'^{2} B_{\mu}^{2} ] &= \frac{1}{8} v^{2} [g
+    W^{3}_{\mu} - g B_{\mu} ]^{2} \\
+    \quad &+ 0 \phantom{v^{2}} [g' W^{3}_{\mu} - g' B_{\mu} ]^{2}
+  \end{split}
+\end{equation}
+but one can diagonalize and find that
+\begin{equation}
+  \label{eq:51}
+  \begin{split}
+    A^{\mu} &= \frac{g' W_{\mu}^{3} + g B_{\mu}}{\sqrt{g^{2} +
+        g'^{2}}} \\
+    Z^{\mu} &= \frac{g W_{\mu}^{3} + g' B_{\mu}}{\sqrt{g^{2} +
+        g'^{2}}}
+  \end{split}
+\end{equation}
+with $M_{A} = 0$ and $M_{Z} = v \sqrt{g^{2} + g'^{2}} / 2$ which are
+the photon and neutral weak vector boson fields.
+% Recalling that
+% \begin{equation}
+%   \label{eq:52}
+%   \frac{g'}{g} = \tan \theta_{W}
+% \end{equation}
+% it is possible to write
+% \begin{equation}
+%   \label{eq:53}
+%   \begin{split}
+%     A_{\mu} &= \phantom{-} \cos \theta_{W} B_{\mu} + \sin \theta_{W}
+%     W^{3}_{\mu}
+%     \\
+%     Z_{\mu} &= - \sin \theta_{W} B_{\mu} + \cos \theta_{W}
+%     W^{3}_{\mu}.
+%   \end{split}
+% \end{equation}
+Thus the mass eigenstates are a massless vector boson, $A_{\mu}$ and a
+massive gauge boson $Z_{\mu}$.
+
+We have shown in this section how the Higgs mechanism can be applied
+to give mass to the gauge bosons of the electroweak model.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:
