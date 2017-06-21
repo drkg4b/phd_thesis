@@ -1,10 +1,193 @@
-As mentioned in \cref{sec:standard-model} the symmetry group of the strong
-interaction is $\suthreec$ where the subscript ``C`` stands for the \emph{color}
-charge which is a quantum number acquired by \emph{quarks}. Three R, G, B (red,
-green and blue) colors are introduced. The symmetry generated for rotations in
-the color space (R $\leftrightarrow$ G, G $\leftrightarrow$ B, B
-$\leftrightarrow$ R) is a $suthreec$ \emph{exact} symmetry, meaning that it is
-conserved by all interactions
+% As mentioned in \cref{sec:standard-model} the symmetry group of the strong
+% interaction is $\suthreec$ where the subscript ``C`` stands for the \emph{color}
+% charge which is a quantum number acquired by \emph{quarks}. Three R, G, B (red,
+% green and blue) colors are introduced. The symmetry generated for rotations in
+% the color space (R $\leftrightarrow$ G, G $\leftrightarrow$ B, B
+% $\leftrightarrow$ R) is a $suthreec$ \emph{exact} symmetry, meaning that it is
+% conserved by all interactions. All observed free particles are supposed to be
+% \emph{colorless}, this can be achieved
+The dynamic of the quarks can be described by the Lagrangian:
+\begin{equation}
+  \label{eq:127}
+  \mathcal{L} = \bar{q}_i \left( i \gamma^\mu \partial_\mu - m \right) q_i +
+  \mathcal{L}_\mathrm{int}
+\end{equation}
+where $q_i$ ($i$ = 1, 2, 3) are the color fields and $m$ is the mass of the
+quark and it only depends on the quark flavor and not on the color charge. Let
+us consider only one of the three possible color fields, thus
+$q_i (x) \equiv q(x)$. To generate the interaction Lagrangian, we can impose on
+the free Lagrangian:
+\begin{equation}
+  \label{eq:129}
+    \mathcal{L}_0 = \bar{q} \left( i \gamma^\mu \partial_\mu - m \right) q
+\end{equation}
+gauge invariance under local $\suthreec$ transformations of the type:
+\begin{equation}
+  \label{eq:128}
+  q(x) \rightarrow q'(x) = e^{i \sum_{k = 1}^8 \epsilon^k(x) T^k} q(x) \equiv
+  \Omega(\epsilon(x)) q(x)
+\end{equation}
+where $T^k = \left( T^k \right)^\dag \equiv \lambda^k / 2$ ($k = 1, \dots, 8$)
+are the generators of $\suthreec$, $\epsilon^k(x)$ are arbitrary space-time
+functions and a common choice for the $\lambda^k / 2$ are the Gell-Mann
+matrices. The commutation relation of the group generators is:
+\begin{equation}
+  \label{eq:130}
+  \left[ T^k, T^l \right] = i f^{klm} T^m
+\end{equation}
+where $f^{klm}$ are the structure constants of the group and it can be seen that
+not all the generators commute thus the symmetry group is non-Abelian
+(i.e.
+$\Omega(\epsilon_1) \Omega(\epsilon_2) \neq \Omega(\epsilon_2)
+\Omega(\epsilon_1)$). If we consider the derivative of the transformed color
+field:
+\begin{equation}
+  \label{eq:131}
+  \begin{aligned}
+    \partial_\mu q \rightarrow \partial_\mu q' & = \Omega(\epsilon) \partial_\mu q
+    + \left( \partial_mu \Omega(\epsilon) \right) q \\ \quad & \equiv \Omega
+    \left[ \partial_\mu + \Omega^{-1} \partial_\mu \Omega \right] q \neq
+      \Omega \partial_\mu q
+    \end{aligned}
+\end{equation}
+and we see that the invariance under the $\Omega(\epsilon(x))$ transformation is
+broken. We need to define a derivative such that:
+\begin{equation}
+  \label{eq:132}
+  D_\mu q \rightarrow \left( D_\mu q \right)' = \Omega(\epsilon(x)) D_\mu q
+  \equiv \left( \Omega D_\mu \Omega^{-1} \right) \Omega q \equiv D_\mu' q',
+\end{equation}
+to this end we introduce eight vector fields $G_\mu^k(x)$ ($k = 1, \dots, 8$)
+such that:
+\begin{equation}
+  \label{eq:133}
+  D_\mu q(x) = \left( \partial_\mu + i g T^k G_\mu^k \right) q(x)
+\end{equation}
+where we use the conventions on repeated indexes $T^k G_\mu^k \equiv \sum_k T^k
+G_mu^k(x)$. We want to find how the $G_\mu^k(x)$ fields transform under the
+wanted transformation property of \cref{eq:132}, to this end:
+\begin{equation}
+  \label{eq:134}
+  \left( D_\mu q \right)' = \left( \Omega \partial_\mu + \partial_\mu \Omega + i
+    g T^k {G'}_\mu^k \Omega \right) q \equiv \Omega D_\mu q = \Omega
+  \left( \partial_\mu + i g T^k G_\mu^k \right)q
+\end{equation}
+from which:
+\begin{equation}
+  \label{eq:135}
+  T^k {G'}_\mu^k = \Omega T^k G_\mu^k \Omega^{-1} + \frac{i}{g}
+  \left( \partial_\mu \Omega \right) \Omega^{-1} = \Omega T^k G_\mu^k
+  \Omega^{-1} - \frac{i}{g} \Omega \partial_\mu \Omega^{-1}.
+\end{equation}
+Considering the infinitesimal transformations of the type:
+\begin{equation}
+  \label{eq:136}
+  \Omega(\epsilon) \sim 1 + i \epsilon^k T^k; \quad \Omega^{-1}(\epsilon) \sim 1 -
+  i \epsilon^k T^k,
+\end{equation}
+from \cref{eq:135}, we obtain:
+\begin{equation}
+  \label{eq:137}
+  \begin{aligned}
+    \MoveEqLeft T^k {G'}_\mu^k = \left( 1 + i \epsilon^l T^l \right) T^m
+    G_\mu^m \left( 1 - i \epsilon^l T^l \right) \\
+    & - \frac{i}{g} \left( 1 + i \epsilon^l T^l \right)\left( -i \partial_\mu
+      \epsilon^k \right) T^k \\
+    & \sim T^k G_\mu^k + i \epsilon^l \underbrace{\left[ T^l, T^m
+      \right]}_{if^{lmk} T^k} G_\mu^m - \frac{1}{g}\left( \partial_\mu
+      \epsilon^k \right) T^k \\
+    & \equiv T^k \left[ G_\mu^k - f^{klm} \epsilon^l G_\mu^m -
+      \frac{i}{g} \partial_\mu \epsilon^k \right].
+   \end{aligned}
+\end{equation}
+And the looked for transformations are:
+\begin{equation}
+  \label{eq:138}
+  G_\mu^k(x) \rightarrow {G'}_\mu^k(x) = G_\mu^k(x) -
+  f^{klm}\epsilon^l(x)G_\mu^m(x) - \frac{i}{g}\partial_\mu \epsilon^k(x)
+\end{equation}
+and we are sure that the Lagrangian:
+\begin{equation}
+\mathcal{L}(q, D_\mu q)\label{eq:139} = \bar{q}\left( i \gamma^\mu D_\mu - m \right) q
+\end{equation}
+is invariant under $\suthreec$ local gauge transformations. The $G_\mu^k(x)$ ($k
+= 1, \dots, 8$) fields are called \emph{gluons} and are the carriers of the
+strong force between quarks as a consequence of the color charge.
+
+To be able to write the full Lagrangian we need to find the equivalent of
+$F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ of the Abelian case also
+for the gluons. This is needed since up to now the gluon were not treated as a
+dynamic degree of freedom and we need to add their kinetic term in the
+Lagrangian. It can be seen that in the Abelian case:
+\begin{equation}
+  \label{eq:140}
+  \left[D_\mu, D_\nu \right] = -ieF_{\mu\nu}
+\end{equation}
+thus, by analogy, we can calculate:
+\begin{equation}
+  \label{eq:141}
+  \begin{aligned}
+    \MoveEqLeft \left[D_\mu, D_\nu \right] = \left[\partial_\mu + ig T^k G_\mu^k, \partial_\nu +
+      ig T^k G_\nu^k \right] \\
+    & = \cancel{\left[\partial_\mu, \partial_\nu \right]} + ig
+    \left[T^kG_\mu^k, \partial_\nu \right] + ig \left[\partial_\mu, T^kG_\nu^k
+    \right] - g^2 \left[T^kG_\mu^k, T^kG_\nu^k
+    \right] \\
+    & = ig \left( \partial_\mu T^kG_\nu^k - \partial_\nu T^k G_\mu^k \right) -
+    g^2 \underbrace{\left[T^k, T^l \right]}_{if^{klm}T^m} G_\mu^k G_\nu^k \\
+    & = ig T^m \left( \partial_\mu G_\nu^m - \partial_\nu G_\mu^m - g f^{mkl}
+      G_\mu^k G_\nu^l\right) \\
+    & \equiv ig T^m G_{\mu\nu} \equiv ig G_{\mu\nu}
+  \end{aligned}
+\end{equation}
+where $G_{\mu\nu}^k = \partial_\mu G_\nu^k -
+\partial_nu G_\mu^k - g f^{klm} G_\mu^l G_\nu^m$ and
+$G_{\mu\nu} = T^k G_{\mu\nu}^k$ have been defined. Finally indicating with
+$G_\mu \equiv T^k G_\mu^k$ we have:
+\begin{equation}
+  \label{eq:142}
+  G_{\mu\nu} = \partial_\mu G_\nu - \partial_\nu G_\mu + ig \left[ G_\mu, G_\nu \right].
+\end{equation}
+The field strength tensor of \cref{eq:142} transforms according to:
+\begin{equation}
+  \label{eq:144}
+  G'_{\mu\nu} = \Omega G_{\mu\nu} \Omega^{-1}
+\end{equation}
+and for any product of these tensors we have:
+\begin{equation}
+  \label{eq:145}
+  G'_{\mu\nu} G'_{\rho \sigma} \dots G'_{\lambda \tau} = U \left( G_{\mu\nu}
+    G_{\rho \sigma} \dots G_{\lambda \tau} \right) U^{-1}
+\end{equation}
+and the trace of these products is gauge invariant:
+\begin{equation}
+  \label{eq:146}
+  \mathrm{Tr}(G'_{\mu\nu} \dots G'_{\lambda \tau}) = \mathrm{Tr}(UG_{\mu\nu}
+  \dots G_{\lambda \tau}U^{-1}) = \mathrm{Tr}(G_{\mu\nu} \dots G_{\lambda \tau}).
+\end{equation}
+Thus in order to retain local gauge invariance for the gluon kinetic term the
+simplest Lagrangian can be written as:
+\begin{equation}
+  \label{eq:143}
+  \mathcal{L}_G = \mathrm{const~Tr}(G_{\mu\nu} G^{\mu\nu}) \equiv
+  \mathrm{const~}\mathrm{Tr}(T^k T^l) G_{\mu\nu}^k G^{\mu\nu l}
+\end{equation}
+using the known property of the Gell-Mann matrices $\mathrm{Tr}(T^k T^l) =
+\mathrm{Tr}(\lamnbda^k \lambda^l)/2$ and choosing the constant term we have:
+\begin{equation}
+  \label{eq:147}
+  \mathcal{L}_G = - \frac{1}{2} \mathrm{Tr}(G_{\mu\nu}G^{\mu\nu}) = -
+  \frac{1}{4} \sum_{k = 1}^8 G_{\mu\nu}^k G^{\mu\nu k}.
+\end{equation}
+The full Lagrangian can finally be written as:
+\begin{equation}
+  \label{eq:148}
+  \mathcal{L} = \bar{q} \left( i \gamma^\mu D_\mu - m \right) q - g \left(
+    \bar{q} \gamma^\mu T^k q \right) G_\mu^k - \frac{1}{4}G_{\mu\nu}^k G_k^{\mu\nu}
+\end{equation}
+where the first term is the free Lagrangian, the second one describes the
+interaction between quarks and gluons and the final is the term for free gluon
+motion and the gluon self interaction.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
