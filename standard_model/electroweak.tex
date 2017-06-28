@@ -1,22 +1,118 @@
-We can now see how to find out the weak interaction symmetry group, to this end,
-let us start by writing out the \emph{Hamiltonian} for the weak interaction:
+In 1930 Pauli suggested the introduction of a new particle in order to explain
+the continuous spectrum of the electron in $\beta$ decays. He called it neutron
+(in 1930 the neutron has not been discovered yet) as it had to be electrically
+neutral in order to conserve charge. It was not until Fermi proposed his theory
+for $\beta$ decay~\cite{FermiTheory} that the new particle was accepted and
+named \emph{neutrino}. The Lagrangian in Fermi's theory is of the
+current-current type and can be written as:
+% We can now see how to find out the weak interaction symmetry group, to this end,
+% let us start by writing out the \emph{Hamiltonian} for the weak interaction:
 \begin{equation}
-  H_{weak} = \frac{4 G_F}{\sqrt{2}} J_\mu^\dagger J^\mu
+  \mathcal{L}_\mathrm{weak} = \frac{G_F}{\sqrt{2}} J_\mu^\dagger
+  J^\mu
+  \label{eq:150}
 \end{equation}
-where
+where the $J_\mu$ current is given by:
+\begin{equation}
+  \label{eq:151}
+  J_\mu = \overbar{\psi} \gamma^\mu \psi
+\end{equation}
+and $\psi$, $\overbar{\psi}$ are the spinors of the fermions involved in the
+interaction. In 1949 Powell discovered in cosmic rays two particles that he
+called the tau and the theta mesons. The tau could decay by weak interaction
+into three pions ($\tau^+ \rightarrow \pi^+ \pi^+ \pi^-$) and the theta decays
+into two pions ($\theta^+ \rightarrow \pi^+ \pi^0$). The measured lifetime and
+mass of the tau and the theta mesons turned out to be the compatible within
+experimental uncertainties hinting that they could be the same particle but in
+that case parity conservation (a space-time symmetry) would be violated. This is
+known as the $\tau - \theta$ puzzle. In 1950 Lee and Yang proposed that parity
+could be violated in weak interactions~\cite{LeeYangParityViolation} which was
+experimentally confirmed in 1956 by Madame Wu~\cite{WuExperiment}. The tau and
+theta mesons were identified as the \emph{kaon} which decays are both parity
+conserving ($k^+ \rightarrow \pi^+ \pi^+ \pi^-$) and parity violating
+($k^+ \rightarrow \pi^+ \pi^0$). Wu's experiment involved the $\beta$ decay of
+Cobalt 60 atoms to Nickel 60. The Cobalt atoms were immersed in a magnetic field
+in order to align it with the spin of the nucleus and the observable in the
+experiment is the product between the momentum of the electron and its spin
+($\vec{J} \cdot \vec{p}$). Reverting the magnetic field is the same as applying
+a parity transformation and since the momentum transforms as a vector and
+changes sign under space reflection ($\vec{p} \to - \vec{p}$) but the spin
+transforms as an axial vector and remains unchanged ($\vec{J} \to \vec{J}$) the
+product $\vec{J} \cdot \vec{p}$ is not parity conserving and asymmetry in the
+distributions of the experiment and its reflected version were observed. In 1958
+Feynman and Gell-Mann proposed a parity violating extension of Fermi's
+theory~\cite{VATheory} called the V-A (vector minus axial vector) theory which
+introduces the \emph{chiral} operators:
+\begin{equation}
+  \label{eq:152}
+  P_L = \frac{1}{2}(1 - \gamma^5); \quad P_R = \frac{1}{2}(1 + \gamma^5)
+\end{equation}
+where $\gamma_5 = i \gamma_0 \gamma_1 \gamma_2 \gamma_3$ and $\gamma_\mu$
+($\mu =$ 0, 1, 2, 3) are the Dirac matrices. The chiral operators projects the
+left and right chirality when applied on a spinor $\psi$. The weak current can
+be re-written as:
 \begin{equation}
   \begin{split}
-    J_\mu & \equiv J_\mu^{(+)} = \bar{\psi}_{\nu_e} \gamma_\mu \frac{1}{2} (1 -
-    \gamma_5) \psi_e \equiv \bar{\nu}_{e_L}
+    J_\mu & \equiv J_\mu^{(+)} = \overbar{\psi}_{\nu_e} \gamma_\mu \frac{1}{2}
+    \left(1 - \gamma_5 \right) \psi_e \equiv \overbar{\nu}_{e_L}
     \gamma_\mu e_L \\
-    J_\mu^\dagger & \equiv J_\mu^{(-)} = \bar{\psi}_e \gamma_\mu \frac{1}{2} (1
-    - \gamma_5) \psi_{\nu_e} \equiv \bar{e}_L \gamma_\mu \nu_{e_L},
+    J_\mu^\dagger & \equiv J_\mu^{(-)} = \overbar{\psi}_e \gamma_\mu \frac{1}{2}
+    (1 - \gamma_5) \psi_{\nu_e} \equiv \overbar{e}_L \gamma_\mu \nu_{e_L},
   \end{split}
+  \label{eq:153}
 \end{equation}
-here $J_\mu^{(+)}$ and $J_\mu^{(-)}$ are the charge weak currents, $\gamma_\mu$
-($\mu =$ 0, 1, 2, 3) are the Dirac matrices and
-$\gamma_5 = i \gamma_0 \gamma_1 \gamma_2 \gamma_3$. To easy the notation, let us
-write:
+here $J_\mu^{(+)}$ and $J_\mu^{(-)}$ are the charged weak currents and are a
+combination of vector and axial vector currents where only the left chiral
+fermions and the right chiral anti-fermions participate in the weak
+interaction. One problem of the V-A theory is that, for example, the total cross
+section for the inelastic neutrino scattering process
+$\nu_\mu + e^- \rightarrow \nu_e + \mu^-$ is given
+by~\cite{VAUnitaryViolationBook}:
+\begin{equation}
+  \label{eq:155}
+  \sigma = \frac{G_F^2}{\pi}s
+\end{equation}
+where $s$ is the center of mass energy and it seems to grow indefinitely with
+energy. If we consider the cross section expansion in partial waves:
+\begin{equation}
+  \label{eq:156}
+  \frac{\ud \sigma}{\ud \Omega} = \left| \frac{1}{2ik} \sum_{\ell = 0}^\infty
+    (2 \ell + 1) A_\ell P_\ell(\cos \theta) \right|^2
+\end{equation}
+where $A_\ell$ is the partial wave amplitude for the orbital angular momentum
+$\ell$, since for the point-like scattering (or $s$-wave) assumed in Fermi's
+theory only the $\ell = 0$ mode contributes and there is no angular dependence
+($P_\ell(\cos \theta) = 1$) we see that:
+\begin{equation}
+  \label{eq:157}
+  \frac{\ud \sigma}{\ud \Omega} = \frac{1}{4E^2} |A_\ell|^2.
+\end{equation}
+Requiring the unitarity ($|A_\ell| \leq 1$) for each partial wave, we have that:
+\begin{equation}
+  \label{eq:158}
+  \frac{\ud \sigma}{\ud \Omega} \leq \frac{1}{4 E^2}
+\end{equation}
+and for the total cross section:
+\begin{equation}
+  \label{eq:159}
+  \sigma = \int \frac{\ud \sigma}{\ud \Omega} \ud \Omega = 4 \pi \frac{\ud
+    \sigma}{\ud \Omega} \leq \frac{\pi}{2E^2}
+\end{equation}
+and we see that the cross section is subject to a \emph{unitarity bound}. If we
+use the result of \cref{eq:155} we see that for energies grater than:
+\begin{equation}
+  \label{eq:160}
+  E \geq \frac{1}{\sqrt{2}} \sqrt{\frac{\pi}{G_F}} \approx 370~\mathrm{GeV}
+\end{equation}
+and unitarity is violated. The V-A theory is thus only valid for energies
+comparable to the Fermi scale ($\approx 300$~GeV) while for higher energies the
+point-like nature of the theory violates the unitarity of the scattering
+matrix. A consistent theory for the weak interaction at high energies require
+the exchange of mediator particles and can be obtained by analogy to the
+electromagnetic case by formulating it as a gauge theory.
+
+In order to determine the symmetry group fro the weak interactions, let us
+simplify the notation by writing:
 \begin{equation}
   \chi_L =
   \begin{pmatrix}
@@ -34,22 +130,22 @@ and using the Pauli matrices
 we have:
 \begin{equation}
   \begin{split}
-    J_\mu^{(+)} &= \bar{\chi}_L \gamma_\mu \tau_+ \chi_L \\
-    J_\mu^{(-)} &= \bar{\chi}_L \gamma_\mu \tau_- \chi_L
+    J_\mu^{(+)} &= \overbar{\chi}_L \gamma_\mu \tau_+ \chi_L \\
+    J_\mu^{(-)} &= \overbar{\chi}_L \gamma_\mu \tau_- \chi_L
   \end{split}
 \end{equation}
-by introducing a ``neutral'' current:
+by introducing a \emph{neutral} current:
 \begin{equation}
-  J_\mu^{(3)} = \bar{\chi}_L \gamma_\mu \frac{\tau_3}{2} \chi_L = \frac{1}{2}
-  \bar{\nu}_L \gamma_\mu \nu_L - \frac{1}{2} \bar{e}_L \gamma e_L
+  J_\mu^{(3)} = \overbar{\chi}_L \gamma_\mu \frac{\tau_3}{2} \chi_L = \frac{1}{2}
+  \overbar{\nu}_L \gamma_\mu \nu_L - \frac{1}{2} \overbar{e}_L \gamma e_L
 \end{equation}
-we have a ``triplet'' of currents:
+we have a \emph{triplet} of currents:
 \begin{equation}
   \label{eq:1}
-  J_\mu^i = \bar{\chi}_L \gamma_\mu \frac{\tau_i}{2} \chi_L.
+  J_\mu^i = \overbar{\chi}_L \gamma_\mu \frac{\tau_i}{2} \chi_L.
 \end{equation}
 
-Now if chose an $SU(2)_L$ transformation:
+Now if chose an $\sutwol$ transformation:
 \begin{equation}
   \chi_L (x) \to \chi'_L (x) = e^{i \vec{\varepsilon} \cdotp \vec{T}} \chi_L(x)
   = e^{i \vec{\varepsilon} \cdotp \frac{\vec{\tau}}{2}} \chi_L(x),
@@ -58,7 +154,7 @@ where $T_i = \tau_i / 2$ are the $SU(2)_L$ \emph{generators}, and think the
 $\chi_L$ as the \emph{fundamental representation}, then the current triplet is a
 triplet of $SU(2)_L$, the \emph{weak isotopic spin}.
 
-The right handed fermions are singlet for the $SU(2)_{L}$, thus:
+The right handed fermions are singlet for the $\sutwol$, thus:
 \begin{equation}
   e_{R} \to e'_{R}= e_{R}.
 \end{equation}
@@ -66,22 +162,23 @@ Since we are considering the global transformations, we have no interaction, so
 the Lagrangian reads:
 \begin{equation}
   \label{eq:2}
-  \mathcal{L} = \bar{e} i \gamma^{\mu} \partial_{\mu} e + \bar{\nu} i
-  \gamma^{\mu} \partial_{\mu} \nu \equiv \bar{\chi_{L}} i
-  \gamma \partial \chi_{L} + \bar{e}_{R} i \gamma \partial e_{R};
+  \mathcal{L} = \overbar{e} i \gamma^{\mu} \partial_{\mu} e + \overbar{\nu} i
+  \gamma^{\mu} \partial_{\mu} \nu \equiv \overbar{\chi}_{L} i
+  \gamma \partial \chi_{L} + \overbar{e}_{R} i \gamma \partial e_{R};
 \end{equation}
 for now we are bounded to set $m_{e} = 0$, in fact the mass term couples right
-and left fermion's components and it is not $SU(2)_{L}$ invariant.  In 1973,
-experiments detected events of the type:
+and left fermion's components and it is not $SU(2)_{L}$ invariant.  In 1973, the
+Gargamelle bubble chamber experiment~\cite{Gargamelle} detected events of the
+type:
 \begin{equation}
   \label{eq:3}
-  \bar{\nu}_{\mu}\eminus \rightarrow \bar{\nu}_{\mu}\eminus \\
+  \overbar{\nu}_{\mu}\eminus \rightarrow \overbar{\nu}_{\mu}\eminus \\
 \end{equation}
 \begin{equation}
   \label{eq:4}
   \begin{cases}
     \nu_{\mu} N \rightarrow \nu_{\mu} X \\
-    \bar{\nu}_{\mu} N \rightarrow \bar{\nu}_{\mu} X
+    \overbar{\nu}_{\mu} N \rightarrow \overbar{\nu}_{\mu} X
   \end{cases}
 \end{equation}
 which are evidence of a neutral current. Further investigations yielded that the
@@ -91,7 +188,7 @@ involves only left handed fermions.  We know a neutral current that mixes left
 and right components namely the electromagnetic current:
 \begin{equation}
   \label{eq:5}
-  J_{\mu} \equiv e J_{\mu}^{(em)} = e \bar{\psi} \gamma_{\mu} Q \psi
+  J_{\mu} \equiv e J_{\mu}^{(em)} = e \overbar{\psi} \gamma_{\mu} Q \psi
 \end{equation}
 where $Q$ is the charge operator with eigenvalue $Q = -1$ for the electron. $Q$
 is the generator of the $U(1)_{(em)}$ group. So we have an isospin triplet and
@@ -109,7 +206,7 @@ for the current we have
 where
 \begin{equation}
   \label{eq:8}
-  J_{\mu}^{Y} = \bar{\psi} \gamma_{\mu} Y \psi
+  J_{\mu}^{Y} = \overbar{\psi} \gamma_{\mu} Y \psi
 \end{equation}
 so, by analogy, the hypercharge $Y$ generates a $U(1)_{Y}$ symmetry, and, as it
 is a $SU(2)_{L}$ singlet, leaves \eqref{eq:2} invariant under the
