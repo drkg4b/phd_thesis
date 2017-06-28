@@ -107,9 +107,14 @@ use the result of \cref{eq:155} we see that for energies grater than:
 and unitarity is violated. The V-A theory is thus only valid for energies
 comparable to the Fermi scale ($\approx 300$~GeV) while for higher energies the
 point-like nature of the theory violates the unitarity of the scattering
-matrix. A consistent theory for the weak interaction at high energies require
-the exchange of mediator particles and can be obtained by analogy to the
-electromagnetic case by formulating it as a gauge theory.
+matrix. Feynman and Gell-Mann~\cite{FeynmannGellManFermiInteraction} proposed
+that the weak interaction could happen through the exchange of spin one bosons,
+this prompted Schwinger~\cite{SchwingerGaugeTheory} to introduce a gauge theory
+of the weak interactions mediated by the $W^\pm$ bosons where he also tried to
+include the photon. It was clear that a consistent theory for the weak
+interaction at high energies required the exchange of mediator particles and
+could be obtained by analogy to the electromagnetic case by formulating it as a
+gauge theory.
 
 In order to determine the symmetry group fro the weak interactions, let us
 simplify the notation by writing:
@@ -127,47 +132,49 @@ and using the Pauli matrices
 \begin{equation}
   \tau_\pm = \frac{1}{2}( \tau_1 \pm i \tau_2)
 \end{equation}
-we have:
+we have for the two charged currents of \cref{eq:153}:
 \begin{equation}
   \begin{split}
     J_\mu^{(+)} &= \overbar{\chi}_L \gamma_\mu \tau_+ \chi_L \\
     J_\mu^{(-)} &= \overbar{\chi}_L \gamma_\mu \tau_- \chi_L
   \end{split}
 \end{equation}
-by introducing a \emph{neutral} current:
+we can complete a possible SU(2) symmetry group by introducing a \emph{neutral}
+current:
 \begin{equation}
   J_\mu^{(3)} = \overbar{\chi}_L \gamma_\mu \frac{\tau_3}{2} \chi_L = \frac{1}{2}
-  \overbar{\nu}_L \gamma_\mu \nu_L - \frac{1}{2} \overbar{e}_L \gamma e_L
+  \overbar{\nu}_L \gamma_\mu \nu_L - \frac{1}{2} \overbar{e}_L \gamma
+  e_L
+  \label{eq:161}
 \end{equation}
-we have a \emph{triplet} of currents:
+and we thus have an \emph{isospin} triplet of weak currents:
 \begin{equation}
   \label{eq:1}
-  J_\mu^i = \overbar{\chi}_L \gamma_\mu \frac{\tau_i}{2} \chi_L.
+  J_\mu^i = \overbar{\chi}_L \gamma_\mu \frac{\tau_i}{2} \chi_L
 \end{equation}
-
-Now if chose an $\sutwol$ transformation:
+whose \emph{generators} $T_i = \tau_i / 2$ give an $\sutwol$ algebra. The
+subscript ``L`` indicates that only the left-handed chiral components of the
+fermions couples to the isospin triplet of weak currents. Global transformation
+of the $\sutwol$ group are of the form:
 \begin{equation}
   \chi_L (x) \to \chi'_L (x) = e^{i \vec{\varepsilon} \cdotp \vec{T}} \chi_L(x)
   = e^{i \vec{\varepsilon} \cdotp \frac{\vec{\tau}}{2}} \chi_L(x),
 \end{equation}
-where $T_i = \tau_i / 2$ are the $SU(2)_L$ \emph{generators}, and think the
-$\chi_L$ as the \emph{fundamental representation}, then the current triplet is a
-triplet of $SU(2)_L$, the \emph{weak isotopic spin}.
-
-The right handed fermions are singlet for the $\sutwol$, thus:
+where $\chi_L$ is the \emph{fundamental representation} of the group, the right
+handed fermions are singlet for the $\sutwol$, thus:
 \begin{equation}
   e_{R} \to e'_{R}= e_{R}.
 \end{equation}
 Since we are considering the global transformations, we have no interaction, so
-the Lagrangian reads:
+the Lagrangian can be written as:
 \begin{equation}
   \label{eq:2}
   \mathcal{L} = \overbar{e} i \gamma^{\mu} \partial_{\mu} e + \overbar{\nu} i
   \gamma^{\mu} \partial_{\mu} \nu \equiv \overbar{\chi}_{L} i
   \gamma \partial \chi_{L} + \overbar{e}_{R} i \gamma \partial e_{R};
 \end{equation}
-for now we are bounded to set $m_{e} = 0$, in fact the mass term couples right
-and left fermion's components and it is not $SU(2)_{L}$ invariant.  In 1973, the
+where we have set $m_{e} = 0$ because the mass term couples right and left
+components of the fermions and it is not $\sutwol$ invariant. In 1973, the
 Gargamelle bubble chamber experiment~\cite{Gargamelle} detected events of the
 type:
 \begin{equation}
@@ -181,35 +188,46 @@ type:
     \overbar{\nu}_{\mu} N \rightarrow \overbar{\nu}_{\mu} X
   \end{cases}
 \end{equation}
-which are evidence of a neutral current. Further investigations yielded that the
-neutral weak current is predominantly $V-A$ (i.e. left-handed) but not purely
-$V-A$ so the $J^{(3)}_{\mu}(x)$ current introduced above can not be used as it
-involves only left handed fermions.  We know a neutral current that mixes left
-and right components namely the electromagnetic current:
+which are evidence of a neutral current. It was natural to try to identify this
+neutral current with the one of \cref{eq:161} but it was seen that the
+experimentally observed current has both left-handed and right-handed components
+thus the $J^{(3)}_{\mu}(x)$ current introduced above can not be used as it
+involves only have left-handed fermions and needs to be combined with some other
+current with also right-handed components. The electromagnetic current is
+neutral and mixes left-handed and right-handed components:
 \begin{equation}
   \label{eq:5}
-  J_{\mu} \equiv e J_{\mu}^{(em)} = e \overbar{\psi} \gamma_{\mu} Q \psi
+  J_{\mu}^\mathrm{\, em} (x) = \overbar{\psi}(x) \gamma_{\mu} Q \psi (x)
 \end{equation}
-where $Q$ is the charge operator with eigenvalue $Q = -1$ for the electron. $Q$
-is the generator of the $U(1)_{(em)}$ group. So we have an isospin triplet and
-we have included the right hand components, the isospin singlet, what we want to
-do, is to combine them and define the hypercharge operator:
+where $Q$ is the electric charge operator (with eigenvalue $Q = -1$ for the
+electron) and is also the generator of the U(1)$_\mathrm{em}$ symmetry group of
+the electromagnetism. For example in the case of the electron we have:
+\begin{equation}
+  \label{eq:162}
+  j_\mu^\mathrm{\, em} = - \overbar{e} \gamma_\mu e = - \overbar{e}_L \gamma_\mu
+  e_L - \overbar{e}_R \gamma_\mu e_R.
+\end{equation}
+The idea is to find the minimal symmetry group that contains the $\sutwol$ and
+the U(1)$_\mathrm{em}$ generators and a current that completes the weak isospin
+triplet but is invariant for $\sutwol$ transformations. To this end we can
+define the \emph{hypercharge} operator:
 \begin{equation}
   \label{eq:6}
-  Y = 2 ( Q - T_{3}) \rightarrow Q = T_{3} + \frac{Y}{2},
+  Y = 2 ( Q - T_{3}) \Rightarrow Q = T_{3} + \frac{Y}{2},
 \end{equation}
-for the current we have
+for the current we can write:
 \begin{equation}
   \label{eq:7}
-  J_{\mu}^{(em)} = J_{\mu}^{(3)} + \frac{1}{2} J_{\mu}^{Y}
+  J_{\mu}^\mathrm{\, em} = J_{\mu}^{(3)} + \frac{1}{2} J_{\mu}^{Y}
 \end{equation}
-where
+where:
 \begin{equation}
   \label{eq:8}
-  J_{\mu}^{Y} = \overbar{\psi} \gamma_{\mu} Y \psi
+  J_{\mu}^{Y} = \overbar{\chi}_L \gamma_{\mu} \chi_L - 2 \overbar{e}_R
+  \gamma_\mu e_R.
 \end{equation}
-so, by analogy, the hypercharge $Y$ generates a $U(1)_{Y}$ symmetry, and, as it
-is a $SU(2)_{L}$ singlet, leaves \eqref{eq:2} invariant under the
+The hypercharge $Y$ generates a U(1)$_{Y}$ symmetry and since it is a $\sutwol$
+singlet, leaves the Lagrangian of \cref{eq:2} invariant under the
 transformations:
 \begin{equation}
   \label{eq:9}
@@ -220,43 +238,48 @@ transformations:
       y_{R}}e_{R}.
   \end{split}
 \end{equation}
-We thus have incorporated the electromagnetic interactions extending the group
-to $SU(2)_{L} \times U(1)_{Y}$ and instead of having a single symmetry group we
-have a direct product of groups, each with his own \emph{coupling constant}, so,
-in addition to $e$ we will have another coupling to be found.  Since we have a
-direct product of symmetry groups, the generators of $SU(2)_{L}$, $T_{i}$, and
-the generators of $U(1)_{Y}$, $Y$ commute, the commutation relations are:
+We thus have unified the electromagnetic and weak interactions extending the
+gauge group to $\sutwol \times \uoney$ and instead of having a single symmetry
+group we have a direct product of groups each with his own coupling constant
+thus in addition to the electric charge $e$ we will have another coupling to be
+found. As mentioned in \cref{sec:standard-model} the idea of an extended
+symmetry group that could unify the weak interaction and electromagnetism was
+first explored by Glashow and later by Weinberg and Salam. Since we have a
+direct product of symmetry groups, the generators of $\sutwol$ and those of
+$\uoney$ commute. The commutation relations are give by:
 \begin{equation}
   \label{eq:10}
-  [T_{+},T_{-}] = 2 T_{3} \quad ; \quad [T_{3},T_{\pm}] = \pm T_{\pm}
-  \quad ; \quad [Y,T_{\pm}] = [Y,T_{3}] = 0,
+  [T_{+},T_{-}] = 2 T_{3}; \quad [T_{3},T_{\pm}] = \pm T_{\pm}; \quad
+  [Y,T_{\pm}] = [Y,T_{3}] = 0.
 \end{equation}
-member of the same isospin triplet, have same hypercharge eigenvalue; the
-relevant quantum numbers are summarized in the table ~\ref{tab:hyper}.
+Members of the same isospin triplet, have same hypercharge eigenvalue. The
+relevant quantum numbers are summarized in \cref{tab:hyper}.
 \begin{table}[htb]
   \renewcommand{\arraystretch}{1.25}
   \centering
   \begin{tabular}{l c c c c}
-    \hline
-    {\bf Lepton} & $T$ & $T^{(3)}$ & $Q$ & $Y$ \\ \hline\hline
+    \toprule
+    {\bf Lepton} & $T$ & $T^{(3)}$ & $Q$ & $Y$ \\
+    \midrule \midrule
     $\nu_{e}$ & $\frac{1}{2}$ & $ \phantom{-}\frac{1}{2}$ & 0 & -1 \\
     $e_{L}^{-}$ & $\frac{1}{2}$ & $-\frac{1}{2}$ & -1 & -1 \\
     \\
-    $e_{R}^{+}$ & 0 & $\phantom{-}0$ & -1 & -2 \\ \hline
+    $e_{R}^{+}$ & 0 & $\phantom{-}0$ & -1 & -2 \\
+    \bottomrule
   \end{tabular} \quad
   \begin{tabular}{l c c c c}
-    \hline
-    {\bf Quark} & $T$ & $T^{(3)}$ & $Q$ & $Y$ \\ \hline\hline
+    \toprule
+    {\bf Quark} & $T$ & $T^{(3)}$ & $Q$ & $Y$ \\
+    \midrule \midrule
     $u_{L}$ & $\frac{1}{2}$ & $\phantom{-}\frac{1}{2}$ & $\phantom{-}\frac{2}{3}$ &
                                                                                     $\phantom{-}\frac{1}{3}$ \\
     $d_{L}$ & $\frac{1}{2}$ & $-\frac{1}{2}$ & $-\frac{1}{2}$ &
                                                                 $\phantom{-}\frac{1}{3}$ \\
     $u_{R}$ & 0 & $\phantom{-}0$ & $\phantom{-}\frac{2}{3}$ & $\phantom{-}\frac{4}{3}$ \\
-    $d_{R}$ & 0 & $\phantom{-}0$  $$ & $-\frac{1}{3}$ & $-\frac{2}{3}$ \\ \hline
-
-
+    $d_{R}$ & 0 & $\phantom{-}0$  $$ & $-\frac{1}{3}$ & $-\frac{2}{3}$ \\
+    \bottomrule
   \end{tabular}
-  \caption{Weak Isospin and Hypercharge Quantum Numbers of Leptons and Quarks}
+  \caption{Weak isospin and hypercharge quantum numbers of leptons and quarks.}
   \label{tab:hyper}
 \end{table}
 %%% Local Variables:
