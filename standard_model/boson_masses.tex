@@ -1,34 +1,136 @@
-% Consider the Higgs Lagrangian
-% \begin{equation}
-%   \label{eq:45}
-%   \mathcal{L}_{\phi} = [(\partial_{\mu} + i g\, \vect{T} \cdot
-%   \vect{W}_{\mu} + i \tfrac{g'}{2}\,Y B_{\mu})\phi]^{\dagger}  [(\partial_{\mu} + i g\, \vect{T} \cdot
-%   \vect{W}_{\mu} + i \tfrac{g'}{2}\,Y B_{\mu})\phi] - V(\phi)
-%  \end{equation}
-%  with $V(\phi) = \mu^{2}\phi^{\dagger} \phi + \lambda (
-%  \phi^{\dagger} \phi )^{2}$ and $\lambda > 0$. To preserve
-%  $SU(2)_{L} \times U(1)_{Y}$ gauge invariance for this Lagrangian,
-%  we can choose four fields to be arranged in an isospin doublet with
-%  $Y = 1$
-%  \begin{equation}
-%   \label{eq:46}
-% \phi = \binom{\phi^{+}}{\phi^{0}} \quad \mbox{with}
-%   \begin{aligned}
-%     &\quad \phi^{+} \equiv
-%     \frac{1}{\sqrt{2}} ( \phi_{1} + i \phi_{2}) \\
-%     &\quad \phi^{0} \equiv \frac{1}{\sqrt{2}} ( \phi_{3} + i
-%     \phi_{4})
-%   \end{aligned}
-% \end{equation}
-% and break the symmetry choosing
-% \begin{equation}
-%   \label{eq:47}
-%   \phi_{0} \equiv \frac{1}{\sqrt{2}} \binom{0}{v}
-% \end{equation}
-% and taking $\mu^{2} < 0$ and $\lambda > 0$ in the potential
-% $V(\phi)$.
-The gauge bosons masses are generated simply substituting the vacuum
-expectation value, $\phi_{0}$, in the Lagrangian, the relevant term is
+In order to apply the Higgs mechanism introduced in \cref{sec:higgs-model} to
+generate the masses of the $W^\pm$ and $Z^0$ weak bosons keeping the photon
+massless and preserving the renormalizability of the electroweak theory, we add
+the the Lagrangian of \cref{eq:13} the Higgs Lagrangian:
+\begin{equation}
+  \label{eq:45}
+  % \mathcal{L}_{\phi} = \left[ \left(\partial_{\mu} + i g\, \vect{T} \cdot
+  %     \vect{W}_{\mu} + i \tfrac{g'}{2}\,Y B_{\mu} \right)\phi \right]^{\dagger}
+  % \left[ \left(\partial_{\mu} + i g\, \vect{T} \cdot
+  %     \vect{W}_{\mu} + i \tfrac{g'}{2}\,Y B_{\mu} \right)\phi \right] - V(\phi)
+  \mathcal{L}_{\phi} = \left| \left(\partial_{\mu} + i g\, \vect{T} \cdot
+      \vect{W}_{\mu} + i \tfrac{g'}{2}\,Y B_{\mu} \right)\phi \right|^2 - V(\phi)
+\end{equation}
+with
+$V(\phi) = \mu^{2}\phi^{\dagger} \phi + \lambda ( \phi^{\dagger} \phi )^{2}$ and
+$\lambda > 0$. To preserve $\sutwol \times \uoney$ gauge invariance for this
+Lagrangian we choose four fields to be arranged in an isospin doublet with
+hypercharge $Y = 1$:
+ \begin{equation}
+  \label{eq:46}
+  \phi = \binom{\phi^{+}}{\phi^{0}} =
+  \frac{1}{\sqrt{2}}
+  \begin{pmatrix}
+    \phi_{1} + i \phi_{2} \\
+    \phi_{3} + i \phi_{4}
+  \end{pmatrix}.
+\end{equation}
+To generate the boson masses we consider the case where in the potential
+$V(\phi)$ we have $\mu^2 < 0$ and choose a particular vacuum expectation value
+of $\phi$:
+\begin{equation}
+  \label{eq:47}
+  \phi_{0} \equiv \frac{1}{\sqrt{2}} \binom{0}{v}.
+\end{equation}
+With this choice the $\sutwol \times \uoney$ symmetry is broken, in fact the
+vacuum is no more invariant under transformations of this group, for example:
+\begin{equation}
+  \label{eq:163}
+  \begin{aligned}[t]
+    T_3 \ket{\phi_0} & = \frac{1}{2}
+    \begin{pmatrix}
+      1 & 0 \\
+      0 & -1
+    \end{pmatrix}
+    \frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+      0 \\
+      v
+    \end{pmatrix}
+    = - \frac{1}{2 \sqrt{2}}
+    \begin{pmatrix}
+      0 \\
+      v
+    \end{pmatrix} \\
+    % T_+ \ket{\phi_0} & =
+    % \begin{pmatrix}
+    %   0 & 1 \\
+    %   0 & 0
+    % \end{pmatrix}
+    % \frac{1}{\sqrt{2}}
+    % \begin{pmatrix}
+    %   0 \\
+    %   v
+    % \end{pmatrix}
+    % = \frac{1}{\sqrt{2}}
+    % \begin{pmatrix}
+    %   0 \\
+    %   v
+    % \end{pmatrix}
+  \end{aligned}
+\end{equation}
+and we get that:
+\begin{equation}
+  \label{eq:164}
+  \phi_0 \rightarrow \phi_0' = e^{i \epsilon^3 T_3} \phi_0 \simeq \left( 1 +
+    \epsilon^3 T_3 \right) \phi_0 \neq \phi_0
+\end{equation}
+and thus the three weak gauge bosons will acquire a mass through the Higgs
+mechanism. We can also see that:
+\begin{equation}
+  \label{eq:165}
+  \begin{aligned}
+    Q \ket{\phi_0} & = \left( T_3 + \frac{Y}{2} \right) \ket{\phi_0} = \left[
+      \begin{pmatrix}
+        1/2 & 0 \\
+        0 - 1/2
+      \end{pmatrix}
+      +
+      \begin{pmatrix}
+        1/2 & 0 \\
+        0 & 1/2
+      \end{pmatrix}
+    \right] \frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+      0 \\
+      v
+    \end{pmatrix} \\
+    & =
+    \begin{pmatrix}
+      1 & 0 \\
+      0 & 0
+    \end{pmatrix}
+    \frac{1}{\sqrt{2}}
+    \begin{pmatrix}
+      0 \\
+      v
+    \end{pmatrix} = 0
+  \end{aligned}
+\end{equation}
+and the vacuum is invariant for U(1)$_\mathrm{em}$ transformations:
+\begin{equation}
+  \label{eq:166}
+    \phi_0 \rightarrow \phi_0' = e^{i \epsilon(x) Q} \phi_0 = \phi_0 \quad
+    \forall \epsilon(x)
+\end{equation}
+and this invariance ensures that the photon will not gain a mass through the
+Higgs mechanism ($m_\gamma = 0$). To summarize, the choice of a particular
+vacuum expectation value $\phi_0$ breaks the $\sutwol \times \uoney$ symmetry
+and by applying the Higgs mechanism the masses of the weak gauge bosons are
+generated but since $\phi_0$ is invariant under transformations of the
+U(1)$_\mathrm{em}$ subgroup the photon remains massless.
+
+As seen in \cref{sec:glob-symm-break} the gauge bosons masses are obtained
+simply substituting the vacuum expectation value $\phi_{0}$ in the Lagrangian:
+\begin{equation}
+  \label{eq:167}
+  \phi(x) \rightarrow \frac{1}{\sqrt{2}}
+  \begin{pmatrix}
+    0 \\
+    v + h(x)
+  \end{pmatrix},
+\end{equation}
+for the mass term we have:
 \begin{equation}
   \label{eq:48}
   \begin{aligned}
@@ -45,7 +147,7 @@ expectation value, $\phi_{0}$, in the Lagrangian, the relevant term is
     + \frac{1}{8} v^{2} \left(g' B_{\mu} - g W_{\mu}^{3} \right) \left( g' B^{\mu} - g
     W^{3
       \mu} \right) \\
-    &= \left(\frac{1}{2} gv \right)^{2} W^{+}_{\mu}W^{- \mu} + \frac{1}{8} v^{2}
+    &= \left(\frac{1}{2} gv \right)^{2} W^{+}_{\mu} {W^-}^{\mu} + \frac{1}{8} v^{2}
     \begin{pmatrix}
       W_{\mu}^{3} & B_{\mu}
     \end{pmatrix}
@@ -58,34 +160,86 @@ expectation value, $\phi_{0}$, in the Lagrangian, the relevant term is
     \end{pmatrix}
   \end{aligned}
 \end{equation}
-having used $W^{\pm} = ( W^{1} \mp i W^{2} ) / \sqrt{2}$. The mass
-term, lead us to conclude that
+where we used $W^{\pm} = ( W^{1} \mp i W^{2} ) / \sqrt{2}$. The first term of
+the equation is similar to the expected mass term for a charged boson $M^2
+W^+_\mu {W^-}^\mu$ and by comparison we conclude that:
 \begin{equation}
   \label{eq:49}
   M_{W} = \frac{1}{2} g v.
 \end{equation}
-The remaining term is off diagonal
+The last term of \cref{eq:48} is off diagonal in the $(W_\mu^3, B_\mu)$ basis
+but can be diagonalized solving the eigenvalue equation in terms of the
+eigenstates $Z_\mu$ and $A_\mu$:
 \begin{equation}
-  \label{eq:50}
-  \begin{split}
-    \frac{1}{8} v^{2} [g^{2} (W_{\mu}^{3})^{2} - 2 g g' W_{\mu}^{3}
-    B^{\mu} + g'^{2} B_{\mu}^{2} ] &= \frac{1}{8} v^{2} [g
-    W^{3}_{\mu} - g B_{\mu} ]^{2} \\
-    \quad &+ 0 \phantom{v^{2}} [g' W^{3}_{\mu} - g' B_{\mu} ]^{2}
-  \end{split}
+  \label{eq:168}
+  \begin{aligned}
+    A^{\mu} & = \frac{g' W_{\mu}^{3} + g B_{\mu}}{\sqrt{g^{2} +
+        {g'}^{2}}} \\
+    Z^{\mu} & = \frac{g W_{\mu}^{3} - g' B_{\mu}}{\sqrt{g^{2} +
+        {g'}^{2}}},
+  \end{aligned}
 \end{equation}
-but one can diagonalize and find that
+and we can write:
 \begin{equation}
-  \label{eq:51}
-  \begin{split}
-    A^{\mu} &= \frac{g' W_{\mu}^{3} + g B_{\mu}}{\sqrt{g^{2} +
-        g'^{2}}} \\
-    Z^{\mu} &= \frac{g W_{\mu}^{3} + g' B_{\mu}}{\sqrt{g^{2} +
-        g'^{2}}}
-  \end{split}
+  \label{eq:169}
+  \begin{aligned}
+    \MoveEqLeft \frac{1}{8} v^{2} \left[ g^{2} \left(W_{\mu}^{3} \right)^{2} - 2
+      g g' W_{\mu}^{3} B^{\mu} + g'^{2} B_{\mu}^{2} \right] = \\
+    & = \frac{v^2}{8} \left[g W^{3}_{\mu} - g B_{\mu} \right]^2 + 0 \left[g'
+      W^{3}_{\mu} - g' B_{\mu} \right]^{2} = \\
+    & = \frac{v^2}{8} \left(g^2 + {g'}^2\right) Z_\mu Z^\mu + 0 \left(g^2 +
+      {g'}^2 \right) A_\mu A^\mu.
+  \end{aligned}
 \end{equation}
-with $M_{A} = 0$ and $M_{Z} = v \sqrt{g^{2} + g'^{2}} / 2$ which are
-the photon and neutral weak vector boson fields.
+The general mass term for neutral fields can be written as:
+\begin{equation}
+  \label{eq:170}
+  \frac{1}{2} M_Z^2 Z_\mu Z^\mu + \frac{1}{2} M_A^2 A_\mu A^\mu
+\end{equation}
+and comparing this with \cref{eq:169} we have that:
+\begin{equation}
+  \label{eq:171}
+  \begin{aligned}
+    M_A & = 0 \\
+    M_Z & = \frac{1}{2} v \sqrt{g^2 + {g'}^2}.
+  \end{aligned}
+\end{equation}
+which are the mass term for the photon and for the neutral weak vector boson
+fields.
+
+After resolving the mass term we can explore the form of the Lagrangian in
+\cref{eq:45} after the substitution of \cref{eq:167}:
+% After the substitution of \cref{eq:167} and resolving the mass terms, the
+% Lagrangian in \cref{eq:45} becomes:
+\begin{equation}
+  \label{eq:174}
+  \mathcal{L}_\phi = \frac{1}{2} \left( \partial_\mu h \right)^2 +
+  \frac{g^2}{4}(v + h)^2 W_\mu^+ {W^-}^\mu + \frac{1}{8}(v + h)^2 Z_\mu Z^\mu -
+  V(\phi),
+\end{equation}
+the terms:
+\begin{equation}
+  \label{eq:175}
+  \frac{g^2v}{2} W_\mu^+ {W^-}^\mu h \quad \mathrm{and} \quad \frac{g^2v}{4}
+  Z_\mu Z^\mu h
+\end{equation}
+show that the coupling between the Higgs and the weak gauge fields is
+proportional to their mass while the Higgs quadratic terms ($h^2$) represents
+the interaction of two Higgs fields with two vector bosons. For the potential
+$V(\phi)$ we have:
+\begin{equation}
+  \label{eq:172}
+  V(\phi) = \frac{1}{2} (- 2 \mu^2) h^2 + \lambda v h^3 + \frac{\lambda}{4} h^4
+\end{equation}
+and the first term describes the mass of the Higgs boson:
+\begin{equation}
+  \label{eq:173}
+  m_h = \sqrt{2 \mu^2}
+\end{equation}
+Since the value of $\mu^2$ is not known the mass of the Higgs boson cannot be
+predicted and must be inferred from experiments. In 2012 the
+ATLAS~\cite{ATLASHiggs} and CMS~\cite{CMSHiggs} experiments at CERN discovered
+the Higgs boson needed to complete the Standard Model of weak interactions.
 % Recalling that
 % \begin{equation}
 %   \label{eq:52}
@@ -102,11 +256,8 @@ the photon and neutral weak vector boson fields.
 %     W^{3}_{\mu}.
 %   \end{split}
 % \end{equation}
-Thus the mass eigenstates are a massless vector boson, $A_{\mu}$ and a
-massive gauge boson $Z_{\mu}$.
-
-We have shown in this section how the Higgs mechanism can be applied
-to give mass to the gauge bosons of the electroweak model.
+% Thus the mass eigenstates are a massless vector boson, $A_{\mu}$ and a
+% massive gauge boson $Z_{\mu}$.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
