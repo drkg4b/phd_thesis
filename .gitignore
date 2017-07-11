@@ -18,6 +18,8 @@
 
 !ChangeLog
 
+!*.png
+
 # Ignore specific files
 
 logo.pdf
