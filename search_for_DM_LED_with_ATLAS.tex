@@ -401,7 +401,7 @@
 
 \input{phys_obj_reco/jet_selection}
 
-\subsection{$b$-Jets}
+\subsection{Identification of $b$ and $c$ Jets}
 \label{sec:b-jets}
 
 \input{phys_obj_reco/b_jet}
@@ -545,21 +545,35 @@
 
 \input{monojet_sig_2016/event_selection}
 
-\subsection{Signal Region}
-\label{sec:signal-region}
+% \subsection{Signal Region}
+% \label{sec:signal-region}
 
-\input{monojet_sig_2016/sr_definition}
+% \input{monojet_sig_2016/sr_definition}
 
-\subsection{Control Regions}
-\label{sec:control-regions}
+\section{Background Estimation}
+\label{sec:backgr-estim}
 
-\input{monojet_sig/cr_intro}
+\input{monojet_sig_2016/bkg_estimation_intro}
 
-\subsubsection{The Muon Control Region With $b$-Veto}
+% \subsection{Control Regions}
+% \label{sec:control-regions}
+
+% \input{monojet_sig/cr_intro}
+
+\subsection{The Muon Control Region With $b$-Veto}
 \label{sec:muon-control-region-1}
 
-\subsubsection{The Muon Control Region With $b$-Jets}
+\input{monojet_sig_2016/wmunu_cr}
+
+\subsection{The Muon Control Region With $b$-Jets}
 \label{sec:muon-control-region-1}
+
+\input{monojet_sig_2016/ttbar_cr}
+
+\subsection{Fit Strategy}
+\label{sec:fit-strategy}
+
+\input{monojet_sig_2016/fit_strategy}
 
 \section{Systematic Uncertainties}
 \label{sec:syst-uncert-1}
@@ -606,10 +620,35 @@
 
 \input{monojet_sig_2016/pileup_np}
 
-\subsection{Theoretical Systematic Uncertainties}
-\label{sec:theor-syst-uncert}
+\subsection{Background Theoretical Systematic Uncertainties}
+\label{sec:backgr-theor-syst}
 
 \input{monojet_sig_2016/theo_syst}
+
+\subsubsection{V + jets Backgrounds}
+\label{sec:v-+-jets}
+
+\input{monojet_sig_2016/vplusjets_theo_syst}
+
+\subsubsection{V + jets Parton Distribution Function Uncertainties}
+\label{sec:v-+-jets-pdf}
+
+\input{monojet_sig_2016/vplusjets_pdf}
+
+\subsubsection{V + jets Matching Uncertainties}
+\label{sec:v-+-jets-matching}
+
+\input{monojet_sig_2016/vplusjets_matching}
+
+\subsubsection{Diboson Background}
+\label{sec:diboson-background}
+
+\input{monojet_sig_2016/diboson_syst}
+
+\subsubsection{Top Quark Background}
+\label{sec:top-quark-background}
+
+\input{monojet_sig_2016/top_syst}
 
 \section{Signal Theroetical Systematic Uncertainties}
 \label{sec:ther-syst-uncert}
@@ -633,6 +672,8 @@
 
 \section{Results and Interpretations}
 \label{sec:results-interpr}
+
+\input{monojet_sig_2016/results_2016}
 
 \subsection{ADD Model Interpretation}
 \label{sec:add-model-interpr}
