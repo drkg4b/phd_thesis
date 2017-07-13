@@ -274,8 +274,8 @@ def make_pretty_plot(period):
         graph_p3.Draw('samep')
         graph_p4.Draw('samep')
 
-        latex = TLatex(1100, 1925, '#bf{#splitline{Data 2015 + 2016, #sqrt{s} = 13'\
-                       'TeV, 36.1 fb^{-1}}{W #rightarrow #mu#nu selection}}')
+        latex = TLatex(1100, 1925, '#bf{#splitline{Data 2016, #sqrt{s} = 13'\
+                       'TeV, 32.9 fb^{-1}}{W #rightarrow #mu#nu selection}}')
 
         latex.SetNDC()
         latex.SetX(.35)
