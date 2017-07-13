@@ -1,9 +1,19 @@
-\begin{description}
-  \item[syst\_FT\_EFF\_B\_systematics] Bla
-  \item[syst\_FT\_EFF\_C\_systematics] Bla
-  \item[syst\_FT\_EFF\_Light\_systematics] Bla
-  \item[syst\_FT\_EFF\_extrapolation]
-  \item[syst\_FT\_EFF\_extrapolation\_from\_charm]
+A common way to model disagreements between data and \gls{mc} simulations in
+trigger and reconstruction efficiencies is to determine a correction factor from
+the fit to the data to Mote Carlo ratio and use this correction as a weight in
+the \gls{mc} distributions. In \gls{atlas} this weight is commonly called a
+\emph{scale factor}.
+\begin{description}[font=\normalfont]
+\item[syst\_FT\_EFF\_B\_systematics:] This parameter takes into account scale
+  factor uncertainties in $b$-tagging (recognizing as a $b$-jet a jet
+  originating from a $b$ quark).
+  \item[syst\_FT\_EFF\_C\_systematics:] This parameter accounts for tagging of
+    $c$-jets uncertainties.
+  \item[syst\_FT\_EFF\_Light\_systematics:] This parameter models the uncertainty
+    in mistagging light quarks.
+  \item[syst\_FT\_EFF\_extrapolation:] \note{What is extrapolation?}
+  \item[syst\_FT\_EFF\_extrapolation\_from\_charm:] \note{What is extrapolation
+      from charm?}
 \end{description}
 %%% Local Variables:
 %%% mode: latex
