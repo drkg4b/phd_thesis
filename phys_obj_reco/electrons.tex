@@ -2,13 +2,21 @@ Electrons are identified in the central part of the ATLAS detector
 ($|\eta| < 2.47$) by an energy deposit in the electromagnetic calorimeter and an
 associated track in the inner detector. Signal electrons are defined as prompt
 electrons coming from the decay of a $W, Z$ boson or a top quark while
-background non--prompt electrons come from hadron decays, photon conversion,
-semi-leptonic heavy flavor hadron decay and highly electromagnetic jets. A
-likelihood discriminant is formed using different information: the shower shape
-in the EM calorimeter, the track-cluster matching, some of the track quality
-distributions from signal and background simulation and cuts on the number of
-hits in the ID\@. Cuts that depend on $|\eta|$ and $\et$ on the likelihood
-estimator allow to distinguish between signal and background electrons.
+background non-prompt electrons come from hadron decays, photon conversion,
+semi-leptonic heavy flavor hadron decay and highly electromagnetic jets. To
+differentiate between signal and background electrons a likelihood discriminant
+is formed using different information: the shower shape in the EM calorimeter,
+the track-cluster matching, some of the track quality distributions from signal
+and background simulation and cuts on the number of hits in the ID\@. Cuts that
+depend on $|\eta|$ and $\et$ on the likelihood estimator allow to distinguish
+between signal and background electrons. To further enhance the discrimination
+from background electrons signal electrons are required to be separated from
+other detector activity, this is done by requiring the energy deposited by the
+electron in the calorimeter or the scalar sum of the transverse momentum of the
+tracks in the \gls{id} contained in a cone of some specified size $\Delta R$ to
+be less than a threshold value that depends on the tightness of the electron
+identification required. These track or calorimeter based criteria are commonly
+referred to as \emph{isolation}.
 
 Electron identification efficiencies are measured in $pp$ collision data and
 compared to efficiencies measured in $\zee$ simulations. Signal electrons can
