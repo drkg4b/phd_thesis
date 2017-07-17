@@ -1,4 +1,39 @@
-\note{Insert this section}
+The $\crwmn$ control region is defined in a similar way as in
+\cref{sec:muon-control-region} and designed to estimate the contribution of
+$\wmunuplusjets$ and $\znunuplusjets$ processes in the signal region. In
+addition to cuts from A to H as defined in \ref{sec:event-selection-1} the
+$\crwmn$ region selects events with:
+\begin{itemize}
+\item Events containing an electron are vetoed.
+\item Exactly one good muon.
+\item The transverse mass defined in \eqref{eq:99} satisfies
+  $30 < m_\mathrm{\, T} < 100$~GeV.
+\item None of the selected jets in the event is identified as a $b$-jet.
+\end{itemize}
+The $\met$ and the leading jet $\pt$ distributions after the background only fit
+described in \cref{sec:glob-simult-likel,sec:fit-strategy} are shown in
+\cref{fig:wmn_plots}. There is a good agreement between data and \gls{mc} within
+uncertainties.
+\begin{figure}[!th]
+  \centering
+  \begin{subfigure}[t]{.48\linewidth}
+    \includegraphics[width=\linewidth]{wmn_cr_met}
+    \caption{$\met$ distribution.}
+    \label{fig:wmn_cr_et_miss}
+  \end{subfigure}
+  \begin{subfigure}[t]{.48\linewidth}
+    \includegraphics[width=\linewidth]{wmn_cr_jet1}
+    \caption{Leading jet $\pt$ distribution.}
+    \label{fig:wmn_cr_jet1}
+  \end{subfigure}
+  \caption{Observed and predicted $\met$ and leading jet $\pt$ after the
+    background only fit in the $\crwmn$ control region for the $\met > 250$~GeV
+    inclusive selection. The error bands in the ratio plot on the bottom of the
+    figures include statistical and systematic uncertainties. The negligible
+    contribution of \gls{ncb} and diboson backgrounds is not reported in the
+    figure.}
+  \label{fig:wmn_plots}
+\end{figure}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
