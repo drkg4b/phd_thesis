@@ -1,0 +1,72 @@
+The most direct way to estimate the main $\znunuplusjets$ background would be
+from $Z (\rightarrow \ell^+ \ell^-) +$ jets processes where $\ell = e, \mu$.
+However the smaller branching ratio of the $Z$ boson decaying to leptons
+compared to the neutrinos makes the $Z (\rightarrow \ell^+ \ell^-) +$ jets
+statistically limited. For this reason using the decay of the $Z$ boson to
+leptons as a proxy to estimate the $\znunuplusjets$ process with a statistical
+precision of less than 1\% can be used up to a $\pt$ of the boson of 600~GeV,
+beyond this value the $W(\rightarrow \ell \nu) +$ jets processes are
+statistically favored and should be used
+instead~\cite{VplusJetsCorrections}. The theoretical extrapolation of the
+$\znunuplusjets$ background from the $Z (\rightarrow \ell^+ \ell^-) +$ jets and
+$W(\rightarrow \ell \nu) +$ jets processes at high $\pt$ can be influenced by
+several factor including the choice of the parton distribution function and the
+renormalization and factorization scales therefore it is important to include in
+the calculations higher order correction in \gls{qcd} and \gls{ew}
+processes. The V + jets samples used in this analysis are generated at the
+\gls{nlo} and \gls{lo} in \gls{qcd} for up to two and four partons respectively,
+at the \gls{lo} in \gls{ew} and normalized to an inclusive \gls{nnlo} cross
+section. One possible way to include higher order correction to the \gls{mc}
+samples relies on the re-weighting of the differential cross section of these
+samples to the \gls{nlo} \note{Why do we apply NLO corrections to something that
+  is already at NLO?} in \gls{qcd} and \gls{nlo} plus \gls{nll} Sudakov
+approximation at \gls{nnlo} in \gls{ew} \note{Very confusing!! And what has this
+  to do with the fact we have a \gls{nnlo} inclusive cross
+  section?}~\cite{VplusJetsCorrections}. At high energies \gls{ew} corrections
+are dominated by single and double logarithms of the scale of the process over
+the mass of the vector boson ($s/m_\mathrm{V}^2$ where V = $W, Z$) called
+Sudakov logarithms~\cite{SudakovLogs}. In the limit when all the kinematic
+invariants are much larger than the electroweak scale (the \emph{Sudakov limit})
+the \gls{ew} one-loop corrections can be predicted in a process invariant
+way~\cite{SudakovApproximation}. This Sudakov approximation is computationally
+cheaper than the full \gls{nlo} \gls{ew} correction and since it includes
+leading and sub-leading logarithmic terms it is at the \gls{nll} accuracy
+level~\cite{SudakovApproximation}. The framework proposed in
+Ref.~\cite{VplusJetsCorrections} for applying higher order corrections to the
+\gls{mc} samples introduces a single re-weighting factor for all the V + jets
+Monte Carlo simulations with a set of relative systematic uncertainties that can
+be implemented as nuisance parameters in the profile likelihood method described
+in \cref{sec:stat-proc}. It is based on the formula:
+\begin{equation}
+  \label{eq:51}
+  \frac{\ud}{\ud x} \frac{\ud}{\ud \vec{y}} \sigma^{(V)}
+  (\vec{\epsilon}_\mathrm{MC}, \vec{\epsilon}_\mathrm{TH}) = \frac{\ud}{\ud x}
+  \frac{\ud}{\ud \vec{y}} \sigma_\mathrm{MC}^{(V)}(\vec{\epsilon}_\mathrm{MC})
+  \left[ \frac{\frac{\ud}{\ud x}
+      \sigma_\mathrm{TH}^{(V)}(\vec{\epsilon}_\mathrm{TH})}{\frac{\ud}{\ud x}
+      \sigma_\mathrm{MC}^{(V)}(\vec{\epsilon}_\mathrm{MC})} \right]
+\end{equation}
+where the one dimensional parameter $x$ is understood as the transverse momentum
+of the vector boson $x = \pt^{(V)}$, $\vec{y}$ represents other kinematic
+variables included in the \gls{mc} simulation, $\vec{\epsilon}_\mathrm{MC}$ and
+$\vec{\epsilon}_\mathrm{TH}$ are the nuisance parameters associated with the
+Monte Carlo predictions and the theoretical higher order corrections introduced
+with this calculation and finally $\sigma_\mathrm{MC}^{(V)}$ and
+$\sigma_\mathrm{TH}^{(V)}$ are the production cross sections for the V + jets
+samples computed from \gls{mc} and from theory respectively. The
+$\ud \sigma_\mathrm{TH}(\vec{\epsilon}_\mathrm{TH})/\ud x$ is first done at the
+\gls{lo} and subsequently corrected independently at the \gls{nlo} in \gls{qcd}
+and \gls{nlo} plus the Sudakov approximation at \gls{nnlo} in \gls{ew}:
+\begin{equation}
+  \label{eq:176}
+  \frac{\ud}{\ud x} \sigma_\mathrm{TH}(\vec{\epsilon}_\mathrm{TH}) =
+  k_\mathrm{NLO}(x, \vec{\epsilon}_\mathrm{TH}) \cdot \left(1 + k_\mathrm{EW}(x,
+    \vec{\epsilon}_\mathrm{TH}) \right) \cdot \frac{\ud}{\ud x} \sigma_\mathrm{LO}
+\end{equation}
+where $k_\mathrm{LO} = k_\mathrm{NLO}^\mathrm{EW} +
+k_\mathrm{NNLO}^\mathrm{Sudakov}$. The systematic uncertainties associated with
+this theoretical procedure are described in \cref{sec:v-+-jets}.
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../search_for_DM_LED_with_ATLAS"
+%%% End:
