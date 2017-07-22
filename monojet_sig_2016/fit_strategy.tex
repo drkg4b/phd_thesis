@@ -1,4 +1,43 @@
-\note{Insert this section}
+The profile likelihood method described in \cref{sec:stat-proc} is used to
+combine the background estimated with the different methods outlined in
+\cref{sec:backgr-estim} and the relative systematic uncertainties described in
+\cref{sec:syst-uncert-1,sec:ther-syst-uncert} in a global fit. The likelihood
+function is the product of Poisson probability, one for each bin used in the
+analysis defined in \cref{sec:event-selection-1} and Gaussian probabilities that
+model the systematic uncertainties. The Poisson probabilities include as free
+parameters the normalization factors mentioned in \cref{sec:glob-simult-likel}
+used to scale the relative contributions of the signal and background
+predictions. The free parameters of the Gaussian distributions are the nuisance
+parameters used to model the systematic uncertainties described in
+\cref{sec:syst-uncert-1}. The nuisance parameters and the normalization factors
+are adjusted to the optimal value by the fit which allows for a reduction of the
+otherwise relatively large theoretical and experimental systematic uncertainties
+(of the order of 20 - 40\%).  In this version of the analysis a unique
+normalization factor is used to constrain all the V + jets samples, this is
+justified by the use of the theoretical framework introduced in
+\cref{sec:corrections-vjets}. Analogously a single normalization factor is used
+for the $t \bar{t}$ and single top processes. \cref{tab:norm_factors_2016}
+summarizes the normalization factors and the control regions used for their
+estimation. The $k^\mathrm{V + jets}$ and $k^t$ together with the signal
+strength $\mu$ are the tree parameters of the global fit.
+\begin{table}[!th]
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    Control Region & Background Process & Normalization Factor \\
+    \midrule \midrule
+    All control regions & V + jets & $k^\mathrm{V + jets}$ \\
+    $\crtop$ & $t \bar{t}$, single top & $k^t$ \\
+    \bottomrule
+  \end{tabular}
+  \caption{Summary table of the different background processes and the
+    corresponding control regions used to evaluate the normalization factors.}
+  \label{tab:norm_factors_2016}
+\end{table}
+\note{Review this part}
+% In order to estimate the main $\znunuplusjets$ background of the analysis a
+% strategy similar to the one adopted in the 2015 analysis and outlined in
+% \cref{sec:glob-simult-likel} has been adopted.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
