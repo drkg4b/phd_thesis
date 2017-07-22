@@ -1,4 +1,9 @@
 Author: Gabriele Bertoli <gbertoli@cern.ch>
+Date:   Sat Jul 22 20:27:55 2017 +0200
+
+    Replacing -- with - in all the document
+
+Author: Gabriele Bertoli <gbertoli@cern.ch>
 Date:   Thu Apr 27 17:41:06 2017 +0200
 
     bsm/led.tex bsm/kk-cons.tex search_for_DM_LED_with_ATLAS.tex references.bib
