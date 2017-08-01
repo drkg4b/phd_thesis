@@ -2,28 +2,28 @@ In order to account for possible mismodelings associated with the higher order
 corrections to the V + jets samples described in \cref{sec:corrections-vjets},
 the following nuisance parameters are introduced in the statistical model and
 thus constrained by the global fit described in \cref{sec:fit-strategy}:
-\begin{description}[font=\normalfont]
-\item[$\delta_1 k_\mathrm{NLO}$:] Accounts for uncertainties in the
-  normalization of the vector boson $\pt$ distribution due to \gls{qcd} scale
-  variations.
-\item[$\delta_2 k_\mathrm{NLO}$:] This parameter accounts for shape
-  uncertainties of the vector boson $\pt$ distribution due to \gls{qcd} scale
-  variations.
-\item[$\delta_3 k_\mathrm{NLO}$:] This parameter accounts for the correlation of
-  \gls{qcd} uncertainties in the different V + jets processes.
-\item[$\delta_1 k_\mathrm{EW}$:] This parameter estimate the uncertainty of
-  unkown high $\pt$ \gls{ew} effects beyond \gls{nnlo}.
-\item[$\delta_2 k_\mathrm{EW}$:] This parameter accounts for unknown terms in
-  the \gls{nlo} approximation at high $\pt$ and for \gls{nnlo} effects that
-  might become relevant when hard contributions dominate.
-\item[$\delta_3 k_\mathrm{EW}$:] This term accounts for the limitations of the
-  Sudakov approximation.
-\item[$\delta_3 k_\mathrm{mix}$:] The \gls{qcd} and \gls{ew} are treated as
-  separate corrections, this term accounts for unknown interference terms not
-  taken into account.
-\end{description}
-\note{Probably for consistency it is better to switch to the following but need
-  to find out what are the extra two NP}
+% \begin{description}[font=\normalfont]
+% \item[$\delta_1 k_\mathrm{NLO}$:] Accounts for uncertainties in the
+%   normalization of the vector boson $\pt$ distribution due to \gls{qcd} scale
+%   variations.
+% \item[$\delta_2 k_\mathrm{NLO}$:] This parameter accounts for shape
+%   uncertainties of the vector boson $\pt$ distribution due to \gls{qcd} scale
+%   variations.
+% \item[$\delta_3 k_\mathrm{NLO}$:] This parameter accounts for the correlation of
+%   \gls{qcd} uncertainties in the different V + jets processes.
+% \item[$\delta_1 k_\mathrm{EW}$:] This parameter estimate the uncertainty of
+%   unkown high $\pt$ \gls{ew} effects beyond \gls{nnlo}.
+% \item[$\delta_2 k_\mathrm{EW}$:] This parameter accounts for unknown terms in
+%   the \gls{nlo} approximation at high $\pt$ and for \gls{nnlo} effects that
+%   might become relevant when hard contributions dominate.
+% \item[$\delta_3 k_\mathrm{EW}$:] This term accounts for the limitations of the
+%   Sudakov approximation.
+% \item[$\delta_3 k_\mathrm{mix}$:] The \gls{qcd} and \gls{ew} are treated as
+%   separate corrections, this term accounts for unknown interference terms not
+%   taken into account.
+% \end{description}
+% \note{Probably for consistency it is better to switch to the following but need
+%   to find out what are the extra two NP}
 \begin{description}[font=\normalfont]
 \item[vjets\_d1K\_NLO:] Accounts for uncertainties in the normalization of the
   vector boson $\pt$ distribution due to \gls{qcd} scale variations.
@@ -33,10 +33,16 @@ thus constrained by the global fit described in \cref{sec:fit-strategy}:
   uncertainties in the different V + jets processes.
 \item[vjets\_d1kappa\_EW:] This parameter estimate the uncertainty of unkown
   high $\pt$ \gls{ew} effects beyond \gls{nnlo}.
-\item[vjets\_d2kappa\_EW\_eej:]
-\item[vjets\_d2kappa\_EW\_evj:]
-\item[vjets\_d3kappa\_EW\_eej:]
-\item[vjets\_d3kappa\_EW\_evj:]
+\item[vjets\_d2kappa\_EW\_eej:] This parameter accounts for unknown terms in the
+  \gls{nlo} approximation at high $\pt$ and for \gls{nnlo} effects that might
+  become relevant when hard contributions dominate. It is used for the Z + jest
+  processes.
+\item[vjets\_d2kappa\_EW\_evj:] This parameter accounts for the same effects as
+  the previous one but it is used to constrain the W + jets processes.
+\item[vjets\_d3kappa\_EW\_eej:] This term accounts for the limitations of the
+  Sudakov approximation for the Z + jets processes.
+\item[vjets\_d3kappa\_EW\_evj:] This term accounts for the limitations of the
+  Sudakov approximation for the W + jets processes.
 \item[vjets\_dK\_NLO\_mix:] The \gls{qcd} and \gls{ew} are treated as separate
   corrections, this term accounts for unknown interference terms not taken into
   account.
@@ -48,15 +54,16 @@ thus constrained by the global fit described in \cref{sec:fit-strategy}:
   250 and 1000~GeV while a flat function is fitted beyond 1000~GeV. This
   parameter accounts for systematic uncertainties due to the smoothing.
 \end{description}
-Besides the $\delta_1 k_\mathrm{EW}$ and $\delta_2 k_\mathrm{EW}$ for which the
-universality in not demonstrated and are thus treated as independent across the
-V + jets samples, the other parameters are treated as correlated between the V +
-jets processes and vector boson $\pt$ but independent from one another. The
-nuisance parameters are applied by re-weighting each event based on the theory
-input of \cref{sec:corrections-vjets}, in particular up and down variation
-histograms of the $\pt$ distributions of the vector boson are obtained applying
-the event weight and treated in a consistent way to other normalization and
-shape uncertainties.
+Since the vjets\_d2kappa\_EW\_eej, vjets\_d2kappa\_EW\_evj,
+vjets\_d3kappa\_EW\_eej and vjets\_d3kappa\_EW\_evj describe subleading unknown
+effects they are treated with independent nuisance parameters for each process
+in the fit, the other parameters are treated as correlated between the V + jets
+processes and vector boson $\pt$ but independent from one another. The nuisance
+parameters are applied by re-weighting each event based on the theory input of
+\cref{sec:corrections-vjets}, in particular up and down variation histograms of
+the $\pt$ distributions of the vector boson are obtained applying the event
+weight and treated in a consistent way to other normalization and shape
+uncertainties.
 %%% local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
