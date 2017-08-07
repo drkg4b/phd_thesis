@@ -1,6 +1,6 @@
 \documentclass[10pt,twoside,cucitura,classica,english,openany]{toptesi}
 
-\usepackage{hyperref}
+\usepackage[breaklinks=true]{hyperref}
 \hypersetup{%
   pdfpagemode={UseOutlines},
   bookmarksopen,
@@ -41,7 +41,7 @@
 %%% Add line number to the document for debug purposes:
 \linenumbers
 
-\DeclareUnicodeCharacter{FFFD}{?????}
+% \DeclareUnicodeCharacter{FFFD}{?????}
 
 \crefname{figure}{Figure}{Figures}
 
@@ -64,10 +64,10 @@
 \ateneo{Stockholm University}
 \facolta{Department of Physics}
 
-\titolo{Search for Supersymmetry in Monojet Final States with the ATLAS Experiment}
+\titolo{Search for Supersymmetry and Large Extra Dimensions in Monojet Final
+  States with the ATLAS Experiment}
 
-\TesiDiLaurea{Licentiate Thesis \\ \scriptsize{Akademisk avhandling för avläggande av
-  filosifie \\ licetiatexamen vid Stockholm universitet}}
+\TesiDiLaurea{PhD Thesis}
 
 \CorsoDiLaureaIn{Doctoral Studies in }
 \corsodilaurea{Physics}
@@ -75,11 +75,11 @@
 \CandidateName{Candidate:}
 \candidato{Gabriele \textsc{Bertoli}}
 \AdvisorName{Advisor:}
-\relatore{doc.~Christophe \textsc{Clement}}
+\relatore{Prof.~Christophe \textsc{Clement}}
 \CoAdvisorName{Co-Supervisor}
-\secondorelatore{doc.~David \textsc{Milstead}}
-\sedutadilaurea{September 2016}
-\sedutadilaurea{\textsc{September 29,} 2016}
+\secondorelatore{Prof.~David \textsc{Milstead}}
+% \sedutadilaurea{September 2016}
+\sedutadilaurea{\textsc{\today}}
 
 \newtheorem{osservazione}{Osservazione}
 \ExtendCaptions{english}{Abstract}{Acknowledgments}
@@ -104,7 +104,9 @@
 
 %\ringraziamenti
 
-\tablespagetrue\figurespagetrue \indici
+% \tablespagetrue\figurespagetrue
+
+\indici
 
 % \expandafter\ifx\csname StileTrieste\endcsname\relax \else
 \begin{citazioni}
@@ -120,7 +122,7 @@
 
 \sommario
 
-\input{abstract.tex}
+\input{abstract}
 
 \mainmatter
 
@@ -128,6 +130,11 @@
 \label{cha:intro}
 
 \input{introduction/intro}
+
+\section{Content Overview}
+\label{sec:content-overview}
+
+\input{introduction/content_overview}
 
 \section{Author's Contribution}
 \label{sec:authors-contribution}
