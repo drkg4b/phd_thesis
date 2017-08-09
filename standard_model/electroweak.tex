@@ -1,10 +1,10 @@
 In 1930 Pauli suggested the introduction of a new particle in order to explain
-the continuous spectrum of the electron in $\beta$ decays. He called it neutron
-(in 1930 the neutron has not been discovered yet) as it had to be electrically
-neutral in order to conserve charge. It was not until Fermi proposed his theory
-for $\beta$ decay~\cite{FermiTheory} that the new particle was accepted and
-named \emph{neutrino}. The Lagrangian in Fermi's theory is of the
-current-current type and can be written as:
+the continuous spectrum of in $\beta$ decays~\cite{PauliNeutrino}. Since the
+neutron was not discovered yet Pauli named his hypothesized particle that way as
+it had to be electrically neutral in order to conserve charge. It was not until
+Fermi proposed his theory for $\beta$ decay~\cite{FermiTheory, FermiTheoryIta}
+that the new particle was accepted and named \emph{neutrino}. The Lagrangian in
+Fermi's theory is of the current-current type and can be written as:
 % We can now see how to find out the weak interaction symmetry group, to this end,
 % let us start by writing out the \emph{Hamiltonian} for the weak interaction:
 \begin{equation}
@@ -12,80 +12,106 @@ current-current type and can be written as:
   J^\mu
   \label{eq:150}
 \end{equation}
-where the $J_\mu$ current is given by:
+where $G_F$ is the Fermi constant and the $J_\mu$ current is given by:
 \begin{equation}
   \label{eq:151}
-  J_\mu = \overbar{\psi} \gamma^\mu \psi
+  J_\mu = \overbar{\psi} \gamma^\mu \psi,
 \end{equation}
-and $\psi$, $\overbar{\psi}$ are the spinors of the fermions involved in the
-interaction. In 1949 Powell discovered in cosmic rays two particles that he
-called the tau and the theta mesons. The tau could decay by weak interaction
-into three pions ($\tau^+ \rightarrow \pi^+ \pi^+ \pi^-$) and the theta decays
-into two pions ($\theta^+ \rightarrow \pi^+ \pi^0$). The measured lifetime and
-mass of the tau and the theta mesons turned out to be the compatible within
-experimental uncertainties hinting that they could be the same particle but in
-that case parity conservation (a space-time symmetry) would be violated. This is
-known as the $\tau - \theta$ puzzle. In 1950 Lee and Yang proposed that parity
-could be violated in weak interactions~\cite{LeeYangParityViolation} which was
-experimentally confirmed in 1956 by Madame Wu~\cite{WuExperiment}. The tau and
-theta mesons were identified as the \emph{kaon} which decays are both parity
-conserving ($k^+ \rightarrow \pi^+ \pi^+ \pi^-$) and parity violating
-($k^+ \rightarrow \pi^+ \pi^0$). Wu's experiment involved the $\beta$ decay of
+here $\psi$, $\overbar{\psi}$ are the spinors of the fermions involved in the
+interaction and $\gamma_\mu$ ($\mu =$ 0, 1, 2, 3) are the Dirac matrices. In
+1949 Powell~\cite{PowellTauMeson} discovered in cosmic rays two particles that
+he called the tau and the theta mesons. The tau meson could decay by weak
+interaction into three pions ($\tau^+ \rightarrow \pi^+ \pi^+ \pi^-$) and the
+theta decays into two pions ($\theta^+ \rightarrow \pi^+ \pi^0$). The measured
+lifetime and mass of the tau and the theta mesons turned out to be the
+compatible within experimental uncertainties hinting that they could be the same
+particle but in that case parity\footnote{Parity is a space-time symmetry in
+  which $\vec{r} \rightarrow \pvec{r}' = - \vec{r}$ and $t \rightarrow t' = t$
+  where $\vec{r}$ and $t$ are the position vector and time respectively thus
+  $\vec{p} \rightarrow \pvec{p}' = - \vec{p}$,
+  $\vec{L} = \vec{r} \times \vec{p} \rightarrow \pvec{L}' = \vec{L} \Rightarrow
+  \vec{J} \rightarrow \pvec{J}' = \vec{J}$ where $\vec{p}$, $\vec{L}$ and
+  $\vec{J}$ are the momentum, the angular momentum and the total angular
+  momentum respectively. For the helicity we have also
+  $\lambda = \vec{J} \cdot \vec{p} / |\vec{p}| \rightarrow \lambda' = -
+  \lambda$.} conservation would be violated. This is known as the
+$\tau - \theta$ puzzle. In 1950 Lee and Yang proposed that parity could be
+violated in weak interactions~\cite{LeeYangParityViolation} which was
+experimentally confirmed in 1956 by Wu~\cite{WuExperiment}. The tau and theta
+mesons were identified as the \emph{kaon} which decays are both parity
+conserving ($K^+ \rightarrow \pi^+ \pi^+ \pi^-$) and parity violating
+($K^+ \rightarrow \pi^+ \pi^0$). Wu's experiment involved the $\beta$ decay of
 Cobalt 60 atoms to Nickel 60. The Cobalt atoms were immersed in a magnetic field
-in order to align it with the spin of the nucleus and the observable in the
-experiment is the product between the momentum of the electron and its spin
+in order to align the spin of the nucleus with it. The observable in the
+experiment is the product between the spin of the electron and its momentum
 ($\vec{J} \cdot \vec{p}$). Reverting the magnetic field is the same as applying
 a parity transformation and since the momentum transforms as a vector and
 changes sign under space reflection ($\vec{p} \to - \vec{p}$) but the spin
 transforms as an axial vector and remains unchanged ($\vec{J} \to \vec{J}$) the
 product $\vec{J} \cdot \vec{p}$ is not parity conserving and asymmetry in the
-distributions of the experiment and its reflected version were observed. In 1958
-Feynman and Gell-Mann proposed a parity violating extension of Fermi's
+distributions of the experiment and its reflected version were observed.
+
+In 1958 Feynman and Gell-Mann proposed a parity violating extension of Fermi's
 theory~\cite{VATheory} called the V-A (vector minus axial vector) theory which
 introduces the \emph{chiral} operators:
 \begin{equation}
   \label{eq:152}
   P_L = \frac{1}{2}(1 - \gamma^5); \quad P_R = \frac{1}{2}(1 + \gamma^5)
 \end{equation}
-where $\gamma_5 = i \gamma_0 \gamma_1 \gamma_2 \gamma_3$ and $\gamma_\mu$
-($\mu =$ 0, 1, 2, 3) are the Dirac matrices. The chiral operators projects the
-left and right chirality when applied on a spinor $\psi$. The weak current can
-be re-written as:
+where $\gamma_5 = i \gamma_0 \gamma_1 \gamma_2 \gamma_3$. The chiral operators
+projects the left and right chirality when applied on a spinor $\psi$. The weak
+current can be re-written as:
 \begin{equation}
   \begin{split}
     J_\mu & \equiv J_\mu^{(+)} = \overbar{\psi}_{\nu_e} \gamma_\mu \frac{1}{2}
-    \left(1 - \gamma_5 \right) \psi_e \equiv \overbar{\nu}_{e_L}
-    \gamma_\mu e_L \\
+    \left(1 - \gamma_5 \right) \psi_e \\
     J_\mu^\dagger & \equiv J_\mu^{(-)} = \overbar{\psi}_e \gamma_\mu \frac{1}{2}
-    (1 - \gamma_5) \psi_{\nu_e} \equiv \overbar{e}_L \gamma_\mu \nu_{e_L},
+    (1 - \gamma_5) \psi_{\nu_e},
   \end{split}
   \label{eq:153}
 \end{equation}
 here $J_\mu^{(+)}$ and $J_\mu^{(-)}$ are the charged weak currents and are a
-combination of vector and axial vector currents where only the left chiral
-fermions and the right chiral anti-fermions participate in the weak
-interaction. One problem of the V-A theory is that, for example, the total cross
-section for the inelastic neutrino scattering process
-$\nu_\mu + e^- \rightarrow \nu_e + \mu^-$ is given
+combination of vector and axial vector currents. The $\frac{1}{2}(1 - \gamma^5)$
+operator only selects left-handed fermions (or right-handed anti-fermions) thus
+only these components participate in the weak interaction. Indicating for
+simplicity $\psi_e (x)$ as $e (x)$ and $\psi_{\nu_e} (x)$ as $\nu_e (x)$,
+\cref{eq:153} can be written as:
+\begin{equation}
+  \begin{aligned}
+    J_\mu^{(+)} = \overbar{\nu}_{e_L} \gamma_\mu e_L \\
+    J_\mu^{(-)} = \overbar{e}_L \gamma_\mu \nu_{e_L}
+  \end{aligned}
+  \label{eq:177}
+\end{equation}
+where the subscript $L$ indicates that the $\frac{1}{2}(1 - \gamma^5)$ have been
+applied and only the left-handed fermions are selected.
+
+One problem of the V-A theory is that the total cross section for the inelastic
+neutrino scattering process $\nu_\mu + e^- \rightarrow \nu_e + \mu^-$ given
 by~\cite{VAUnitaryViolationBook}:
 \begin{equation}
   \label{eq:155}
   \sigma = \frac{G_F^2}{\pi}s
 \end{equation}
-where $s$ is the center of mass energy and it seems to grow indefinitely with
-energy. If we consider the cross section expansion in partial waves:
+where $s = 4E^2$ is the center of mass energy of the $\nu_\mu-e$ system grows
+indefinitely with energy. In his attempt to elaborate a theory for beta decay,
+Fermi assumed it to be point-like~\cite{FermiTheoryIta}.  As we now know the
+short range of the weak force is due to the large masses of the mediators making
+it only appear point-like in relatively low energy phenomena such as the beta
+decay. Let us consider the following expansion in partial waves:
 \begin{equation}
   \label{eq:156}
   \frac{\ud \sigma}{\ud \Omega} = \left| \frac{1}{2ik} \sum_{\ell = 0}^\infty
     (2 \ell + 1) A_\ell P_\ell(\cos \theta) \right|^2
 \end{equation}
 where $A_\ell$ is the partial wave amplitude for the orbital angular momentum
-$\ell$, since for the point-like scattering (or $s$-wave) assumed in Fermi's
-theory only the $\ell = 0$ mode contributes and there is no angular dependence
-($P_\ell(\cos \theta) = 1$) we see that:
+$\ell$ and $P_\ell$ are the Legendre polynomials. For point-like scattering
+(also referred to as $s$-wave scattering) the $\ell = 0$ mode
+dominates~\cite{VAUnitaryViolationBook} and there is no angular dependence
+($P_0(\cos \theta) = 1$) thus we have:
 \begin{equation}
   \label{eq:157}
-  \frac{\ud \sigma}{\ud \Omega} = \frac{1}{4E^2} |A_\ell|^2.
+  \frac{\ud \sigma}{\ud \Omega} = \frac{1}{4E^2} |A_0|^2.
 \end{equation}
 Requiring the unitarity ($|A_\ell| \leq 1$) for each partial wave, we have that:
 \begin{equation}
@@ -96,25 +122,24 @@ and for the total cross section:
 \begin{equation}
   \label{eq:159}
   \sigma = \int \frac{\ud \sigma}{\ud \Omega} \ud \Omega = 4 \pi \frac{\ud
-    \sigma}{\ud \Omega} \leq \frac{\pi}{2E^2}
+    \sigma}{\ud \Omega} \leq \frac{\pi}{E^2}
 \end{equation}
 and we see that the cross section is subject to a \emph{unitarity bound}. If we
 use the result of \cref{eq:155} we see that for energies grater than:
 \begin{equation}
   \label{eq:160}
-  E \geq \frac{1}{\sqrt{2}} \sqrt{\frac{\pi}{G_F}} \approx 370~\mathrm{GeV}
+  E \geq \sqrt{\frac{\pi}{2 G_F}} \approx 367~\mathrm{GeV}
 \end{equation}
-and unitarity is violated. The V-A theory is thus only valid for energies
-comparable to the Fermi scale ($\approx 300$~GeV) while for higher energies the
-point-like nature of the theory violates the unitarity of the scattering
-matrix. Feynman and Gell-Mann~\cite{FeynmannGellManFermiInteraction} proposed
-that the weak interaction could happen through the exchange of spin one bosons,
-this prompted Schwinger~\cite{SchwingerGaugeTheory} to introduce a gauge theory
-of the weak interactions mediated by the $W^\pm$ bosons where he also tried to
-include the photon. It was clear that a consistent theory for the weak
-interaction at high energies required the exchange of mediator particles and
-could be obtained by analogy to the electromagnetic case by formulating it as a
-gauge theory.
+unitarity is violated. The V-A theory is thus only valid for energies comparable
+to the Fermi scale ($\approx 367$~GeV) while for higher energies the point-like
+nature of the theory violates the unitarity of the scattering matrix. Feynman
+and Gell-Mann~\cite{FeynmannGellManFermiInteraction} proposed that the weak
+interaction could happen through the exchange of spin one bosons, this prompted
+Schwinger~\cite{SchwingerGaugeTheory} to introduce a gauge theory of the weak
+interactions mediated by the $W^\pm$ bosons where he also tried to include the
+photon. A consistent theory for the weak interaction at high energies thus
+required the exchange of mediator particles and could be obtained by analogy to
+the electromagnetic case by formulating it as a gauge theory.
 
 In order to determine the symmetry group fro the weak interactions, let us
 simplify the notation by writing:
