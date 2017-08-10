@@ -224,3 +224,18 @@
 
 - How do you tell apart all the different signals that we are probing with the
   monojet signature in case of an excess?
+
+%% From my thesis:
+
+- Why not group u and s quarks for example?
+
+  The three familes of quarks grouped in the standard way provide an almost
+  diagonal CKM matrix thus making it easier to use in calculations.
+
+- Draw a Feynman diagram of the \tau \to \pi^+ \pi^+ \pi^- process
+
+- Where do the tau meson in cosmic rays come from?
+
+- What is a spinor?
+
+- Why are P_L and P_R called chiral operators? What is a chiral operator?
