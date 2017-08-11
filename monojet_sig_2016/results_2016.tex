@@ -1,6 +1,8 @@
-The number of events observed in data and in the Standard model predictions are
-reported in \cref{tab:results} for a selected set of exclusive signal regions as
-defined in \cref{sec:event-selection-1}.
+The number of events observed in data and in the Standard Model predictions for
+a selected set of exclusive signal regions as defined in
+\cref{sec:event-selection-1} are reported in \cref{tab:results}. The total
+uncertainty of the \gls{sm} predictions range between 2.4\% for EM1 and 9.7\%
+for EM10.
 \begin{table}[!h]
   \centering
   \resizebox{\linewidth}{!}{\begin{tabular}{lccccc}
@@ -42,7 +44,14 @@ defined in \cref{sec:event-selection-1}.
     uncertainty includes both statistical and systematic uncertainties.}
   \label{tab:results}
 \end{table}
-\begin{figure}[!th]
+\cref{fig:kfactors} reports the normalization factors applied to the \gls{mc}
+predictions obtained from the fit as described in \cref{sec:fit-strategy}. It
+can be seen that a multiplicative factor of 1.35 and 0.87 is calculated for the
+V + jets and top background respectively. These factors are applied in
+\cref{fig:sr_plots} which shows the comparison between the measured
+distributions and the Monte Carlo predictions for the $\met$ and leading jet in
+signal regions with $\met > 250$~GeV after the fit.
+\begin{figure}[!h]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
     \includegraphics[width=\linewidth]{sr_mod_ind_met}
@@ -62,21 +71,61 @@ defined in \cref{sec:event-selection-1}.
     the error bars include experimental and systematic uncertainties.}
   \label{fig:sr_plots}
 \end{figure}
-\begin{figure}[!th]
-  \centering
-  \includegraphics[width=\linewidth]{np_pull_plot}
-  \caption{Values of the nuisance parameters used in the analysis after the
-    control and signal region inclusive fit to the data.}
-  \label{fig:np_pull}
-\end{figure}
-\begin{figure}[!hb]
+\begin{figure}[!h]
   \centering
   \includegraphics[width=\linewidth]{kfactors}
   \caption{Values of the normalization factors for the V + jets and single top
     backgrounds after the control and signal region inclusive fit to the data.}
   \label{fig:kfactors}
 \end{figure}
-\begin{figure}[!th]
+\cref{fig:np_pull} shows the value of the nuisance parameters defined in
+\cref{sec:syst-uncert-1} after the background only fit to the data of the
+control and signal regions. In most cases there is a mild constrain of the
+parameters. \note{Figure out the story about the compatibility with zero}.
+\begin{figure}[!h]
+  \centering
+  \includegraphics[width=\linewidth]{np_pull_plot}
+  \caption{Values of the nuisance parameters used in the analysis after the
+    control and signal region inclusive fit to the data.}
+  \label{fig:np_pull}
+\end{figure}
+Finally \cref{fig:region_pulls} shows the comparison between data and Monte
+Carlo before and after the fit for the single different regions defined in the
+analysis. After the fit the agreement between data and theory expectations is
+good. Since no significant excess of data compared to the predictions has been
+observed, the statistical approach described in \cref{sec:stat-proc} have been
+used to set 95\%~\gls{cl} model independent exclusion limits (see
+\cref{sec:model-indep-limits-1}) and interpreted in terms of the ADD scenario
+for large extra dimensions in \cref{sec:add-model-interpr}. The observed limits
+are in general slightly worse than the expected sensitivity due to the small
+excess of data compared to the Standard Model expectation as can be seen from
+\cref{tab:sr_yields}.
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    \multicolumn{3}{c}{Exclusive Signal Region Yields} \\
+    \midrule \midrule
+    Region & Predicted & Observed \\
+    \midrule
+    EM1 & $111100 \pm 2300$ & 111203 \\
+    EM2 & $67100 \pm 1400$ & 67475 \\
+    EM3 & $33820 \pm 940$ & 35285 \\
+    EM4 & $27640 \pm 610$ & 27843 \\
+    EM5 & $8360 \pm 190$ & 8583 \\
+    EM6 & $2825 \pm 78$ & 2975 \\
+    EM7 & $1094 \pm 33$ & 1142 \\
+    EM8 & $463 \pm 19$ & 512 \\
+    EM9 & $213 \pm 9$ & 223 \\
+    EM10 & $226 \pm 16$ & 245 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Total yields for Standard Model predictions and data in the different
+    exclusive singal region selections. The statistical and systematic
+    uncertainties are also quoted on the SM predictions.}
+  \label{tab:sr_yields}
+\end{table}
+\begin{figure}[!h]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
     \includegraphics[width=\linewidth]{crele_pull}
@@ -110,7 +159,7 @@ defined in \cref{sec:event-selection-1}.
       are a relative error for the pre and post-fit results. I'm not sure I
       understand why they are put on 1 and what are they supposed to mean, maybe
       I'm going to remove them from the plot (sort of Asimov data).}.}
-  \label{fig:reagion_pulls}
+  \label{fig:region_pulls}
 \end{figure}
 %%% Local Variables:
 %%% mode: latex
