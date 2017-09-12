@@ -28,22 +28,32 @@ $\met = \pt = 250$ GeV) and the hard scatter jets are defined as:
 \item Jets with $\pt > 50$ GeV or $|\eta| > 2.4$ (forward jets), are always
   considered coming from the hard scatter.
 \item In order to be considered coming from the hard scatter proton-proton
-  collision, the jets with $p_T^{\text{thresh}} \leq \pt \leq 50$ GeV must
-  additionally satisfy a JVT $>$ JVT$^{\text{ thresh}}$ selection criteria where
-  different $p_T^{\text{thresh}}$ and JVT$^{\text{ thresh}}$ have been studied,
-  in particular
-  $p_T^{\text{thresh}} \in \{30~\text{GeV}, 40~\text{GeV}, 50~\text{GeV},
-  70~\text{GeV}\}$ and JVT$^{\text{ thresh}} \in \{0.14, 0.64, 0.92\}$.
+  collision, the jets with $\pt^{\mathrm{thresh}} \leq \pt \leq 50$~GeV must
+  additionally satisfy a
+  $\mathrm{\gls{jvt}}~>~\mathrm{\gls{jvt}}^{\text{ thresh}}$ selection criteria
+  where different $\pt^{\mathrm{thresh}}$ and \gls{jvt}$^{\mathrm{\, thresh}}$
+  have been studied, in particular:
+  \begin{enumerate}[A -]
+  \item
+    $\pt^{\mathrm{thresh}} \in
+    \{30~\mathrm{GeV},~40~\mathrm{GeV},~50~\mathrm{GeV}, ~70~\mathrm{GeV}\}$,
+  \item \gls{jvt}$^{\mathrm{\, thresh}}~\in~ \{0.14,~0.64,~0.92\}$.
+  \end{enumerate}
 \end{itemize}
 
-\cref{fig:comp_4jets_nojvt} shows the jet veto efficiency for the different
-values of $p_T^{\mathrm{\, thresh}}$ and N~(jets)~$\leq~4$ in the case where no
-JVT cut is applied. In the case of $p_T^{\mathrm{\, thresh}}$ of 30 GeV the
-pile-up dependence is noticeable while it becomes less important with tighter
-cuts. In \cref{fig:comp_4jets_jvt64} a JVT $>$ 0.64 selection is applied in the
-definition of the hard scatter jets, in this case the pile-up dependence for
-the $p_T^{\mathrm{\, thresh}}$ of 30 GeV is reduced and the distribution for
-$p_T^{\mathrm{\, thresh}}$ of 40, 50 and 70 GeV cuts is, within statistical
+As can be seen from \cref{fig:susy_compressed}, at least three jets in the event
+are required for the \gls{susy} compressed spectra models, on the other hand
+other searches~\cite{MultijetSUSY} already explore signatures with five jets or
+more. For these reasons and to increase the statistics of the samples, in the
+monojet analysis events with at most four jets have been
+selected. \cref{fig:comp_4jets_nojvt} shows the jet veto efficiency for the
+different values of $\pt^{\mathrm{\, thresh}}$ and N~(jets)~$\leq~4$ in the case
+where no JVT cut is applied. In the case of $\pt^{\mathrm{\, thresh}}$ of 30~GeV
+the pile-up dependence is noticeable while it becomes less important with
+tighter cuts. In \cref{fig:comp_4jets_jvt64} a JVT $>$ 0.64 selection is applied
+in the definition of the hard scatter jets, in this case the pile-up dependence
+for the $pt^{\mathrm{\, thresh}}$ of 30~GeV is reduced and the distribution for
+$\pt^{\mathrm{\, thresh}}$ of 40, 50 and 70~GeV cuts is, within statistical
 error, flat.
 \begin{figure}[!h]
   \centering
@@ -73,7 +83,9 @@ on the $\znunu$ background. Also in this case an improvement of the jet veto
 efficiency as function of the average number of interaction per crossing
 especially for $\pt = 30$~GeV is seen. The selected definition of the
 hard-scatter jets, with N (jets) $\leq$ 4 is, within statistical error, 99\%
-efficient for the considered signals.
+efficient for the considered signals. On a final remark, even though harder cuts
+on the $\pt$ of the jets provide a better efficiency, it can be seen that such a
+choice wold overlap with the analysis given in Ref.~\cite{MultijetSUSY}.
 \begin{figure}[!h]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
@@ -90,10 +102,11 @@ efficient for the considered signals.
     $\leq 4$ as a function of the average number of interactions per bunch
     crossing $<\mu>$ for the $\znunu$ background. In
     Figure~\ref{fig:comp_4jets_nojvt} no JVT cut is applied and there is some
-    drop of the efficiency at high pile-up. In Figure~\ref{fig:comp_4jets_jvt64}
-    a JVT $> 0.64$ cut is applied, the dependence from pile-up is reduced.}
+    drop of the efficiency at high pile-up. In \cref{fig:comp_4jets_jvt64} a JVT
+    $> 0.64$ cut is applied, the dependence from pile-up is reduced.}
   \label{fig:jet_veto_comparison}
 \end{figure}
+\note{I still have the plots with 3 and 5 jets, if needed.}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
