@@ -25,20 +25,30 @@ already associated to hard objects. It may be reconstructed by means of
 calorimeter-based methods, the so called \gls{cst}, or using track-based methods
 known as \gls{tst}.
 
-The CST is reconstructed using energy deposits in the calorimeters which are not
-associated to hard objects, it arise from soft radiation accompanying the hard
-scatter event and from underlying event activity. A downside of the CST is its
-vulnerability to pile up.
+The \gls{cst} is reconstructed using energy deposits in the calorimeters which
+are not associated to hard objects, it arise from soft radiation accompanying
+the hard scatter event and from underlying event activity. A downside of the
+\gls{cst} is its vulnerability to pile up.
 
-The TST is built from tracks not associated to any hard object, tracks can be
-associated to vertices and thus to a particular $pp$ collision, making this
-method robust against pile-up. This method is, however, insensitive to soft
-terms coming from neutral particles that do not leave a track in the ID, thus
-the TST $\met$ is combined with calorimeter-based measurements for hard objects.
+The \gls{tst} is built from tracks not associated to any hard object, tracks can
+be associated to hard scatter vertices and thus to a particular $pp$ collision,
+making this method robust against pile-up. This method is, however, insensitive
+to soft terms coming from neutral particles that do not leave a track in the
+\gls{id}, thus the \gls{tst} $\met$ is combined with calorimeter-based
+measurements for hard objects.
 
-Due to its stability against pile-up, this analysis uses the TST $\met$ term.
-Moreover, the muons are treated as invisible particles in the $\met$
-reconstruction (i.e. $E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \mu} = 0$).
+Due to its stability against pile-up, this analysis uses the \gls{tst} $\met$
+term. Moreover in the monojet analysis the muons are treated as invisible
+particles in the $\met$ reconstruction so that the missing energy is calculated
+as:
+\begin{equation}
+  \label{eq:178}
+  E_\mathrm{\, x(y)}^\mathrm{\, miss} = E_\mathrm{\, x(y)}^\mathrm{\, miss,\, e} +
+  E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \gamma} + E_\mathrm{\, x(y)}^\mathrm{\,
+    miss,\, \tau} + E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \text{jets}} +
+  E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \text{soft}}
+\end{equation}
+where $E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \mu} = 0$ is used in \cref{eq:94}.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
