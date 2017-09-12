@@ -1,6 +1,6 @@
-The $\antikt$ algorithm is a sequential recombination algorithm. It defines two
-distances $d_{ij}$ and $d_{iB}$. The distance $d_{ij}$ between the physical
-objects $i$ and $j$ is defined as:
+The $\antikt$ algorithm~\cite{Antikt} is a sequential recombination
+algorithm. It defines two distances $d_{ij}$ and $d_{iB}$. The distance $d_{ij}$
+between the physical objects $i$ and $j$ is defined as:
 \begin{equation}
   \label{eq:89}
   d_{ij} = \min(k_{ti}^{-2}, k_{tj}^{-2}) \frac{\Delta_{ij}^2}{R^2}
@@ -19,7 +19,7 @@ identifies the smallest of the two distances and, if it is $d_{ij}$, it
 recombines the $i$ and $j$ objects while if it is $d_{iB}$, it calls $i$ a jet
 and removes it from the list of inputs to the algorithm. The distances are
 recalculated and the procedure reiterated until there are no more
-objects~\cite{Antikt}.
+objects.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
