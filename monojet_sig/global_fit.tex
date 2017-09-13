@@ -1,16 +1,16 @@
-A pure MC based prediction of the background contamination in the signal region
-yield large theoretical and experimental systematic uncertainties in the shape
-and normalization of the predicted distributions. For this reason a data driven
-approach, where the different backgrounds are normalized using the data in CRs
-that are orthogonal to the SR, is used. To extrapolate from CR to SR prediction
-an MC based \emph{transfer factor} is used. This factor is a ratio of MC
-predictions thus most of the systematic uncertainties either cancel out or are
-significantly reduced. The extrapolation from one kinematics region to another
-can be itself source of uncertainties, to avoid this, the selection in terms of
-kinematic in the CRs and SRs is chosen to be the same. The expected
-contributions of a background process BG$_i$, which is extracted from a control
-region CR$_j$ to a signal region SR$_k$, is
-given by:
+A pure \gls{mc} based prediction of the \gls{bg} contamination in the signal
+region yield large theoretical and experimental systematic uncertainties in the
+shape and normalization of the predicted distributions. For this reason a data
+driven approach, where the different backgrounds are normalized using the data
+in \glspl{cr} that are orthogonal to the \gls{sr}, is used. To extrapolate from
+\gls{cr} to \gls{sr} prediction an \gls{mc} based \emph{transfer factor} is
+used. This factor is a ratio of \gls{mc} predictions thus most of the systematic
+uncertainties either cancel out or are significantly reduced. The extrapolation
+from one kinematics region to another can be itself source of uncertainties, to
+avoid this, the selection in terms of kinematic in the \glspl{cr} and \glspl{sr}
+is chosen to be the same. The expected contributions of a background process
+BG$_i$, which is extracted from a control region CR$_j$ to a signal region
+SR$_k$, is given by:
 \begin{equation}
   \label{eq:100}
   N_{\mathrm{\, BG}_i}^{\mathrm{\, SR}_k} = \frac{(N_\mathrm{\,
@@ -36,8 +36,8 @@ background events predicted in MC simulation in the signal region. The ratio:
         CR}_j}_{\mathrm{\, BG}_i \mathrm{,~MC}}}
 \end{equation}
 is the transfer factor used to extrapolate from CR$_j$ to SR$_k$. The
-normalization factors used in the normalization of the BG expectation in the SRs
-is given by:
+normalization factors used in the normalization of the background expectation in
+the \glspl{sr} are bin dependent and are given by:
 \begin{equation}
   \label{eq:102}
   \mu_{j} = \frac{(N_\mathrm{\, data}^{\mathrm{\, CR}_j} - N_{\mathrm{\,
@@ -50,8 +50,8 @@ $N_{\mathrm{\, non~BG}_i,~\mathrm{MC}}^{\mathrm{\, CR}_j}$, gets contributions
 from the other normalization factors. To properly treat the correlations, the
 normalization factors are obtained from a simultaneous fit of all the CRs
 referred to as the \emph{global fit}. A summary of the different processes and
-the corresponding CR used to extract the normalization factor is given in
-Table~\ref{tab:norm_factors}.
+the corresponding \gls{cr} used to extract the normalization factor is given in
+\cref{tab:norm_factors}.
 \begin{table}[!th]
   \centering
   \begin{tabular}{lll}
@@ -65,7 +65,9 @@ Table~\ref{tab:norm_factors}.
     \bottomrule
   \end{tabular}
   \caption{Summary table of the different background processes and the
-    corresponding control regions used to evaluate the normalization factors.}
+    corresponding control regions used to evaluate the bin dependent
+    normalization factors. \note{Why if the SFs are bin dependent in 2016
+      analysis I only have one value? Are they combined in the end?}}
   \label{tab:norm_factors}
 \end{table}
 
@@ -76,8 +78,8 @@ The global fit can be performed in two different ways:
   independent limits.
 \item The signal plus background hypothesis, fits both the signal and control
   regions with a sum of background and specific signal. The normalization of the
-  specific BSM signal is a free parameter. This fit is used to exclude specific
-  models.
+  specific \gls{bsm} signal is a free parameter. This fit is used to exclude
+  specific models.
 \end{enumerate}
 %%% Local Variables:
 %%% mode: latex
