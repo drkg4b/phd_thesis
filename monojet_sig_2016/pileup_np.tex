@@ -1,6 +1,12 @@
+The generation of Monte Carlo samples is done before or during the data taking
+period when the pile-up conditions are not known precisely. For this reason at
+the analysis level it is necessary to re-weight the \gls{mc} pile-up conditions
+to what is found during the data taking, this procedure is commonly referred to
+as \emph{pile-up re-weighting}.
 \begin{description}[font=\normalfont]
-\item[syst\_PRW\_DATASF:] This parameter models changes in pile-up conditions
-  during the data taking periods.
+\item[syst\_PRW\_DATASF:] This parameter represents the uncertainty applied to
+  the correction due to the pile-up re-weighting in order to account for
+  differences between data and Monte Carlo.
 \item[syst\_JvtEfficiency:] This parameter accounts for the uncertainty in the
   \gls{jvt} efficiency relevant for pile-up suppression.
 \end{description}
