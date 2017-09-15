@@ -1,10 +1,21 @@
-The Top control region ($\crtop$) is used to estimate the contribution of
-$t \bar{t}$ and single top processes in the signal region. It is defined in the
-same way as the $\crwmn$ control region defined in \cref{sec:muon-cr-bveto} but
-at least one $b$-jet is required instead of the veto. \cref{fig:top_plots}
-report the $\met$ and the leading jet $\pt$ distributions after the background
-only fit described in \cref{sec:glob-simult-likel,sec:fit-strategy}. It shows,
-within uncertainties, a good agreement between data and \gls{mc}.
+Due to the large Monte Carlo modeling uncertainties of the top background with
+large $\met$, in the analysis with the 2015 data this process had one of the
+largest uncertainties. For this reason, in order to increase the precision of
+the analysis with the combined 2015 and 2016 data, the Top control region
+($\crtop$) is used to estimate the contribution of $t \bar{t}$ and single top
+processes in the signal region. In addition to cuts from A to H as defined in
+\cref{sec:event-selection-1} the $\crtop$ region selects events with:
+\begin{itemize}
+\item Events containing an electron are vetoed.
+\item Exactly one good muon.
+\item The transverse mass defined in \eqref{eq:99} satisfies
+  $30 < m_\mathrm{\, T} < 100$~GeV.
+\item At least one of the selected jets in the event is identified as a $b$-jet.
+\end{itemize}
+\cref{fig:top_plots} report the $\met$ and the leading jet $\pt$ distributions
+after the background only fit described in
+\cref{sec:glob-simult-likel,sec:fit-strategy}. It shows, within uncertainties, a
+good agreement between data and \gls{mc}.
 \begin{figure}[!th]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
