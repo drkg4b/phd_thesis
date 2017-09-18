@@ -1,4 +1,41 @@
-\note{Insert this section}
+Following the ATLAS recommendation given in
+Ref.~\cite{MCTuningRecommendations2015} a set of five Monte Carlo generation
+tune parameters are varied in order to cover uncertainties from
+\begin{itemize}
+\item Underlying event effects,
+\item Jet structure effects,
+\item Aspects of MC generation that provides extra jet production
+\end{itemize}
+The \gls{susy} compressed signal samples are produced with {\sc madgraph}, thus
+an additional set of systematic uncertainties need to be considered. The
+following uncertainties are considered at the {\sc madgraph} level:
+\begin{itemize}
+\item Renormalization and factorization scale varied by a factor 0.5 and 2.
+\item Initial state radiation: vary the scale for the $gqq$ and $ggg$ vertices,
+\item Jet matching: vary the qcut for the MLM matching 0.5, 1, 2
+\end{itemize}
+For each squark mass 16 systematic samples are produced and analysed at truth
+level. The resulting effect on the acceptance is evaluated in each $\met$ bin
+of the signal region and presented in \cref{tab:susy_tune}.
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{lccccccc}
+    \toprule
+    \multicolumn{8}{c}{Initial and Final State Radiation} \\
+    \midrule \midrule
+    $\met$ [GeV] & 250-300 & 300-350  & 350-400 & 400-500 & 500-600 & 600-700
+ & > 700 \\
+    \midrule
+    $\Delta A$ & 11 & 18 & 11 & 8 & 7 & 9 & 8 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Total theoretical uncertainty in \% on the \gls{susy} compressed
+    spectra signal region acceptance as function of the $\met$ bin in the signal
+    region, from tune, initial and final state radiation systematic
+    uncertainties. The final value is a common envelope valid for all the
+    \gls{susy} compressed models.}
+  \label{tab:susy_tune}
+\end{table}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
