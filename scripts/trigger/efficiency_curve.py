@@ -1,4 +1,4 @@
-#!/bin/python
+#!/usr/bin/python
 '''
 Script to generate the trigger efficiency curve.
 '''
@@ -86,6 +86,21 @@ def do_efficiency_curve(chain):
     g_efficiency_p3 = TGraphAsymmErrors(50)
     g_efficiency_p4 = TGraphAsymmErrors(50)
 
+    # h_after_selection_p1 = TH1F('h_after_selection_p1', '', 20, 0, 400)
+    # h_after_selection_p2 = TH1F('h_after_selection_p2', '', 20, 0, 400)
+    # h_after_selection_p3 = TH1F('h_after_selection_p3', '', 20, 0, 400)
+    # h_after_selection_p4 = TH1F('h_after_selection_p4', '', 20, 0, 400)
+
+    # h_before_selection_p1 = TH1F('h_before_selection_p1', '', 20, 0, 400)
+    # h_before_selection_p2 = TH1F('h_before_selection_p2', '', 20, 0, 400)
+    # h_before_selection_p3 = TH1F('h_before_selection_p3', '', 20, 0, 400)
+    # h_before_selection_p4 = TH1F('h_before_selection_p4', '', 20, 0, 400)
+
+    # g_efficiency_p1 = TGraphAsymmErrors(20)
+    # g_efficiency_p2 = TGraphAsymmErrors(20)
+    # g_efficiency_p3 = TGraphAsymmErrors(20)
+    # g_efficiency_p4 = TGraphAsymmErrors(20)
+
     g_efficiency_p1.SetName('g_efficiency_p1')
     g_efficiency_p2.SetName('g_efficiency_p2')
     g_efficiency_p3.SetName('g_efficiency_p3')
@@ -145,6 +160,10 @@ def do_efficiency_curve(chain):
 
         n_jets = len(chain.jet_pt)
 
+        if chain.jet_pt[0] < 250E3:
+
+            continue
+
         jet_pt_eta = [i for i in zip(chain.jet_pt, chain.jet_eta) if i[0] >
                       30000 and abs(i[1]) < 2.8]
 
@@ -163,10 +182,10 @@ def do_efficiency_curve(chain):
         is_third_period = (chain.run >= 302919 and chain.run <= 304008)
         is_fourth_period = (chain.run >= 304128 and chain.run <= 310216)
 
-        pass_muon_trigger = (chain.trigger_HLT_mu24_ivarmedium or
-                             chain.trigger_HLT_mu26_ivarmedium)
+        # pass_muon_trigger = (chain.trigger_HLT_mu24_ivarmedium or
+        #                      chain.trigger_HLT_mu26_ivarmedium)
 
-        # pass_muon_trigger = chain.trigger_HLT_mu26_ivarmedium
+        pass_muon_trigger = chain.trigger_HLT_mu26_ivarmedium
 
         if is_first_period:
 
@@ -323,9 +342,9 @@ def main():
     '''
     path = 'data/'
 
-    # chain = get_tchain(path)
+    chain = get_tchain(path)
 
-    # do_efficiency_curve(chain)
+    do_efficiency_curve(chain)
 
     periods = ('all', 'p1', 'p2', 'p3', 'p4')
 
