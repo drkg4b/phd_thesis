@@ -52,24 +52,6 @@ normalization factors are obtained from a simultaneous fit of all the CRs
 referred to as the \emph{global fit}. A summary of the different processes and
 the corresponding \gls{cr} used to extract the normalization factor is given in
 \cref{tab:norm_factors}.
-\begin{table}[!th]
-  \centering
-  \begin{tabular}{lll}
-    \toprule
-    Control Region & Background Process & Normalization Factor \\
-    \midrule \midrule
-    CR$_\mathrm{\, wmn}$ & $W (\rightarrow \mu \nu),\, Z (\rightarrow \nu \bar{\nu})$ & $\mu_\mathrm{\, wmn}$ \\
-    CR$_\mathrm{\, ele}$ & $W (\rightarrow e \nu),\, W (\rightarrow \tau \nu),\,
-                           Z/\gamma^* (\rightarrow \tau^+ \tau^-)$ & $\mu_\mathrm{\, ele}$ \\
-    CR$_\mathrm{\, zmm}$ & $Z/\gamma^* (\rightarrow \mu^+ \mu^-)$ & $\mu_\mathrm{\, zmm}$ \\
-    \bottomrule
-  \end{tabular}
-  \caption{Summary table of the different background processes and the
-    corresponding control regions used to evaluate the bin dependent
-    normalization factors. \note{Why if the SFs are bin dependent in 2016
-      analysis I only have one value? Are they combined in the end?}}
-  \label{tab:norm_factors}
-\end{table}
 
 The global fit can be performed in two different ways:
 \begin{enumerate}
@@ -81,6 +63,24 @@ The global fit can be performed in two different ways:
   specific \gls{bsm} signal is a free parameter. This fit is used to exclude
   specific models.
 \end{enumerate}
+\begin{table}[!th]
+  \centering
+  \resizebox{\linewidth}{!}{\begin{tabular}{lll}
+    \toprule
+    Control Region & Background Process & Normalization Factor \\
+    \midrule \midrule
+    CR$_\mathrm{\, wmn}$ & $W (\rightarrow \mu \nu),\, Z (\rightarrow \nu \bar{\nu})$ & $\mu_\mathrm{\, wmn}$ \\
+    CR$_\mathrm{\, ele}$ & $W (\rightarrow e \nu),\, W (\rightarrow \tau \nu),\,
+                           Z/\gamma^* (\rightarrow \tau^+ \tau^-)$ & $\mu_\mathrm{\, ele}$ \\
+    CR$_\mathrm{\, zmm}$ & $Z/\gamma^* (\rightarrow \mu^+ \mu^-)$ & $\mu_\mathrm{\, zmm}$ \\
+    \bottomrule
+  \end{tabular}}
+  \caption{Summary table of the different background processes and the
+    corresponding control regions used to evaluate the bin dependent
+    normalization factors.}
+  \label{tab:norm_factors}
+\end{table}
+
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
