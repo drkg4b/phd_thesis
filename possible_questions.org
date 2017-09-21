@@ -263,3 +263,18 @@
 
   Need to calculate \mu for the reduction in number of events given by the
   truncation.
+
+- Regarding the W -> l nu processes where l = mu or an electron, why not just
+  lower the electron requirements to veto more of these events?
+
+  Jets sometimes can fake electrons, these kind of fake are likely to be
+  reconstructed as loose electrons thus lowering the electron quality on the
+  veto could lead to rejecting signal events where a jet is mistakenly
+  reconstructed as an electron.
+
+- Why not using a Z -> ee control region?
+
+  It is not beneficial. It was tried but the systematic uncertainties are very
+  small and thus this kind of region doesn't help reducing the systematics in
+  other regions. This is because the Z -> ee process is very well measured and
+  precise in ATLAS.
