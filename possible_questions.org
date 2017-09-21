@@ -197,7 +197,7 @@
 
 - Do we still use the double Gaussian fit?
 
-- Why and how can I trust the trunkation methos? All the events are used during
+- Why and how can I trust the truncation methos? All the events are used during
   the estimation and efficiency studies, how can you throw them out aftewards
   without affecting the estimation done before?
 
@@ -239,3 +239,27 @@
 - What is a spinor?
 
 - Why are P_L and P_R called chiral operators? What is a chiral operator?
+
+- What is the Plack scale? And the Planck mass?
+
+- Why is the mass splitting importatnt to mention?
+
+  because the cross section is enhanced by the number of gravitons.
+
+- If the graviton has a lifetime what are its decays?
+
+- Why do we talk of graviton mass?
+
+  Because there is an extra momentum term in the extra dimensions which is
+  modeled as a mass.
+
+- What are the cosmological motivation that exclude ADD n = 2?
+
+  Some supernovae energy would disappear in the extra dimensions.
+
+- Is there a t-channel production for the graviton?
+
+- Why does the truncation not matter much?
+
+  Need to calculate \mu for the reduction in number of events given by the
+  truncation.
