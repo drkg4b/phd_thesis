@@ -1,20 +1,21 @@
-In order to reduce the overlap with other analyses, especially those containing
-multijet final states, an upper cut on the number of \gls{hs} jets is
-necessary. This procedure is denominated \emph{jet veto}. In order to define
-hard scatter jets, cuts on the jet $\pt$ and on the JVT (see
+In order to reduce the overlap with other \gls{atlas} data analyses, especially
+those containing multijet final states, an upper cut on the number of \gls{hs}
+jets is necessary. This procedure is denominated \emph{jet veto}. In order to
+define hard scatter jets, cuts on the jet $\pt$ and on the \gls{jvt} (see
 \cref{sec:jet-vertex-tagger}) have been studied. The aim of these cuts is to
-render the analysis independent from pile-up as much as possible but stay
-signal efficient, too hard cuts would lead to disregarding possible signal
-events while, on the other hand, too loose cuts let pile-up jets in the signal
-region.
+render the analysis independent from pile-up as much as possible but stay signal
+efficient, too hard cuts would lead to disregarding possible signal events
+while, on the other hand, too loose cuts let pile-up jets in the signal region
+and allow significant overlap with other \gls{atlas} searches.
 
-Due to the jets coming from the squark decays, the SUSY compressed
-squark-neutralino model have more jets compared to other signals considered in
+Due to the jets coming from the squark decays, the \gls{susy} compressed
+squark-neutralino model has more jets compared to other signals considered in
 the monojet analysis and are therefore the most sensitive to jet veto efficiency
 and to the definition of hard scatter jet. To study the pile-up contamination
-of different $\pt$ thresholds a \emph{figure of merit} is defined and its
+for different $\pt$ thresholds a \emph{figure of merit} is defined and its
 dependence from the average number of proton-proton collisions per bunch
-crossing studied. The figure of merit is defined as:
+crossing studied. The figure of merit is referred to as \emph{jet veto
+  efficiency } and defined as:
 \begin{equation}
   \label{eq:fig_merit}
   \frac{\text{N (events) with baseline cuts + at
@@ -22,17 +23,22 @@ crossing studied. The figure of merit is defined as:
       with baseline cuts}}
 \end{equation}
 where the baseline cuts are the event selection given in
-\cref{sec:event-selection} except the cut F (the study presented here uses
-$\met = \pt = 250$ GeV) and the hard scatter jets are defined as:
+\cref{sec:event-selection} except the cut F (the study presented here uses a
+symmetric $\met$ and leading jet $\pt$ cut at 250~GeV) and the hard scatter jets
+are defined as:
 \begin{itemize}
-\item Jets with $\pt > 50$ GeV or $|\eta| > 2.4$ (forward jets), are always
-  considered coming from the hard scatter.
+\item Jets with $\pt > 50$ GeV is always considered coming from the hard
+  scatter.
+\item Due to the lacking of a tracking system in the $|\eta| > 2.4$ region and
+  thus the impossibility of using a \gls{jvt} criteria, jets belonging to the
+  $|\eta| > 2.4$ (forward jets) are always considered as coming from the hard
+  scatter.
 \item In order to be considered coming from the hard scatter proton-proton
-  collision, the jets with $\pt^{\mathrm{thresh}} \leq \pt \leq 50$~GeV must
+  collision, the jets with $\pt^{\mathrm{thresh}} < \pt < 50$~GeV must
   additionally satisfy a
   $\mathrm{\gls{jvt}}~>~\mathrm{\gls{jvt}}^{\text{ thresh}}$ selection criteria
   where different $\pt^{\mathrm{thresh}}$ and \gls{jvt}$^{\mathrm{\, thresh}}$
-  have been studied, in particular:
+  are studied, in particular:
   \begin{enumerate}[A -]
   \item
     $\pt^{\mathrm{thresh}} \in
@@ -45,18 +51,16 @@ As can be seen from \cref{fig:susy_compressed}, at least three jets in the event
 are required for the \gls{susy} compressed spectra models, on the other hand
 other searches~\cite{MultijetSUSY} already explore signatures with four jets or
 more. For these reasons and to increase the acceptance of the \gls{susy}
-compressed models, in the monojet analysis events with at most four jets with a
-$\pt$ of at least 30~GeV have been selected.
-\cref{fig:comp_4jets_nojvt,fig:comp_3jets_nojvt} shows the jet veto efficiency
-for the different values of $\pt^{\mathrm{\, thresh}}$ and number of jets in the
-case where no \gls{jvt} cut is applied. In the case of
-$\pt^{\mathrm{\, thresh}}$ of 30~GeV the pile-up dependence is noticeable while
-it becomes less important with tighter cuts. In
-\cref{fig:comp_4jets_jvt64,fig:comp_3jets_jvt64} a \gls{jvt} $>$ 0.64 selection
-is applied in the definition of the hard scatter jets, in this case the pile-up
-dependence for the $\pt^{\mathrm{\, thresh}}$ of 30~GeV is reduced and the
-distribution for $\pt^{\mathrm{\, thresh}}$ of 40, 50 and 70~GeV cuts is, within
-statistical error, flat.
+compressed models, events with at most three or four jets are studied with
+different $\pt$ thresholds.  \cref{fig:comp_4jets_nojvt,fig:comp_3jets_nojvt}
+shows the jet veto efficiency for the different values of
+$\pt^{\mathrm{\, thresh}}$ and number of jets in the case where no \gls{jvt} cut
+is applied. With a maximum number of jets of three 30~GeV jets the signal
+efficiency loss is as large as 20\%. The \gls{jvt} cut reduces the loss of
+efficiency for the signal, by preventing pile-up jets to trigger a veto of the
+signal events. For three jets at 30~GeV the loss of signal is reduced from about
+20\% in \cref{fig:comp_3jets_nojvt} to approximately 15\% in
+\cref{fig:comp_3jets_jvt64} and becomes lesser than 5\% for at most four jets.
 % \cref{fig:comp_4jets_nojvt} shows the jet veto efficiency for the
 % different values of $\pt^{\mathrm{\, thresh}}$ and N~(jets)~$\leq~4$ in the case
 % where no JVT cut is applied. In the case of $\pt^{\mathrm{\, thresh}}$ of 30~GeV
@@ -98,18 +102,15 @@ statistical error, flat.
     applied, the dependence from pile-up is reduced.}
   \label{fig:comp_eff}
 \end{figure}
-The effect of the upper cuts on the number of hard scatter jets with the default
-definition used in this analysis on the signal models considered is
-verified. \cref{fig:jet_veto_comparison} shows the same behavior described above
-on the $\znunu$ background. Also in this case an improvement of the jet veto
-efficiency as function of the average number of interaction per crossing
-especially for $\pt = 30$~GeV is seen. The selected definition of the
-hard-scatter jets, with N (jets) $\leq$ 4 is, within statistical error, 99\%
-(\note{Looks more like 95\% to me.}) efficient for the considered signals. Even
-though harder cuts on the $\pt$ of the jets provide a better efficiency, it can
-be seen that such a choice would overlap with the analysis given in
-Ref.~\cite{MultijetSUSY} \note{Is that so? Seems that for the 4 jet region they
-  have an 100~GeV cut}.
+From this study and similar ones on other signals explored by this analysis, it
+was decided to select events with at most four jets above 30~GeV. Even though
+harder cuts on the $\pt$ of the jets provide a better efficiency, such a choice
+would overlap with the analysis given in Ref.~\cite{MultijetSUSY}.
+\cref{fig:jet_veto_comparison} shows the same behavior described above on the
+$\znunu$ background. Also in this case an improvement of the jet veto efficiency
+as function of the average number of interaction per crossing especially for
+$\pt = 30$~GeV is seen. The selected definition of the hard-scatter jets, with N
+(jets) $\leq$ 4 is pile-up independent.
 \begin{figure}[!h]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
