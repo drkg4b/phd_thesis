@@ -5,53 +5,58 @@ designed to measure jets, tau particles, missing momentum and for the energy
 reconstruction of hadrons, thus having an up-to-date description of the noise in
 the detector is important for most physics analysis in ATLAS\@. For the
 reprocessing of the 2011 data I developed a set of python scripts to study the
-noise constants variations over several calibration runs. Based on these scripts
-I carried out new studies of noise evolution some of which are described in
-\cref{cha:noise-studies-with}. I presented the performance of the \gls{atlas}
-Tile calorimeter in a poster session at the ``XXVII International Symposium on
-Lepton Photon Interactions at High Energies (2015)'' and appear in the
-proceedings of the conference on the ``Proceedings of
-Science''~\cite{TileCalPerformanceBertoli}.
+noise constants variations over several calibration runs. Some of the software I
+produced is still in use today. Based on these scripts I carried out new studies
+of noise evolution some of which are described in \cref{cha:noise-studies-with}
+and produced noise calibration constants used in the reprocessing of the
+\gls{atlas} data which is later used in precision measurements performed with
+the full \gls{atlas} run~1 (2010 - 2013) dataset. I presented the performance of
+the \gls{atlas} Tile calorimeter on behalf of the \gls{atlas} collaboration in a
+poster session at the ``XXVII International Symposium on Lepton Photon
+Interactions at High Energies (2015)'', this work appears in the proceedings of
+the conference in Ref.~\cite{TileCalPerformanceBertoli}.
 
 I later started analyzing the ATLAS data joining the monojet team in the effort
-of trying to answer relevant Standard Model open questions. During Run~I my
+of trying to answer relevant Standard Model open questions. During run~1 my
 contribution was limited to the study of the parton distribution function
 systematic uncertainties associated to the cross section and acceptance for
 extra dimension models.
 
-In Run~II the \gls{atlas} software framework was radically changed along with
-the data format thus the Stockholm analysis code had to be largely rewritten. I
-am the main author of this software that allows to produce end-user last
-analysis stage ROOT~\cite{CERNROOT} files on the \gls{cern} computing grid that
-are small enough to be imported to the department computers for final stage
-analysis and statistical interpretation. In the 2015 Run~II analysis an upper
-cut on the number of jets was introduced, the efficiency of such a cut was
-studied using a multivariate method based on the TMVA~\cite{TMVA} package and
-the results, being in agreement with other studies performed in the group,
-implemented in the analysis. I performed for the first time studies of the
-sensitivity of the monojet analysis to the compressed supersymmetric
-squark-neutralino model and demonstrated the sensitivity of the analysis to this
-channel. Finally I have performed the analysis of the 2015 data and derived
-myself the exclusion limits for the compressed squark-neutralino model. For the
-2016 Run~II analysis I used the combined 2015 + 2016 data collected by the
-\gls{atlas} detector to study the large extra dimension in the \gls{add} model
-scenario, I calculated the theoretical systematic uncertainties affecting the
-cross section and acceptance for this signal and implemented them in the fit. I
-then calculated the exclusion limits on the effective Planck scale for five
-large extra spatial dimensions. The results presented in this thesis led to the
-following publications:
+For \gls{lhc} run~2 (2015 - 2018) the \gls{atlas} software framework was
+radically changed along with the formats for data analysis thus the Stockholm
+analysis code had to be largely rewritten. I am the main author of this software
+that allows to produce end-user last analysis stage ROOT~\cite{CERNROOT} files
+on the \gls{lhc} computing grid that are small enough to be imported to the
+department computers for final stage analysis and statistical interpretation. In
+the 2015 run~2 analysis an upper cut on the number of jets was introduced, the
+efficiency of such a cut was studied using a multivariate method based on the
+TMVA~\cite{TMVA} package and the results implemented in the analysis. I
+performed for the first time studies that demonstrated the sensitivity of the
+monojet analysis to the compressed supersymmetric squark-neutralino
+model. Finally I have performed the analysis of the 2015 data and derived myself
+the exclusion limits for the compressed squark-neutralino model and studied the
+theoretical systematics for this model.
+
+The second analysis presented in this thesis is based on the combined 2015 +
+2016 data collected by the \gls{atlas} detector and is used to derive new
+experimental constraints on the large extra dimension in the \gls{add} model
+scenario. For this thesis I calculated the theoretical systematic uncertainties
+affecting the cross section and acceptance for this signal and implemented them
+in the fit. I then calculated the exclusion limits on the effective Planck scale
+for five large extra spatial dimensions. The results presented in this thesis
+led to the following publications:
 \begin{enumerate}[A -]
-\item \emph{{Search for new phenomena in final stages with an energetic jet and
+\item \emph{{Search for new phenomena in final states with an energetic jet and
       large missing transverse momentum in $pp$ collisions at $\sqrt{s} = 13$
       TeV using the ATLAS detector}} given in Ref.~\cite{MonoJetPaper}.
 \item \emph{{Search for dark matter and other new phenomena in events with an
       energetic jet and large missing transverse momentum using the ATLAS
       detector}} given in Ref.~\cite{MonoJetPaper2016}. This conference note is
-  being converted to a paper and it is in the final stages of approval.
+  being converted to a paper and is in the final stages of \gls{atlas} approval.
 \end{enumerate}
 As mentioned earlier I also contributed to the calculations of the systematic
 uncertainties related to the parton distribution functions for the \gls{add}
-large extra dimension model that was part of the monojet paper:
+large extra dimension model that was part of the run~1 monojet paper:
 \begin{enumerate}[C -]
 \item \emph{Search for new phenomena with the monojet and missing transverse
     momentum signature using the ATLAS detector in proton–proton
@@ -65,19 +70,17 @@ conference that resulted in the following conference proceeding:
   Ref.~\cite{TileCalPerformanceBertoli}.
 \end{enumerate}
 
-The work presented in this thesis is based on previous results already reported
-in my licentiate thesis with the title \emph{Search for Supersymmetry in
-  Monojet Final States with the ATLAS Experiment} and for this reason some of
-the chapters in this thesis are freely taken from the licentiate one. In
-particular \cref{cha:theoretical-overview} has been largely revisited,
+The text of this thesis relies in part on my licentiate thesis with the title
+\emph{Search for Supersymmetry in Monojet Final States with the ATLAS
+  Experiment}~\cite{MyLicentiate} and for this reason some of the chapters in
+this thesis are taken or adapted from the licentiate thesis. In particular
+\cref{cha:theoretical-overview} has been largely revisited,
 \cref{cha:beyond-stand-model} has been extended, \cref{cha:exper-appar} is taken
-from the licentiate and some typo have been corrected, a section has been added to
-\cref{cha:noise-studies-with}, \cref{cha:phys-objects-reconst} has been reviewed
-to include the changes added to the analysis during the search for large extra
-dimensions, \cref{cha:monojet-signature} has been revisited and corrected,
-\cref{cha:2016-monoj-analys} only appears in this thesis and
-\cref{cha:conclusions} has been updated to summarize the results of
-\cref{cha:2016-monoj-analys}.
+to a large extent from the licentiate, a section has been added to
+\cref{cha:noise-studies-with}. \cref{cha:phys-objects-reconst} has been revised
+and extended to include aspects relevant to the analysis of the 2015 and 2016
+data for the search for large extra dimensions, \cref{cha:monojet-signature} has
+been revisited and expanded, \cref{cha:2016-monoj-analys} is entirely new.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
