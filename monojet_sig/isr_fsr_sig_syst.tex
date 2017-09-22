@@ -15,14 +15,15 @@ tune parameters have been varied in order to account for uncertainties from:
 \item Aspects of the \gls{mc} generation that provide extra jet production.
 \end{itemize}
 The \gls{susy} compressed signal samples are produced with
-MADGRAPH~\cite{MADGRAPH}, thus an additional set of systematic uncertainties
-need to be considered. The following uncertainties are considered at the MADGRPH
-level:
-\begin{itemize}
-\item Renormalization and factorization scale varied by a factor 0.5 and 2.
-\item Initial state radiation: vary the scale for the $gqq$ and $ggg$ vertices,
-\item Jet matching: vary the qcut for the CKKW matching 0.5, 1, 2
-\end{itemize}
+MADGRAPH~\cite{MADGRAPH}, thus an additional matching scale systematic
+uncertainty is considered.% set of systematic uncertainties
+% need to be considered. The following uncertainties are considered at the MADGRPH
+% level:
+% \begin{itemize}
+% \item Renormalization and factorization scale varied by a factor 0.5 and 2.
+% \item Initial state radiation: vary the scale for the $gqq$ and $ggg$ vertices,
+% \item Jet matching: vary the qcut for the CKKW matching 0.5, 1, 2
+% \end{itemize}
 For each squark mass 16 \gls{mc} samples are produced and compared at the truth
 level. The resulting envelope of the systematic uncertainties affects the signal
 acceptance and are added in quadrature, the results are presented in
@@ -39,11 +40,11 @@ acceptance and are added in quadrature, the results are presented in
     $\Delta A$ & 11 & 18 & 11 & 8 & 7 & 9 & 8 \\
     \bottomrule
   \end{tabular}}
-  \caption{Total theoretical uncertainty in \% on the \gls{susy} compressed
-    spectra signal region acceptance as function of the $\met$ bin in the signal
-    region, from tune, initial and final state radiation systematic
-    uncertainties. The final value is a common envelope valid for all the
-    \gls{susy} compressed models.}
+\caption{Theoretical uncertainty in \% on the \gls{susy} compressed spectra
+  signal region acceptance as function of the $\met$ bin in the signal region,
+  from tune, matching, initial and final state radiation systematic
+  uncertainties. The final value is a common envelope valid for all the
+  \gls{susy} compressed models.}
   \label{tab:susy_tune}
 \end{table}
 %%% Local Variables:
