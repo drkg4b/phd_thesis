@@ -3,14 +3,15 @@ region yield large theoretical and experimental systematic uncertainties in the
 shape and normalization of the predicted distributions. For this reason a data
 driven approach, where the different backgrounds are normalized using the data
 in \glspl{cr} that are orthogonal to the \gls{sr}, is used. To extrapolate from
-\gls{cr} to \gls{sr} prediction an \gls{mc} based \emph{transfer factor} is
-used. This factor is a ratio of \gls{mc} predictions thus most of the systematic
+\gls{cr} to \gls{sr} prediction a \emph{transfer factor} computed in \gls{mc} is
+used. This factor is a ratio of \gls{mc} predictions in regions with similar
+selections on missing transverse energy and jets thus most of the systematic
 uncertainties either cancel out or are significantly reduced. The extrapolation
-from one kinematics region to another can be itself source of uncertainties, to
-avoid this, the selection in terms of kinematic in the \glspl{cr} and \glspl{sr}
-is chosen to be the same. The expected contributions of a background process
-BG$_i$, which is extracted from a control region CR$_j$ to a signal region
-SR$_k$, is given by:
+from one kinematics region to another can be itself a source of uncertainties.
+To avoid this, the selection in terms of kinematic in the \glspl{cr} and
+\glspl{sr} is chosen to be the same. The expected contributions of a background
+process BG$_i$, which is extracted from a control region CR$_j$ to a signal
+region SR$_k$, is given by:
 \begin{equation}
   \label{eq:100}
   N_{\mathrm{\, BG}_i}^{\mathrm{\, SR}_k} = \frac{(N_\mathrm{\,
@@ -19,8 +20,8 @@ SR$_k$, is given by:
   {N^{\mathrm{\, CR}_j}_{\mathrm{\, BG}_i \mathrm{,~MC}}} \times
   N^{\mathrm{\, SR}_k}_{\mathrm{\, BG}_i,~\mathrm{MC}}
 \end{equation}
-where $N_{\mathrm{\, BG}_i}^{\mathrm{\, SR}_k}$ is the predicted number events
-for background $i$ events in the signal region SR$_k$,
+where $N_{\mathrm{\, BG}_i}^{\mathrm{\, SR}_k}$ is the control region driven
+predicted number events for background $i$ events in the signal region SR$_k$,
 $N_\mathrm{\, data}^{\mathrm{\, CR}_j}$ is the observed number of events in the
 control region $j$, $N_{\mathrm{\, non~BG}_i,~\mathrm{MC}}^{\mathrm{\, CR}_j}$
 is the estimated number of the background contamination coming from other

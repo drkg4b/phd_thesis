@@ -1,16 +1,19 @@
 The muon control region ($\crwmn$) is used to estimate the $\wmunuplusjets$ and
-the $\znunuplusjets$ background contribution in the SR\@. The $\wmunuplusjets$
-events can enter the SR if the muon is outside the detector acceptance or it
-fails quality criteria. $\wmunuplusjets$ events are selected and used in order
-to estimate the $\znunuplusjets$ contribution in the signal region. The muon is
+the $\znunuplusjets$ background contribution in the \gls{sr}\@. The
+$\wmunuplusjets$ events can enter the \gls{sr} if the muon is outside the
+detector acceptance or it fails the muon selection criteria presented in
+\cref{sec:muons}. $\wmunuplusjets$ events are selected and used in order to
+estimate the $\znunuplusjets$ contribution in the signal region. The muon is
 treated like a neutrino in the $\met$ calculation, in this way the $\met$ is a
-measurement of the $W$ momentum which is later translated in the $Z$ boson
-momentum to estimate the $\znunuplusjets$ background. In addition to cuts from A
-to H defined in \cref{sec:event-selection} the CR$_{\mathrm{\, wmn}}$ region
+measurement of the $W$ momentum which is later translated into the $Z$ boson
+momentum to estimate the $\znunuplusjets$ background. Moreover, since the muon
+energy deposit in the calorimeter is tiny, the calorimeter activity in
+$\wmunuplusjets$ events is similar to $\znunuplusjets$ events. In addition to
+cuts from A to H defined in \cref{sec:event-selection} the $\crwmn$ region
 selects events with:
 \begin{itemize}
 \item Exactly one good muon.
-\item The electrons are vetoed.
+\item Other baseline muons and baseline electrons are vetoed.
 \item The transverse mass, defined as:
   \begin{equation}
     \label{eq:99}
@@ -20,13 +23,14 @@ selects events with:
   and determined by the muon $\pt$ ($\pt^{\, \mu}$) and neutrino $\pt$
   ($\pt^{\, \nu}$), is required to be $30~<~m_\mathrm{\, T}~<~100$~GeV,
   consistent with $W$ boson production. The neutrino $\pt$ is calculated
-  assuming that $\pt^{\, \nu} = \met$.
+  assuming that $\pt^{\, \nu} = \met$ where the missing energy is calculated
+  according to \cref{eq:94}.
 \end{itemize}
 The transverse mass cut suppress the $\wtaunuplusjets$ processes in this
 region. The measured $\met$ and leading jet $\pt$ distributions after the
-fitting the background normalizations to the control regions (see
-\cref{sec:glob-simult-likel}) are shown in Figure~\ref{fig:muon_cr_plots}. The
-agreement between data and MC is good.
+background only fit procedure described in \cref{sec:glob-simult-likel} are
+shown in \cref{fig:muon_cr_plots}. The agreement between data and \gls{mc} is
+good.
 \begin{figure}[!h]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
@@ -42,7 +46,7 @@ agreement between data and MC is good.
   \caption{Observed and predicted $\met$ and leading jet $\pt$ distributions
     after the background only fit in the single muon $\crwmn$ for the
     $\met > 250~$GeV selection. The error bands include the statistical and
-    systematic error.}
+    systematic errors.}
   \label{fig:muon_cr_plots}
 \end{figure}
 %%% Local Variables:
