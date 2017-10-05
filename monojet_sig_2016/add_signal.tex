@@ -34,7 +34,7 @@ stable particle which, escaping detection, leads to an energy imbalance in the
 detector which can be investigated using the monojet
 signature. \cref{fig:add_feynman} shows the three main graviton production modes
 at \gls{lhc}. These production modes are implemented at \gls{lo} in the Monte
-Carlo generator PYTHIA8~\cite{PYTHIA8}.
+Carlo generator \textsc{pythia8}~\cite{PYTHIA8}.
 
 As mentioned earlier, collider searches do not have sensitivity to \gls{add}
 scenarios with more than six extra dimensions, for this reason in this analysis
@@ -46,24 +46,25 @@ dimensions, values of $\md$ lower than 110~TeV and 5~TeV respectively are
 excluded by cosmological arguments~\cite{ADDCosmology}.
 
 The signal samples used to calculate the exclusion limits on $\md$ are generated
-with PYTHIA8. The following relation between the production cross section and
-$\md$~\cite{ADDPhenomenology} was verified with PYTHIA samples and is exploited
-in order to generate only a single Monte Carlo sample per number of dimensions:
+with \textsc{pythia8}. The following relation between the production cross
+section and $\md$~\cite{ADDPhenomenology} was verified with \textsc{pythia}
+samples and is exploited in order to generate only a single Monte Carlo sample
+per number of dimensions:
 \begin{equation}
   \label{eq:116}
   \sigma_\mathrm{nom} = \frac{C_n}{{(\md^\mathrm{nom})}^{n + 2}}
 \end{equation}
 where $\sigma_\mathrm{nom}$ and $\md^\mathrm{nom}$ are the nominal values of the
-cross section and the Planck scale used in PYTHIA8 to generate the \gls{mc}
-signal sample while $C_n$ is a constant term for a given center of mass energy
-and number of extra dimensions that is determined from \cref{eq:116} as:
+cross section and the Planck scale used in \textsc{pythia8} to generate the
+\gls{mc} signal sample while $C_n$ is a constant term for a given center of mass
+energy and number of extra dimensions that is determined from \cref{eq:116} as:
 \begin{equation}
   \label{eq:179}
   C_n = \sigma_\mathrm{nom} {(\md^\mathrm{nom})}^{n + 2}.
 \end{equation}
 Thus a single Monte Carlo sample is generated for each $n$ and the \gls{add}
 graviton cross section can be deduced for any $\md$ from that relation. The
-samples generated along with $\sigma_\mathrm{nom}$ and $\md_\mathrm{nom}$ used
+samples generated along with $\sigma_\mathrm{nom}$ and $\md^\mathrm{nom}$ used
 in this analysis are reported in \cref{tab:sigma_md_ref}. Once the value of
 $C_n$ is determined, \cref{eq:116} can be regarded as a function $\sigma(\md)$
 and the cross section is set by the Planck scale. In particular, for some
@@ -109,25 +110,28 @@ upper limits on the fundamental Planck scale $\md$.
     \bottomrule
   \end{tabular}
   \caption{Reference values for the cross section and the Planck scale used to
-    generate the \gls{add} signal samples at 13~TeV.}
+    generate the \gls{add} signal samples at 13~TeV. The samples are generated
+    using \textsc{pythia8} with NNPDF \gls{pdf} set. The number of extra
+    dimensions $n$ and the effective Planck scale $\md$ are free parameters of
+    the model.}
   \label{tab:sigma_md_ref}
 \end{table}
 \begin{figure}[!h]
   \centering
-  \begin{subfigure}{.48\linewidth}
+  \begin{subfigure}{.3\linewidth}
     \includegraphics[width=\linewidth]{qq_to_gG}
     \caption{$q \bar{q} \rightarrow g G$.}
   \end{subfigure}
-  \begin{subfigure}{.48\linewidth}
+  \begin{subfigure}{.3\linewidth}
     \includegraphics[width=\linewidth]{qg_to_qG}
     \caption{$q g \rightarrow q G$.}
   \end{subfigure}
-  \begin{subfigure}{.48\linewidth}
+  \begin{subfigure}{.3\linewidth}
     \includegraphics[width=\linewidth]{gg_to_gG}
     \caption{$g g \rightarrow g G$.}
   \end{subfigure}
-  \caption{The main s-channel graviton production mechanisms for the \gls{add}
-    model at \gls{lhc}.}
+  \caption{The main leading order diagrams for graviton production in the
+    \gls{add} model at \gls{lhc}.}
   \label{fig:add_feynman}
 \end{figure}
 %%% Local Variables:
