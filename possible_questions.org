@@ -173,6 +173,14 @@
 
 - Why do we use renorm and fact scale times 0.5 and 2 for systematics?
 
+  The renormalization and factorization scale are not physical parameters and
+  are entirely due to the perturbativity we use to calculate cross section at
+  the theory level. The choise of these variations to estimate the systematics
+  is totally arbitrary. This choice is done by theorists also and we adopt it in
+  order to be able to compare the results. Moreover a variation of 50\% (0.5)
+  and 100\% (2) is a very big variation and in this regard this choice is
+  conservative.
+
 - How do we determine how many events to generate?
 
 - The Pythia settings - are they tested on SM physics so we know what to expcect
@@ -187,6 +195,9 @@
   MET. Why should we then trust the background estimate at high MET? And do you
   understand why you had this problem at 8 TeV and not at 13 TeV?
 
+  At high met we have a single inclusive bin, for this reason the k-factor is
+  unique and not tailored for each bin.
+
 %% From Olle's PhD defence
 
 - What happens if the energy deposit is less than 2 (like 1.8 \sigma), does this
@@ -200,6 +211,12 @@
 - Why and how can I trust the truncation methos? All the events are used during
   the estimation and efficiency studies, how can you throw them out aftewards
   without affecting the estimation done before?
+
+  It is a recursive procedure, we weight down (not throw away) events above the
+  excluded value of md and recalculate the limit until the uncertainty of the
+  truncated and not truncated limits are within 1%. As can be seen from the shat
+  distribution (suppressed and not suppressed) the limits are set with not
+  weighted events.
 
 - The requirement of \met from 8 TeV to 13 TeV and also the efficiency changed,
   was because the trigger got better?
@@ -221,6 +238,9 @@
 
 - What if ATLAS finds something in a region already excluded by a direct
   detection experiment like Ice Cube, how would you reconcile the results?
+
+  the results depend on the model so it might be that the experiments are
+  probing different models.
 
 - How do you tell apart all the different signals that we are probing with the
   monojet signature in case of an excess?
@@ -278,3 +298,11 @@
   small and thus this kind of region doesn't help reducing the systematics in
   other regions. This is because the Z -> ee process is very well measured and
   precise in ATLAS.
+
+- Comment on the choice of md used in the generation of the samples
+
+  Values close to the one excluded in run 1 were chosen in order to simplify the
+  comparison.
+
+- What are the jet quality requirements? What purpose do they serve? How much
+  signal might be lost due to these cuts?
