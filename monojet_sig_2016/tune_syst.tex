@@ -1,39 +1,35 @@
-\gls{mb} events are soft ($\pt < 2$~GeV) inelastic interactions which constitute
-a significant fraction of the hadron-hadron collisions. Understanding \gls{mb}
-processes is therefore important for precision measurements of hard scatter
-interactions. Perturbative \gls{qcd} is commonly used to describe parton
-interactions when possible and non-perturbative \gls{qcd} for low $\pt$
-processes. The free parameters of these models (\emph{tune parameters}) need to
-be tuned in the \gls{mc} generators in order to replicate experimental
-data. These variation of these parameters may lead to different number of
-generated events in the \gls{mc} samples and thus to uncertainty in the
-acceptance. Five tune parameters have been varied in order to account for
-uncertainties from:
+The evaluation of the tune, \gls{isr} and \gls{fsr} uncertainties follows what
+is done for the \gls{susy} compressed models and described in
+\cref{sec:initial-final-state}. Since the Monte Carlo signal samples for
+\gls{add} are generated at the \gls{lo}, there is no parton shower matching
+uncertainty in this case. Five tune parameters have been varied in order to
+account for uncertainties from:
 \begin{itemize}
 \item Underlying event effects.
 \item Jet structure effects.
 \item Aspects of the MC generation that provide extra jet production.
 \end{itemize}
-For each ADD model, ten systematic samples are produced and analyzed at the
-truth level, the effect of the acceptance is evaluated in the different bins
-used in the analysis. The final uncertainty in each bin is a common envelope
-valid for the different extra dimensions models (from ADD n = 2 to ADD n = 6),
-the results are summarized in Table~\ref{tab:add_tune_scale}.
+For each \gls{add} model, ten systematic samples are produced and analyzed at
+the truth level, the effect of the acceptance is evaluated in the different bins
+used in the analysis. The final uncertainty in each bin affects the signal
+acceptance and is a common envelope valid for the different extra dimensions
+models (from \gls{add} n = 2 to \gls{add} n = 6). The results are summarized in
+\cref{tab:add_tune_scale}.
 \begin{table}[!ht]
   \centering
-  \resizebox{\linewidth}{!}{\begin{tabular}{lcccccccccc}
+  \resizebox{\linewidth}{!}{\begin{tabular}{lccccccc}
     \toprule
-    \multicolumn{10}{c}{Initial and Final State Radiation} \\
+    \multicolumn{7}{c}{Initial and Final State Radiation} \\
     \midrule \midrule
-    $\met$~[GeV] & 250-300 & 300-350 & 350-400 & 400-500 & 500-600 & 600-700 &
-                                                                               700-800
- & 800-900 & 900-1000 & 1000-3000 \\
-    $\Delta A(\%)$ & 11 & 11 & 8 & 7 & 7 & 10 & 13 & 18 & 13 & 9 \\
+    $\met$~[GeV] & 400-500 & 500-600 & 600-700 & 700-800  & 800-900 & 900-1000 &
+                   1000-3000 \\
+    \midrule
+    $\Delta A(\%)$ & 7 & 7 & 10 & 13 & 18 & 13 & 9 \\
     \bottomrule
   \end{tabular}}
-  \caption{Tune initial and final state radiation uncertainties in \% on the
+  \caption{Tune, initial and final state radiation uncertainties in \% on the
     acceptance of the different signal region $\met$ bins in the analysis. The
-    final value is a common envelope valid for all the ADD models between n = 2
+    final value is a common envelope valid for all the \gls{add} models between n = 2
     and n = 6 dimensions.}
   \label{tab:add_tune_scale}
 \end{table}
