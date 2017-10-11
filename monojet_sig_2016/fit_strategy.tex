@@ -20,7 +20,7 @@ for the $t \bar{t}$ and single top processes. \cref{tab:norm_factors_2016}
 summarizes the normalization factors and the control regions used for their
 estimation. The $k^\mathrm{V + jets}$ and $k^t$ together with the signal
 strength $\mu$ are the tree parameters of the global fit.
-\begin{table}[!th]
+\begin{table}[!h]
   \centering
   \begin{tabular}{lll}
     \toprule
@@ -34,9 +34,15 @@ strength $\mu$ are the tree parameters of the global fit.
     corresponding control regions used to evaluate the normalization factors.}
   \label{tab:norm_factors_2016}
 \end{table}
-% In order to estimate the main $\znunuplusjets$ background of the analysis a
-% strategy similar to the one adopted in the 2015 analysis and outlined in
-% \cref{sec:glob-simult-likel} has been adopted.
+
+Since sensitivity studies on the \gls{add} models performed in previous versions
+of the analysis showed no sensitivity in lower $\met$ regions, the Monte Carlo
+samples for \gls{add} are generated with a 150~GeV phase space cut at the truth
+level on the transverse momentum of the parton and the graviton
+($\pt > 150$~GeV). This cut is fully efficient only for signal regions with
+$\met \gtrsim 350$~GeV. For this reason for the model independent interpretation
+of the \gls{add} signal, only the $\met > 400$~GeV signal regions are
+considered.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
