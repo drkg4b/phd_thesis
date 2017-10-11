@@ -25,17 +25,23 @@ extra dimension models.
 For \gls{lhc} run~2 (2015 - 2018) the \gls{atlas} software framework was
 radically changed along with the formats for data analysis thus the Stockholm
 analysis code had to be largely rewritten. I am the main author of this software
-that allows to produce end-user last analysis stage ROOT~\cite{CERNROOT} files
-on the \gls{lhc} computing grid that are small enough to be imported to the
-department computers for final stage analysis and statistical interpretation. In
-the 2015 run~2 analysis an upper cut on the number of jets was introduced, the
-efficiency of such a cut was studied using a multivariate method based on the
-TMVA~\cite{TMVA} package and the results implemented in the analysis. I
-performed for the first time studies that demonstrated the sensitivity of the
-monojet analysis to the compressed supersymmetric squark-neutralino
-model. Finally I have performed the analysis of the 2015 data and derived myself
-the exclusion limits for the compressed squark-neutralino model and studied the
-theoretical systematics for this model.
+that applies calibrations to electrons, muons and jets, calculates systematic
+uncertainties and selects the events required for data analysis. This software
+also produces end-user last analysis stage ROOT~\cite{CERNROOT} files on the
+\gls{lhc} computing grid that are small enough to be imported to the department
+computers for final stage analysis and statistical interpretation. I performed
+for the first time studies that demonstrated the sensitivity of the monojet
+analysis to the compressed supersymmetric squark-neutralino model. In order to
+ensure orthogonality with other \gls{susy} searches it was decided to apply an
+upper cut on the number of jets. I performed optimization studies of such cut
+along with signal region definition using a multivariate method based on the
+TMVA~\cite{TMVA} package in order to retain sensitivity to the \gls{susy}
+compressed. I contributed to the development of the limit setting framework and
+to its optimization that allowed to reduce the turn around time from many days
+down to few hours allowing to quickly check and debug the analysis
+results. Finally I have performed the analysis of the 2015 data and derived
+myself the exclusion limits for the compressed squark-neutralino model and
+studied the theoretical systematics for this model.
 
 The second analysis presented in this thesis is based on the combined 2015 +
 2016 data collected by the \gls{atlas} detector and is used to derive new
