@@ -4,11 +4,19 @@ the analysis level it is necessary to re-weight the \gls{mc} pile-up conditions
 to what is found during the data taking, this procedure is commonly referred to
 as \emph{pile-up re-weighting}.
 \begin{description}[font=\normalfont]
-\item[syst\_PRW\_DATASF:] This parameter represents the uncertainty applied to
-  the correction due to the pile-up re-weighting in order to account for
-  differences between data and Monte Carlo.
-\item[syst\_JvtEfficiency:] This parameter accounts for the uncertainty in the
-  \gls{jvt} efficiency relevant for pile-up suppression.
+\item[syst\_PRW\_DATASF:] Once the Monte Carlo samples have been re-weighted to
+  the same number of minimum bias (see \cref{sec:initial-final-state})
+  collisions per bunch crossing as the data, it is observed that the event
+  activity in data and simulation is still slightly different. Auxiliary
+  datasets are used to derive a scaling of the Monte Carlo activity to match
+  that of data. This parameter represents the uncertainty applied to the
+  correction due to the pile-up re-weighting in order to account for differences
+  between data and Monte Carlo.
+\item[syst\_JvtEfficiency:] The efficiency of the \gls{jvt} selection on jets
+  in is slightly different in data and Monte Carlo. It is measured in both and
+  corrections are derived and applied. This systematic uncertainty reflects the
+  precision to which the ration between data and Monte Carlo simulations
+  efficiency are known.
 \end{description}
 %%% Local Variables:
 %%% mode: latex

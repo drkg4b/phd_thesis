@@ -1,8 +1,8 @@
 A common way to model disagreements between data and \gls{mc} simulations in
-trigger and reconstruction efficiencies is to determine a correction factor from
-the fit to the data to Mote Carlo ratio and use this correction as a weight in
-the \gls{mc} distributions. In \gls{atlas} this weight is commonly called a
-\emph{scale factor}.
+reconstruction and identification efficiencies is to determine a correction
+factor using some auxiliary dataset for \gls{mc} to data differences. These
+\emph{scale factors} suffer themselves from systematic uncertainties arising
+from the specific method and dataset used to derive them.
 \begin{description}[font=\normalfont]
 \item[syst\_FT\_EFF\_B\_systematics:] This parameter takes into account scale
   factor uncertainties in $b$-tagging (recognizing as a $b$-jet a jet
@@ -13,8 +13,7 @@ the \gls{mc} distributions. In \gls{atlas} this weight is commonly called a
     in mistagging light quarks.
   \item[syst\_FT\_EFF\_extrapolation:] This parameter accounts for uncertainties
     due to the extrapolation procedure of the data driven calibration from the
-    low $\pt$ region which is not available for in the high $\pt$
-    regime~\cite{BTagCalibration}.
+    low $\pt$ to the high $\pt$ regime~\cite{BTagCalibration}.
   \item[syst\_FT\_EFF\_extrapolation\_from\_charm:] This parameter takes into
     account the uncertainties related to the use of the charm jet scale factors
     also for the tau jets.
