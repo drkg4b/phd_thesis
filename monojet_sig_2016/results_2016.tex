@@ -1,8 +1,8 @@
 The number of events observed in data and in the Standard Model predictions for
 a selected set of exclusive signal regions as defined in
-\cref{sec:event-selection-1} are reported in \cref{tab:results}. The total
-uncertainty of the \gls{sm} predictions range between 2.4\% for EM1 and 9.7\%
-for EM10.
+\cref{sec:event-selection-1} after the background only fit to the control
+regions are reported in \cref{tab:results}. The total uncertainty of the
+\gls{sm} predictions range between 2\% for EM2 and 4.2\% for EM9.
 \begin{table}[!h]
   \centering
   \resizebox{\linewidth}{!}{\begin{tabular}{lccccc}
@@ -38,19 +38,18 @@ for EM10.
                              & $0 \pm 0$ & $0 \pm 0$ \\
     \bottomrule
   \end{tabular}}
-  \caption{Number of events in the observed data and Standard Model predictions
-    in a representative set of signal regions as defined in
-    \cref{sec:event-selection-1}. For the \gls{sm} predictions the quoted
-    uncertainty includes both statistical and systematic uncertainties.}
+\caption{Number of events in the observed data and Standard Model predictions in
+  a representative set of signal regions as defined in
+  \cref{sec:event-selection-1} after the background only fit to the exclusive
+  control regions EM1--EM10. For the \gls{sm} predictions the quoted uncertainty
+  includes both statistical and systematic uncertainties.}
   \label{tab:results}
 \end{table}
-\cref{fig:kfactors} reports the normalization factors applied to the \gls{mc}
-predictions obtained from the fit as described in \cref{sec:fit-strategy}. It
-can be seen that a multiplicative factor of 1.35 and 0.87 is calculated for the
-V + jets and top background respectively. These factors are applied in
+A multiplicative factor of $1.26 \pm 0.13$ and $1.31 \pm 0.17$ is calculated for
+the V + jets and top background respectively. These factors are applied in
 \cref{fig:sr_plots_2016} which shows the comparison between the measured
-distributions and the Monte Carlo predictions for the $\met$ and leading jet in
-signal regions with $\met > 250$~GeV after the fit.
+distributions and the Monte Carlo predictions for the $\met$ and leading jet
+$\pt$ in the inclusive signal region with $\met > 250$~GeV after the fit.
 \begin{figure}[!h]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
@@ -65,42 +64,39 @@ signal regions with $\met > 250$~GeV after the fit.
   \end{subfigure}
   \caption{Distribution of the $\met$ and the leading jet $\pt$ for IM1 signal
     region compared with the background estimates from the background only fit
-    in the control regions. The distributions of different signal models are
+    to the control regions. The distributions of different signal models are
     superimposed for comparison. The contribution from the multi-jet and NCB
     background is negligible and not reported in the plot. In the ratio window
     the error bars include experimental and systematic uncertainties.}
   \label{fig:sr_plots_2016}
 \end{figure}
+
+The nuisance parameters defined in \cref{sec:syst-uncert-1} and used to estimate
+the impact of the systematic uncertainties on the background predictions are
+treated as bin-wise correlated and treated accordingly in the
+fit. \cref{fig:np_pull} shows the value of the nuisance parameters after the
+background only fit to the data of the control and signal regions. In most cases
+there is a mild constrain of the parameters.
 \begin{figure}[!h]
   \centering
-  \includegraphics[width=\linewidth]{kfactors}
-  \caption{Values of the normalization factors for the V + jets and single top
-    backgrounds after the control and signal region inclusive fit to the data.}
-  \label{fig:kfactors}
-\end{figure}
-\cref{fig:np_pull} shows the value of the nuisance parameters defined in
-\cref{sec:syst-uncert-1} after the background only fit to the data of the
-control and signal regions. In most cases there is a mild constrain of the
-parameters.
-\begin{figure}[!h]
-  \centering
-  \includegraphics[width=\linewidth]{np_pull_plot}
+  \includegraphics[width=\linewidth]{np_pull_plot_CRsOnly_BkgOnly}
   \caption{Values of the nuisance parameters used in the analysis after the
-    control and signal region inclusive fit to the data.}
+    background only fit to the exclusive control regions EM1--EM10.}
   \label{fig:np_pull}
 \end{figure}
+
 % Finally \cref{fig:region_pulls} shows the comparison between data and Monte
 % Carlo before and after the fit for the single different regions defined in the
 % analysis.
-After the fit the agreement between data and theory expectations is
-good. Since no significant excess of data compared to the predictions has been
-observed, the statistical approach described in \cref{sec:stat-proc} have been
-used to set 95\%~\gls{cl} model independent exclusion limits (see
-\cref{sec:model-indep-limits-1}) and interpreted in terms of the ADD scenario
-for large extra dimensions in \cref{sec:add-model-interpr}. The observed limits
-are in general slightly worse than the expected sensitivity due to the small
-excess of data compared to the Standard Model expectation as can be seen from
-\cref{tab:sr_yields}.
+After the fit the agreement between data and theory expectations is good. Since
+no significant excess of data compared to the predictions has been observed, the
+statistical approach described in \cref{sec:stat-proc} have been used to set
+95\%~\gls{cl} model independent exclusion limits (see
+\cref{sec:model-indep-limits-1}) and interpreted in terms of the \gls{add}
+scenario for large extra dimensions in \cref{sec:add-model-interpr}. The
+observed limits are in general slightly worse than the expected sensitivity due
+to the small excess of data compared to the Standard Model expectation as can be
+seen from \cref{tab:sr_yields}.
 \begin{table}[!h]
   \centering
   \begin{tabular}{lcc}

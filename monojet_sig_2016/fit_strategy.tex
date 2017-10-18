@@ -12,14 +12,28 @@ parameters used to model the systematic uncertainties described in
 \cref{sec:syst-uncert-1}. The nuisance parameters and the normalization factors
 are adjusted to the optimal value by the fit which allows for a reduction of the
 otherwise relatively large theoretical and experimental systematic uncertainties
-(of the order of 20 - 40\%).  In this version of the analysis a unique
-normalization factor is used to constrain all the V + jets samples, this is
-justified by the use of the theoretical framework introduced in
-\cref{sec:corrections-vjets}. Analogously a single normalization factor is used
-for the $t \bar{t}$ and single top processes. \cref{tab:norm_factors_2016}
-summarizes the normalization factors and the control regions used for their
-estimation. The $k^\mathrm{V + jets}$ and $k^t$ together with the signal
-strength $\mu$ are the tree parameters of the global fit.
+(of the order of 20 - 40\%). Two fitting strategies are implemented in the
+analysis:
+\begin{enumerate}[A -]
+\item A binned global likelihood fit simultaneous to all the exclusive $\met$
+  region EM1--EM10. A unique normalization factor ($k^\mathrm{V + jets}$) is
+  used to constrain all the V + jets samples, this is justified by the use of
+  the theoretical framework introduced in
+  \cref{sec:corrections-vjets}. Analogously a single normalization factor
+  ($k^t$) is used for the $t \bar{t}$ and single top processes. The nuisance
+  parameters introduced in \cref{sec:syst-uncert-1} are treated as bin-wise
+  correlated systematics and treated accordingly in the fit. This fit takes
+  advantage of the shape of the information from the $\met$ distribution in the
+  determination of the normalization of the V + jets and top processes.
+\item A single bin likelihood fit to the different inclusive $\met$ regions
+  IM1--IM10 (a different fit for each inclusive region). The normalization
+  factors $k^\mathrm{V + jets}$, $k^t$ and the nuisance parameters in this case
+  refer to the specific $\met$ region.
+\end{enumerate}
+\cref{tab:norm_factors_2016} summarizes the normalization factors and the
+control regions used for their estimation. The $k^\mathrm{V + jets}$ and $k^t$
+together with the signal strength $\mu$ are the free parameters of the global
+fit.
 \begin{table}[!h]
   \centering
   \begin{tabular}{lll}
