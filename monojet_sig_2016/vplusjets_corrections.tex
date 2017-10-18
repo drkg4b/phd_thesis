@@ -6,34 +6,37 @@ statistically limited. For this reason using the decay of the $Z$ boson to
 leptons as a proxy to estimate the $\znunuplusjets$ process with a statistical
 precision of less than 1\% can be used up to a $\pt$ of the boson of 600~GeV,
 beyond this value the $W(\rightarrow \ell \nu) +$ jets processes are
-statistically favored and should be used
-instead~\cite{VplusJetsCorrections}. The theoretical extrapolation of the
-$\znunuplusjets$ background from the $Z (\rightarrow \ell^+ \ell^-) +$ jets and
-$W(\rightarrow \ell \nu) +$ jets processes at high $\pt$ can be influenced by
-several factor including the choice of the parton distribution function and the
-renormalization and factorization scales therefore it is important to include in
-the calculations higher order correction in \gls{qcd} and \gls{ew}
-processes. The V + jets samples used in this analysis are generated at the
-\gls{nlo} and \gls{lo} in \gls{qcd} for up to two and four partons respectively,
-at the \gls{lo} in \gls{ew} and normalized to an inclusive \gls{nnlo} cross
-section. One possible way to include higher order correction to the \gls{mc}
-samples relies on the re-weighting of the differential cross section of these
-samples to the \gls{nlo} in \gls{qcd} and \gls{nlo} plus \gls{nll} Sudakov
-approximation at \gls{nnlo} in \gls{ew}~\cite{VplusJetsCorrections}. At high
-energies \gls{ew} corrections are dominated by single and double logarithms of
-the scale of the process over the mass of the vector boson ($s/m_\mathrm{V}^2$
-where V = $W, Z$) called Sudakov logarithms~\cite{SudakovLogs}. In the limit
-when all the kinematic invariants are much larger than the electroweak scale
-(the \emph{Sudakov limit}) the \gls{ew} one-loop corrections can be predicted in
-a process invariant way~\cite{SudakovApproximation}. This Sudakov approximation
-is computationally cheaper than the full \gls{nlo} \gls{ew} correction and since
-it includes leading and sub-leading logarithmic terms it is at the \gls{nll}
-accuracy level~\cite{SudakovApproximation}. The framework proposed in
-Ref.~\cite{VplusJetsCorrections} for applying higher order corrections to the
-\gls{mc} samples introduces a single re-weighting factor for all the V + jets
-Monte Carlo simulations with a set of relative systematic uncertainties that can
-be implemented as nuisance parameters in the profile likelihood method described
-in \cref{sec:stat-proc}. It is based on the formula:
+statistically favored and should be used instead~\cite{VplusJetsCorrections}.
+
+The theoretical extrapolation of the $\znunuplusjets$ background from the
+$Z (\rightarrow \ell^+ \ell^-) +$ jets and $W(\rightarrow \ell \nu) +$ jets
+processes at high $\pt$ can be influenced by several factor including the choice
+of the parton distribution function and the renormalization and factorization
+scales therefore it is important to include in the calculations higher order
+correction in \gls{qcd} and \gls{ew} processes. The V + jets samples used in
+this analysis are generated at the \gls{nlo} and \gls{lo} in \gls{qcd} for up to
+two and four partons respectively and at the \gls{lo} in \gls{ew} using
+\textsc{sherpa-2.2.1}~\cite{SHERPAGenerator}. The samples are then normalized to
+an inclusive \gls{nnlo} cross section.
+
+One possible way to include higher order corrections to the \gls{mc} samples
+relies on the re-weighting of the differential cross section of these samples to
+\gls{nlo} in \gls{qcd} and \gls{nlo} plus \gls{nll} Sudakov
+approximation\footnote{At high energies \gls{ew} corrections are dominated by
+  single and double logarithms of the scale of the process over the mass of the
+  vector boson ($s/m_\mathrm{V}^2$ where V = $W, Z$) called Sudakov
+  logarithms~\cite{SudakovLogs}. In the limit when all the kinematic invariants
+  are much larger than the electroweak scale (the \emph{Sudakov limit}) the
+  \gls{ew} one-loop corrections can be predicted in a process invariant
+  way~\cite{SudakovApproximation}. This Sudakov approximation is computationally
+  cheaper than the full \gls{nlo} \gls{ew} correction and since it includes
+  leading and sub-leading logarithmic terms it is at the \gls{nll} accuracy
+  level~\cite{SudakovApproximation}.} at \gls{nnlo} in \gls{ew}. The framework
+proposed in Ref.~\cite{VplusJetsCorrections} for applying higher order
+corrections to the \gls{mc} samples introduces a single re-weighting factor for
+all the V + jets Monte Carlo simulations with a set of relative systematic
+uncertainties that can be implemented as nuisance parameters in the profile
+likelihood method described in \cref{sec:stat-proc}. It is based on the formula:
 \begin{equation}
   \label{eq:51}
   \frac{\ud}{\ud x} \frac{\ud}{\ud \vec{y}} \sigma^{(V)}
@@ -60,7 +63,7 @@ and \gls{nlo} plus the Sudakov approximation at \gls{nnlo} in \gls{ew}:
   k_\mathrm{NLO}(x, \vec{\epsilon}_\mathrm{TH}) \cdot \left(1 + k_\mathrm{EW}(x,
     \vec{\epsilon}_\mathrm{TH}) \right) \cdot \frac{\ud}{\ud x} \sigma_\mathrm{LO}
 \end{equation}
-where $k_\mathrm{LO} = k_\mathrm{NLO}^\mathrm{EW} +
+where $k_\mathrm{EW} = k_\mathrm{NLO}^\mathrm{EW} +
 k_\mathrm{NNLO}^\mathrm{Sudakov}$. The systematic uncertainties associated with
 this theoretical procedure are described in \cref{sec:v-+-jets}.
 %%% Local Variables:
