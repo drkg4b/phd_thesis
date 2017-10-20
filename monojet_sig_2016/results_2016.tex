@@ -3,7 +3,7 @@ a selected set of exclusive signal regions as defined in
 \cref{sec:event-selection-1} after the background only fit to the control
 regions are reported in \cref{tab:results}. The total uncertainty of the
 \gls{sm} predictions range between 2\% for EM2 and 4.2\% for EM9.
-\begin{table}[!h]
+\begin{table}[!htb]
   \centering
   \resizebox{\linewidth}{!}{\begin{tabular}{lccccc}
     \toprule
@@ -50,7 +50,7 @@ the V + jets and top background respectively. These factors are applied in
 \cref{fig:sr_plots_2016} which shows the comparison between the measured
 distributions and the Monte Carlo predictions for the $\met$ and leading jet
 $\pt$ in the inclusive signal region with $\met > 250$~GeV after the fit.
-\begin{figure}[!h]
+\begin{figure}[!htb]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
     \includegraphics[width=\linewidth]{sr_mod_ind_met}
@@ -71,13 +71,14 @@ $\pt$ in the inclusive signal region with $\met > 250$~GeV after the fit.
   \label{fig:sr_plots_2016}
 \end{figure}
 
-The nuisance parameters defined in \cref{sec:syst-uncert-1} and used to estimate
-the impact of the systematic uncertainties on the background predictions are
-treated as bin-wise correlated and treated accordingly in the
+The nuisance parameters defined in \cref{sec:syst-uncert-1} are used to estimate
+the impact of the systematic uncertainties on the background predictions. They
+are treated as bin-wise correlated and treated accordingly in the
 fit. \cref{fig:np_pull} shows the value of the nuisance parameters after the
-background only fit to the data of the control and signal regions. In most cases
-there is a mild constrain of the parameters.
-\begin{figure}[!h]
+background only fit to the data of the control regions. In most cases there is a
+mild constrain of the parameters which is more evident in the case of the top
+uncertainty.
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=\linewidth]{np_pull_plot_CRsOnly_BkgOnly}
   \caption{Values of the nuisance parameters used in the analysis after the
@@ -85,19 +86,16 @@ there is a mild constrain of the parameters.
   \label{fig:np_pull}
 \end{figure}
 
-% Finally \cref{fig:region_pulls} shows the comparison between data and Monte
-% Carlo before and after the fit for the single different regions defined in the
-% analysis.
 After the fit the agreement between data and theory expectations is good. Since
-no significant excess of data compared to the predictions has been observed, the
-statistical approach described in \cref{sec:stat-proc} have been used to set
+no significant excess of data compared to the predictions is observed, the
+statistical approach described in \cref{sec:stat-proc} is used to set
 95\%~\gls{cl} model independent exclusion limits (see
 \cref{sec:model-indep-limits-1}) and interpreted in terms of the \gls{add}
 scenario for large extra dimensions in \cref{sec:add-model-interpr}. The
 observed limits are in general slightly worse than the expected sensitivity due
 to the small excess of data compared to the Standard Model expectation as can be
 seen from \cref{tab:sr_yields}.
-\begin{table}[!h]
+\begin{table}[!htb]
   \centering
   \begin{tabular}{lcc}
     \toprule
@@ -118,8 +116,9 @@ seen from \cref{tab:sr_yields}.
     \bottomrule
   \end{tabular}
   \caption{Total yields for Standard Model predictions and data in the different
-    exclusive singal region selections. The statistical and systematic
-    uncertainties are also quoted on the SM predictions.}
+    exclusive signal region selections after the background only fit to the
+    control regions EM1--EM10. The statistical and systematic uncertainties are
+    also quoted on the SM predictions.}
   \label{tab:sr_yields}
 \end{table}
 % \begin{figure}[!h]

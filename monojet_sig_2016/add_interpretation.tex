@@ -21,20 +21,25 @@ $0.87 \pm 0.23$ is calculated for the V + jets and top background respectively.
 
 The nuisance parameters defined in \cref{sec:syst-uncert-1} and used to estimate
 the impact of the systematic uncertainties on the background predictions are
-treated as bin-wise correlated and treated accordingly in the
-fit. \cref{fig:np_pull} shows the value of the nuisance parameters after the
-background only fit to the data of the control and signal regions. In most cases
-there is a mild constrain of the parameters.
+treated as bin-wise correlated in the fit. \cref{fig:np_pull} shows the value of
+the nuisance parameters after the background only fit to the data of the control
+and signal regions EM4--EM10. In most cases there is a mild constrain of the
+parameters. In this case the impact of the fit on the top systematic is less
+important. This is understood in terms of the better precision of top processes
+measurements in low $\met$ regions (as can be seen from
+\cref{tab:top_syst_2016}) that increase the sensitivity to this systematic
+uncertainty and therefore the constrain of the parameter by the fit.
 \begin{figure}[!h]
   \centering
   \includegraphics[width=\linewidth]{np_pull_plot}
   \caption{Values of the nuisance parameters used in the analysis after the
-    control and signal region inclusive fit to the data.}
+    background only fit of the exclusive control and signal regions EM4--EM10 to
+    the data.}
   \label{fig:np_pull}
 \end{figure}
 
 \cref{tab:add_fit_yields} reports the number of observed and predicted events in
-some of the exclusive control regions defined in the analysis and used in the
+some of the exclusive signal regions defined in the analysis and used in the
 background only fit to the signal and control regions.
 \begin{table}[!h]
 \centering
@@ -61,8 +66,10 @@ Non-collision background & $17 \pm 17$ & $4 \pm 4$ & $0 \pm 0$ & $0 \pm 0$ & $0 
 \end{tabular}}
 \caption{Number of events in the observed data and Standard Model predictions in
   a representative set of signal regions as defined in
-  \cref{sec:event-selection-1}. For the \gls{sm} predictions the quoted
-  uncertainty includes both statistical and systematic uncertainties.}
+  \cref{sec:event-selection-1} after the background only fit of the exclusive
+  control and signal regions EM4--EM10 to the data. For the \gls{sm} predictions
+  the quoted uncertainty includes both statistical and systematic
+  uncertainties.}
 \label{tab:add_fit_yields}
 \end{table}
 
@@ -85,8 +92,15 @@ noticeable in the \gls{add} n = 6 model meaning that the analysis is probing
 values of $\md$ where the effective theory can be trusted.
 
 Values of $\md$ up to 7.7~TeV for n = 2 dimensions and 4.8~TeV for n = 6
-dimensions are excluded at 95\%~CL improving previous results.
-\begin{table}[!hb]
+dimensions are excluded at 95\%~CL improving previous results. The expected
+sensitivity of this search to $\md$ has increased significantly thanks to a
+dataset ten times larger than the previous search and improved techniques for
+background calculations in particular to constrain the top and the V + jets
+backgrounds. The sensitivity is dominated by systematics xx, yy, zz. Due to the
+dependence of the cross section vs MD of the form A = B$^{1/(n+2)}$ further
+increase in sensitivity will be difficult without reduced systematics and much
+larger datasets (of the order of at least 10 times larger).
+\begin{table}[!htb]
   \centering
   \begin{tabular}{lcc}
     \toprule
@@ -111,20 +125,7 @@ dimensions are excluded at 95\%~CL improving previous results.
       reported in parentheses.}
   \label{tab:add_limits}
 \end{table}
-
-The expected sensitivity of this search to $\md$ has increased significantly
-thanks to a dataset ten times larger than the previous search and improved
-techniques for background calculations in particular to constrain the top and
-the V + jets backgrounds. The sensitivity is dominated by systematics xx, yy,
-zz. Due to the dependence of the cross section vs MD of the form A =
-B$^{1/(n+2)}$ further increase in sensitivity will be difficult without reduced
-systematics and much larger datasets (of the order of at least 10 times
-larger). The final limits show an improvement lesser than expected due to the
-observation of somewhat higher event yields in SR than predicted, however of the
-order of xxx sigma. Finally it is worth to note that the new limits are so high
-that the number of ADD events where the EFT is invalid, is now negligible, while
-it was still non-negliglble in the previous ATLAS ADD search [REf].
-\begin{figure}
+\begin{figure}[!htb]
   \centering
   \includegraphics[width=10cm]{add_exclusion_observed}
   \caption{Expected and observed limits at 95\% CL on the fundamental Planck
