@@ -1,18 +1,23 @@
-Two different generators have been used to produce the diboson \gls{mc}
-samples. After taking into account possible cross section variations of the
-generators the difference in yields in each $\met$ bin of the two generators is
-taken as the systematic uncertainty and added in quadrature with a 6\% theory
-uncertainty on the \gls{nlo} cross section. \cref{tab:diboson_sys_2016} reports
-the diboson uncertainties evaluated from the comparison between the two
-generators for the different exclusive regions EM1-EM10 defined in the analysis
-for the signal region and the different control regions. These results are then
-added in quadrature to the 6\% uncertainty on the \gls{nlo} cross section.
-\begin{table}[!ht]
+The \textsc{sherpa}~\cite{SHERPA} and \textsc{powheg}~\cite{POWHEG} interfaced
+with \textsc{pythia8}~\cite{PYTHIA8} generators have been used to produce the
+diboson ($WW$, $WZ$ and $ZZ$ processes) \gls{mc} samples. After taking into
+account possible cross section variations of the generators the difference in
+yields in each $\met$ bin of the two generators is taken as the systematic
+uncertainty and added in quadrature with a 6\% theory uncertainty on the
+\gls{nlo} cross section.
+\begin{description}[font=\normalfont]
+\item[diboson\_Sys:] This parameter accounts for the diboson systematic variations.
+\end{description}
+\cref{tab:diboson_sys_2016} reports the diboson uncertainties evaluated from the
+comparison between the two generators for the different exclusive regions
+EM1-EM10 defined in the analysis for the signal region and the different control
+regions.
+\begin{table}[!htb]
   \centering
   \resizebox{\linewidth}{!}{
   \begin{tabular}{lcccccccccc}
     \toprule
-    \multicolumn{11}{c}{Dibson Uncertainty} \\
+    \multicolumn{11}{c}{Diboson Uncertainty} \\
     \midrule \midrule
     \quad & EM1 & EM2 & EM3 & EM4 & EM5 & EM6 & EM7 & EM8 & EM9 & EM10 \\
     \midrule
