@@ -1,22 +1,24 @@
-Top pairs and single top productions are generated with the \textsc{PowhegBox}
-generator~\cite{POWHEG} with CT10 \glspl{pdf} and the parton shower,
-fragmentation and underlying event simulated with \textsc{pythia8} with A14 set
-of tune parameters. Due to the large Monte Carlo modeling uncertainties of the
-top background at high $\met$ observed in the analysis of the 2015 data (about
-40\% in the signal region for IM6) this process is estimated with a data-driven
-method in the combined 2015 and 2016 data. To this end the Top control region
-($\crtop$) is introduced to estimate the contribution of $t \bar{t}$ and single
-top processes in the signal region. In addition to cuts from A to H as defined
-in \cref{sec:event-selection-1} the $\crtop$ region selects events with:
+Top pairs and single top production are generated with the
+\textsc{PowhegBox}~\cite{POWHEG} generator with CT10 \glspl{pdf} and the parton
+shower, fragmentation and underlying event simulated with \textsc{pythia8} with
+A14 set of tune parameters. Due to the large Monte Carlo modeling uncertainties
+on the top background at high $\met$ observed in the analysis of the 2015 data
+(about 40\% for $t \bar{t}$ and single top processes in the signal region for
+IM6) this process is estimated with a data-driven method in the combined 2015
+and 2016 data. To this end the Top control region ($\crtop$) is introduced to
+estimate the contribution of $t \bar{t}$ and single top processes in the signal
+region. In addition to cuts from A to H as defined in
+\cref{sec:event-selection-1} the $\crtop$ region selects events with:
 \begin{itemize}
 \item Exactly one good muon.
 \item No baseline electrons.
 \item The transverse mass defined in \eqref{eq:99} of the $\met - \mu$ system
   satisfies $30 < m_\mathrm{\, T} < 100$~GeV compatible with a $W$ boson
   production.
-\item At least one of the selected jets in the event is identified as a $b$-jet.
+\item At least one of the selected jets in the event is identified as a $b$-jet
+  (see \cref{sec:b-jets}).
 \end{itemize}
-\cref{fig:top_plots} report the $\met$ and the leading jet $\pt$ distributions
+\cref{fig:top_plots} reports the $\met$ and the leading jet $\pt$ distributions
 after the background only fit described in
 \cref{sec:glob-simult-likel,sec:fit-strategy}. It shows, within uncertainties, a
 good agreement between data and \gls{mc}.

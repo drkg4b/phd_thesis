@@ -1,22 +1,37 @@
-The $\crele$ is enriched in $\wenuplusjets$ processes and is used in the
-computation of the V + jets background contamination in the signal
-region. Besides cuts from B to H as defined in \cref{sec:event-selection-1},
-this region has the following specific selections:
+The $\crele$ is enriched in $\wenuplusjets$ processes and is used to constrain
+the V + jets background contamination in the signal region. Besides cuts from B
+to H as defined in \cref{sec:event-selection-1}, this region has the following
+specific selections:
 \begin{itemize}
 \item The online trigger is required to select events with exactly one electron
-  in the final state.
-\item The baseline muons are vetoed.
-\item In order to exclude the crack region (see \cref{sec:atlas-tilecal}),
-  exactly one baseline electron with $\pt > 30$~GeV and $|\eta| > 1.52$ or
-  $|\eta| < 1.37$ is selected.
+  in the final state:
+  \begin{itemize}
+  \item For the 2015 data the event selection requires a low electron $\pt$
+    threshold of 24~GeV and medium likelihood quality combined with a higher
+    $\pt$ threshold of 60 and 120~GeV with medium and loose quality.
+  \item For the 2016 data a tight electrons with a $\pt$ threshold of 26~GeV and
+    loose isolation are combined with medium and loose quality electrons with 60
+    and 140~GeV $\pt$ threshold respectively in order to select the events for
+    the $\crele$ region.
+  \end{itemize}
+\item Events with baseline muons are vetoed.
+\item In order to exclude electrons in the crack region (see
+  \cref{sec:atlas-tilecal}), exactly one baseline electron with $\pt > 30$~GeV
+  and $|\eta| > 1.52$ or $|\eta| < 1.37$ is selected.
 \item A tight isolation criteria as defined in \cref{sec:electrons} for the
-  selected electrons is required.
+  selected electrons is required. Multijet \gls{qcd} events can enter the
+  $\crele$ region if they have a jet that fakes an electron. A tight isolation
+  requires low calorimeter and track activity around the electron thus removing
+  most jets and single pions faking electrons. \pagebreak[4]
 \item The transverse mass of the $\met - e$ system is required to be
   $30 < m_\mathrm{\, T} < 100$~GeV, compatible with a $W \rightarrow e \nu$
   process.
 \item The events must satisfy: $\met/\sqrt{H_\mathrm{\, T}} > 5$~GeV$^{1/2}$
   ($\met$ \emph{significance}) where $H_\mathrm{T}$ is the scalar sum of the
-  $\pt$ of the electron and the jets in the final state.
+  $\pt$ of the electron and the jets in the final state. Multijet \gls{qcd}
+  events can enter the $\crele$ region if they have a fake electron and fake
+  $\met$ from mis-measured electrons or jet $\pt$. In case of fake $\met$ the
+  significance takes low values, that can be suppressed with this cut.
 \end{itemize}
 The single electron trigger, the veto of electrons in the crack region, the
 tighter isolation and the $\met$ significance criteria all aim at reducing the
@@ -27,8 +42,8 @@ this control region and the $\crwmn$. For this reason in this version of the
 analysis the cut on the transverse mass is
 introduced. \cref{fig:ele_cr_plots_2016} shows the $\met$ and leading jet $\pt$
 distribution of the $\crele$ control region. There is a good agreement within
-uncertainties between data and \gls{mc}.
-\begin{figure}[!th]
+uncertainties between data and \gls{mc} after the background only fit.
+\begin{figure}[!htb]
   \centering
   \begin{subfigure}[t]{.48\linewidth}
     \includegraphics[width=\linewidth]{ele_cr_et_miss_2016}

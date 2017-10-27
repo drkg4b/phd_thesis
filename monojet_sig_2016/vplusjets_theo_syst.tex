@@ -54,12 +54,20 @@ thus constrained by the global fit described in \cref{sec:fit-strategy}:
   250 and 1000~GeV while a flat function is fitted beyond 1000~GeV. This
   parameter accounts for systematic uncertainties due to the smoothing.
 \end{description}
-Since the vjets\_d2kappa\_EW\_eej, vjets\_d2kappa\_EW\_evj,
-vjets\_d3kappa\_EW\_eej and vjets\_d3kappa\_EW\_evj describe subleading unknown
-effects they are treated with independent nuisance parameters for each process
-in the fit, the other parameters are treated as correlated between the V + jets
-processes and vector boson $\pt$ but independent from one another. The nuisance
-parameters are applied by re-weighting each event based on the theory input of
+% Since the following parameters:
+% \begin{itemize}
+% \item vjets\_d2kappa\_EW\_eej
+% \item vjets\_d2kappa\_EW\_evj
+% \item vjets\_d3kappa\_EW\_eej
+% \item vjets\_d3kappa\_EW\_evj
+% \end{itemize}
+Since both the vjets\_d2kappa\_EW\_eej and vjets\_d2kappa\_EW\_evj and both the
+vjets\_d3kappa\_EW\_eej and vjets\_d3kappa\_EW\_evj parameters
+all describe subleading unknown effects they are treated with independent
+nuisance parameters for each process in the fit, the other parameters are
+treated as correlated between the V + jets processes and vector boson $\pt$ but
+independent from one another. The nuisance parameters are applied by
+re-weighting each event based on the theory input of
 \cref{sec:corrections-vjets}, in particular up and down variation histograms of
 the $\pt$ distributions of the vector boson are obtained applying the event
 weight and treated in a consistent way to other normalization and shape

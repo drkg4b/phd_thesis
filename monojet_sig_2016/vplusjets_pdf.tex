@@ -14,14 +14,15 @@ the central value of the alternative \gls{pdf} set with respect to the NNPDF one
 is taken as the inter-\gls{pdf} uncertainty.
 \begin{description}[font=\normalfont]
 \item[PDFComb:] This parameter accounts for the final parton distribution
-  function uncertainty on the V + jets samples evaluated as the square sum of
+  function uncertainty on the V + jets samples evaluated as the quadratic sum of
   the inter and intra-\gls{pdf} uncertainties.
 \end{description}
 \cref{tab:bkg_pdf_2016} reports the relative systematic uncertainties of the V +
 jets backgrounds as a function of the exclusive signal region bins EM1-EM10. The
 uncertainties of the various processes are quoted in the region where that
-process is dominant. Since variation weights are not available, the
-$\zmumuplusjets$ process is estimated from the $\zeeplusjets$.
+process is dominant. Due to the lack of alternative \glspl{pdf} (see
+\cref{sec:part-distr-funct}), the $\zmumuplusjets$ process is estimated from the
+$\zeeplusjets$.
 \begin{table}[!ht]
   \centering
   \resizebox{\linewidth}{!}{
@@ -45,10 +46,10 @@ $\zmumuplusjets$ process is estimated from the $\zeeplusjets$.
                                                           & 7.1 & 12.0 \\
     \bottomrule
   \end{tabular}}
-\caption{Systematic uncertainties in \% on PDFs for the V + jets background as a
-  function of the exclusive signal regions EM1-EM10. The uncertainties on a
-  given process are quoted in the region where this process is dominant. Due to
-  the lack of variation wights the $\zeeplusjets$ uncertainty is used for the
+\caption{Systematic uncertainties in \% on the V + jets background as a function
+  of the exclusive signal regions EM1-EM10. The uncertainties on a given process
+  are quoted in the region where this process is dominant. Due to the lack of
+  alternative \glspl{pdf} the $\zeeplusjets$ uncertainty is used for the
   $\zmumuplusjets$ process.}
   \label{tab:bkg_pdf_2016}
 \end{table}

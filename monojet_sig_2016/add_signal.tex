@@ -15,17 +15,17 @@ the Kaluza-Klein modes is given by~\cite{ADDPhenomenology}:
   \right)^{2/n} \approx \left( \frac{\md}{\mathrm{TeV}} \right)^{\frac{n +
   2}{2}} 10^{\frac{12 n - 31}{n}}~\mathrm{eV}
 \end{equation}
-where $n$ represents the extra dimensions which for $\md = 1$~TeV and $n =$ 4,
-6, 8 gives $\Delta m = 20$~keV, 7~MeV and 0.1~GeV. For $n > 6$ only few \gls{kk}
-modes can be produced and the total production cross section becomes
+where $n$ represents the number of extra dimensions which for $\md = 1$~TeV and
+$n =$ 4, 6, 8 gives $\Delta m = 20$~keV, 7~MeV and 0.1~GeV. For $n > 6$ only few
+\gls{kk} modes can be produced and the total production cross section becomes
 negligible~\cite{ADDPhenomenology} while only for a large number of extra
 dimensions the mass splitting energy becomes comparable with the experimental
 energy resolution and the number of \gls{kk} modes produced is capable of
-compensating the $1/\overbar{M}^2_p$ suppression factor in the production cross
+compensating the $1/\overbar{M}^2_P$ suppression factor in the production cross
 section. The graviton lifetime of
 $\tau_G \approx \overbar{M}^2_P/m^3 \approx (\mathrm{TeV}/m)^3 \approx
 10^3$~seconds~\cite{ADDPhenomenology} makes it stable over \gls{atlas} detection
-time. The $1/\overbar{M}^2_p$ suppression factor can be interpreted as the low
+time. The $1/\overbar{M}^2_P$ suppression factor can be interpreted as the low
 probability that a graviton propagating in the extra dimensions crosses the
 usual three spatial dimensions~\cite{ADDPhenomenology}. The Kaluza-Klein
 graviton only interacts weakly through the gravitational interaction with the
@@ -36,6 +36,24 @@ signature. \cref{fig:add_feynman} shows the three main graviton production modes
 at \gls{lhc}. These production modes are implemented at \gls{lo} in the Monte
 Carlo generator \textsc{pythia8}~\cite{PYTHIA8} with the ATLAS2014 (A14)
 tune~\cite{PYTHIATune}.
+\begin{figure}[!htb]
+  \centering
+  \begin{subfigure}{.48\linewidth}
+    \includegraphics[width=\linewidth]{qq_to_gG}
+    \caption{$q \bar{q} \rightarrow g G$.}
+  \end{subfigure}
+  \begin{subfigure}{.48\linewidth}
+    \includegraphics[width=\linewidth]{qg_to_qG}
+    \caption{$q g \rightarrow q G$.}
+  \end{subfigure}
+  \begin{subfigure}{.48\linewidth}
+    \includegraphics[width=\linewidth]{gg_to_gG}
+    \caption{$g g \rightarrow g G$.}
+  \end{subfigure}
+  \caption{The main leading order diagrams for graviton plus quark and graviton
+    plus gluon production in the \gls{add} model at \gls{lhc}.}
+  \label{fig:add_feynman}
+\end{figure}
 
 As mentioned earlier, collider searches do not have sensitivity to \gls{add}
 scenarios with more than six extra dimensions, for this reason in this analysis
@@ -65,19 +83,20 @@ energy and number of extra dimensions that is determined from \cref{eq:116} as:
 \end{equation}
 Thus a single Monte Carlo sample is generated for each $n$ and the \gls{add}
 graviton cross section can be deduced for any $\md$ from that relation. The
-samples generated along with $\sigma_\mathrm{nom}$ and $\md^\mathrm{nom}$ used
-in this analysis are reported in \cref{tab:sigma_md_ref}. Once the value of
-$C_n$ is determined, \cref{eq:116} can be regarded as a function $\sigma(\md)$
-and the cross section is set by the Planck scale. In particular, for some
-excluded value of $\md^\mathrm{excl}$:
+samples generated along with their values of $\sigma_\mathrm{nom}$ and
+$\md^\mathrm{nom}$ used in this analysis are reported in
+\cref{tab:sigma_md_ref}. Once the value of $C_n$ is determined, \cref{eq:116}
+can be regarded as a function $\sigma(\md)$ and the cross section is set by the
+Planck scale. In particular, for some excluded value of $\md^\mathrm{excl}$:
 \begin{equation}
   \label{eq:180}
   \frac{\sigma_\mathrm{nom}}{\sigma_\mathrm{excl}} = \left(
     \frac{\md^\mathrm{excl}}{\md^\mathrm{nom}} \right)^{n + 2}.
 \end{equation}
 From the definition of excluded signal strength
-$\mu_\mathrm{excl} = \sigma/\sigma_\mathrm{nom}$ where $\sigma$ is the
-production cross section of some \gls{bsm} model, we have that:
+$\mu_\mathrm{excl} = \sigma_\mathrm{excl}/\sigma_\mathrm{nom}$ where
+$\sigma_\mathrm{excl}$ is the production cross section of some \gls{bsm} model,
+we have that:
 \begin{equation}
   \label{eq:181}
   \sigma_\mathrm{excl} = \mu_\mathrm{excl} \sigma_\mathrm{nom}
@@ -93,15 +112,22 @@ and finaly:
   \label{eq:117}
   \md^\mathrm{excl} = \frac{\md^\mathrm{nom}}{\mu^{1/(n + 2)}_\mathrm{excl}}.
 \end{equation}
-With this prescription upper limits on the signal strength are translated into
+With these relations upper limits on the signal strength are translated into
 upper limits on the fundamental Planck scale $\md$.
-\begin{table}[!h]
+
+In the previous version of the analysis it was shown that low missing energy
+signal regions have no experimental sensitivity to \gls{add} models. Therefore
+the \gls{add} samples used in this analysis are generated with with a 150~GeV
+phase space cut at the truth level on the transverse momentum of the parton and
+the graviton ($\pt > 150$~GeV). The cross section in \cref{tab:sigma_md_ref}
+include the efficiency of the truth level cut on the leading jet.
+\begin{table}[!htb]
   \centering
   \begin{tabular}{lcc}
     \toprule
-    \multicolumn{3}{c}{Nominal Cross Section and Planck Scale Values} \\
+    \multicolumn{3}{c}{Effective Planck Scale and Nominal Cross Section} \\
     \midrule \midrule
-    Model & $\md$~[GeV] & $\sigma$~[pb] \\
+    Model & $\md^\mathrm{nom}$~[GeV] & $\sigma$~[pb] \\
     \midrule
     ADD n = 2 & 5300 & 1.55 \\
     ADD n = 3 & 4100 & 1.82 \\
@@ -110,31 +136,15 @@ upper limits on the fundamental Planck scale $\md$.
     ADD n = 6 & 3000 & 7.22 \\
     \bottomrule
   \end{tabular}
-  \caption{Reference values for the cross section and the Planck scale used to
+  \caption{Nominal values for the cross section and the Planck scale used to
     generate the \gls{add} signal samples at 13~TeV. The samples are generated
     using \textsc{pythia8} with NNPDF23LO~\cite{NNPDF23LO} \gls{pdf} set and the
     A14 tune. The number of extra dimensions $n$ and the effective Planck scale
-    $\md$ are free parameters of the model.}
+    $\md$ are free parameters of the model. Theoretical systematic on the cross
+    section are discussed in \cref{sec:ther-syst-uncert}.}
   \label{tab:sigma_md_ref}
 \end{table}
-\begin{figure}[!h]
-  \centering
-  \begin{subfigure}{.3\linewidth}
-    \includegraphics[width=\linewidth]{qq_to_gG}
-    \caption{$q \bar{q} \rightarrow g G$.}
-  \end{subfigure}
-  \begin{subfigure}{.3\linewidth}
-    \includegraphics[width=\linewidth]{qg_to_qG}
-    \caption{$q g \rightarrow q G$.}
-  \end{subfigure}
-  \begin{subfigure}{.3\linewidth}
-    \includegraphics[width=\linewidth]{gg_to_gG}
-    \caption{$g g \rightarrow g G$.}
-  \end{subfigure}
-  \caption{The main leading order diagrams for graviton production in the
-    \gls{add} model at \gls{lhc}.}
-  \label{fig:add_feynman}
-\end{figure}
+\pagebreak[4]
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"

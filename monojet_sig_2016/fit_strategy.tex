@@ -2,7 +2,7 @@ The profile likelihood method described in \cref{sec:stat-proc} is used to
 combine the background estimated with the different methods outlined in
 \cref{sec:backgr-estim} and the relative systematic uncertainties described in
 \cref{sec:syst-uncert-1,sec:ther-syst-uncert} in a global fit. The likelihood
-function is the product of Poisson probability, one for each bin used in the
+function is the product of Poisson probabilities, one for each bin used in the
 analysis defined in \cref{sec:event-selection-1} and Gaussian probabilities that
 model the systematic uncertainties. The Poisson probabilities include as free
 parameters the normalization factors mentioned in \cref{sec:glob-simult-likel}
@@ -14,53 +14,55 @@ jets samples. This is justified by the use of the theoretical framework
 introduced in \cref{sec:corrections-vjets}. Analogously a single normalization
 factor ($k^t$) is used for the $t \bar{t}$ and single top processes. The
 nuisance parameters used to model the systematic uncertainties and described in
-\cref{sec:syst-uncert-1} are the free parameters in the Gaussian
-distributions.
+\cref{sec:syst-uncert-1} are the free parameters that follow a Gaussian
+distribution of mean zero and standard deviation one.
 
 The nuisance parameters and the normalization factors are adjusted to the
 optimal value by the fit which allows for a reduction of the otherwise
 relatively large theoretical and experimental systematic uncertainties (of the
-order of 20 - 40\% before fit). Two fitting strategies are implemented in the
-analysis:
+order of 20 - 40\% before fit as explained in \cref{sec:syst-uncert-1}). Two
+fitting strategies are implemented in the analysis:
 \begin{enumerate}[A -]
 \item A binned global likelihood fit simultaneous to all the exclusive $\met$
   region EM1--EM10. The nuisance parameters introduced in
-  \cref{sec:syst-uncert-1} are treated as bin-wise correlated systematics and
+  \cref{sec:syst-uncert-1} are treated as bin-wise correlated systematics (the
+  same nuisance parameter will be used in all the \glspl{cr} and \glspl{sr}) and
   treated accordingly in the fit. This fit takes advantage of the shape of the
   information from the $\met$ distribution in the determination of the
   normalization of the V + jets and top processes.
 \item A single bin likelihood fit to the different inclusive $\met$ regions
   IM1--IM10 (a different fit for each inclusive region). The normalization
   factors $k^\mathrm{V + jets}$, $k^t$ and the nuisance parameters in this case
-  refer to the specific $\met$ region.
+  refer to the specific $\met$ region. This fit is used to derive the $\met$ and
+  leading jet $\pt$ distributions in
+  \cref{fig:sr_et_miss_2016,fig:sr_jet1_pt_2016}.
 \end{enumerate}
 \cref{tab:norm_factors_2016} summarizes the normalization factors and the
-control regions used for their estimation. The $k^\mathrm{V + jets}$ and $k^t$
-together with the signal strength $\mu$ are the free parameters of the global
-fit.
+control regions most constraining for their estimation. The
+$k^\mathrm{V + jets}$ and $k^t$ together with the signal strength $\mu$ are the
+free parameters of the global fit.
 \begin{table}[!h]
   \centering
   \begin{tabular}{lll}
     \toprule
-    Control Region & Background Process & Normalization Factor \\
+    Background Process & Normalization Factor & Most Constraining Region \\
     \midrule \midrule
-    All control regions & V + jets & $k^\mathrm{V + jets}$ \\
-    $\crtop$ & $t \bar{t}$, single top & $k^t$ \\
+    V + jets & $k^\mathrm{V + jets}$ & $\crwmn$, $\crzmm$, $\crele$ \\
+    $t \bar{t}$, single top & $k^t$ & $\crtop$ \\
     \bottomrule
   \end{tabular}
   \caption{Summary table of the different background processes and the
-    corresponding control regions used to evaluate the normalization factors.}
+    corresponding control regions most constraining for the normalization
+    factors.}
   \label{tab:norm_factors_2016}
 \end{table}
 
-Since sensitivity studies on the \gls{add} models performed in previous versions
-of the analysis showed no sensitivity in lower $\met$ regions, the Monte Carlo
-samples for \gls{add} are generated with a 150~GeV phase space cut at the truth
-level on the transverse momentum of the parton and the graviton
-($\pt > 150$~GeV). This cut is fully efficient only for signal regions with
-$\met \gtrsim 350$~GeV. For this reason for the model independent interpretation
-of the \gls{add} signal, only the $\met > 400$~GeV signal regions are
-considered.
+In \cref{sec:phen-add-model} it was discussed that the \gls{add} Monte Carlo
+samples generated with \textsc{pythia} are simulated with a cut of 150~GeV on
+the $\pt$ of the parton and the graviton. This cut is fully efficient only for
+signal regions with $\met \gtrsim 350$~GeV. For this reason for the model
+dependent interpretation of the \gls{add} signal, only the $\met > 400$~GeV
+signal regions are considered.
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
