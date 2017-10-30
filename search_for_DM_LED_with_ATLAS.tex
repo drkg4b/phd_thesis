@@ -1,4 +1,4 @@
-\documentclass[10pt,twoside,cucitura,classica,english,openany]{toptesi}
+\documentclass[10pt,twoside,cucitura,classica,openany]{toptesi}
 
 %%% This is for the Swedish state paper format:
 \usepackage{geometry}
@@ -29,7 +29,8 @@
 \setcounter{secnumdepth}{4}
 
 \usepackage[latin1, utf8]{inputenc}
-\usepackage[T1]{fontenc}\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 % \usepackage{layaureo}
 \usepackage{topfront}
 \usepackage{amsmath}
@@ -135,6 +136,13 @@
 % \fi
 
 \printglossaries
+
+\chapter*{Sammanfattning}
+\addcontentsline{toc}{section}{Sammanfattning}
+
+\input{abstract_sw}
+
+\selectlanguage{english}
 
 \sommario
 
