@@ -1,14 +1,17 @@
-\gls{mb} events are soft ($\pt < 2$~GeV) inelastic interactions which constitute
-a significant fraction of the hadron-hadron collisions. Understanding \gls{mb}
-processes is therefore important for precision measurements of hard scatter
-interactions. Perturbative \gls{qcd} is commonly used to describe parton
+\gls{mb} events are inelastic $pp$ collisions characterized by low momentum
+exchange, typically below approximately 2~GeV. They make up the vast majority of
+the \gls{lhc} collisions. Proper Monte Carlo modeling of \gls{mb} processes is
+therefore important for for proper prediction of event yields in signal and
+control regions. Perturbative \gls{qcd} is commonly used to describe parton
 interactions when possible and non-perturbative \gls{qcd} for low $\pt$
 processes. The free parameters of these models (\emph{tune parameters}) are
-tuned in the \gls{mc} generators in order to replicate experimental data. The
-variation of these parameters may lead to different number of generated events
-in the \gls{mc} samples and thus to uncertainty in the acceptance. Following the
-\gls{atlas} recommendation given in Ref.~\cite{MCTuningRecommendations2015} five
-tune parameters have been varied in order to account for uncertainties from:
+tuned in the \gls{mc} generators in order to replicate experimental \gls{mb}
+data. The variation of these parameters may lead to different number of
+generated events in the \gls{mc} samples or different kinematic characteristics
+of the simulated events and thus to an uncertainty on the signal and background
+predictions. Following the \gls{atlas} recommendation given in
+Ref.~\cite{MCTuningRecommendations2015} five tune parameters have been varied in
+order to account for uncertainties from:
 \begin{itemize}
 \item Underlying event effects.
 \item Jet structure effects.
@@ -24,11 +27,9 @@ N-jet event can arise from soft-radiation evolution of a N-parton final state
 (matrix element jets) or from an (N-1)-parton configuration where the extra jet
 appears from from hard emission during the shower evolution (parton shower
 jet). A \emph{matching scheme} is defined on an event-by-event basis in order to
-decide which process originated the N-jet event avoiding in this way double
-counting of events~\cite{Matching}. Due to the wide range of the energy scales
-spanned by the jets transverse momentum there are different scales considered in
-the possible overlap between parton shower or matrix element jets. These scales
-used in the matching scheme are referred to as \emph{matching scales}. The
+
+avoid double counting and decide which jets should be taken from the matrix
+element and which ones should be taken from parton shower~\cite{Matching}. The
 \gls{susy} compressed signal samples are produced with
 \textsc{madgraph}~\cite{MADGRAPH}, thus an additional matching scale systematic
 uncertainty is considered. % set of systematic uncertainties
@@ -39,11 +40,18 @@ uncertainty is considered. % set of systematic uncertainties
 % \item Initial state radiation: vary the scale for the $gqq$ and $ggg$ vertices,
 % \item Jet matching: vary the qcut for the CKKW matching 0.5, 1, 2
 % \end{itemize}
-For each squark mass 16 \gls{mc} samples are produced and compared at the truth
-level. The resulting envelope of the systematic uncertainties affects the signal
-acceptance and are added in quadrature, the results are presented in
+
+
+Practically the matching, tune, initial and final state uncertainties are
+estimated by first generating 16 alternative \gls{mc} samples for each squark
+mass with different settings and evaluating the relative variation in number of
+events in the signal regions as observed at the Monte Carlo truth level. For a
+given squark and neutralino mass, the different relative variations are added in
+quadrature. Finally the envelope of the systematics obtained over all squark and
+neutralino mass is derived in order to obtain a single systematic uncertainty
+for all \gls{susy} compressed mass points. The results are presented in
 \cref{tab:susy_tune}.
-\begin{table}[!h]
+\begin{table}[!htb]
   \centering
   \resizebox{\linewidth}{!}{\begin{tabular}{lccccccc}
     \toprule
