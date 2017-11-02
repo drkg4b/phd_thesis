@@ -1,22 +1,22 @@
 A common way to model disagreements between data and \gls{mc} simulations in
-reconstruction and identification efficiencies is to determine a correction
-factor using some auxiliary dataset for \gls{mc} to data differences. These
+reconstruction and identification efficiencies is to determine correction
+factors using some auxiliary dataset for \gls{mc} to data differences. These
 \emph{scale factors} suffer themselves from systematic uncertainties arising
 from the specific method and dataset used to derive them.
 \begin{description}[font=\normalfont]
-\item[syst\_FT\_EFF\_B\_systematics:] This parameter takes into account scale
-  factor uncertainties in $b$-tagging (recognizing as a $b$-jet a jet
-  originating from a $b$ quark).
-  \item[syst\_FT\_EFF\_C\_systematics:] This parameter accounts for tagging of
-    $c$-jets uncertainties.
-  \item[syst\_FT\_EFF\_Light\_systematics:] This parameter models the uncertainty
-    in mistagging light quarks.
-  \item[syst\_FT\_EFF\_extrapolation:] This parameter accounts for uncertainties
-    due to the extrapolation procedure of the data driven calibration from the
-    low $\pt$ to the high $\pt$ regime~\cite{BTagCalibration}.
-  \item[syst\_FT\_EFF\_extrapolation\_from\_charm:] This parameter takes into
-    account the uncertainties related to the use of the charm jet scale factors
-    also for the tau jets.
+\item[syst\_FT\_EFF\_B\_systematics:] This parameter models scale factor
+  uncertainties in $b$-tagging (recognizing as a $b$-jet a jet originating from
+  a $b$ quark) efficiency.
+\item[syst\_FT\_EFF\_C\_systematics:] This parameter models the uncertainty on
+  the probability to $b$-tag a $c$-jet.
+\item[syst\_FT\_EFF\_Light\_systematics:] This parameter models the uncertainty
+  in mistagging light flavor ($u$, $d$, $s$ and gluon) jets.
+\item[syst\_FT\_EFF\_extrapolation:] This parameter accounts for uncertainties
+  due to the extrapolation procedure of the data driven $b$-tagging calibration
+  efficiency from the low $\pt$ to the high $\pt$ regime~\cite{BTagCalibration}.
+\item[syst\_FT\_EFF\_extrapolation\_from\_charm:] This parameter accounts for
+  the uncertainties related to the use of the charm jet $b$-tagging scale
+  factors applied to tau jets.
 \end{description}
 %%% Local Variables:
 %%% mode: latex

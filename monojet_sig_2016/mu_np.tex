@@ -1,31 +1,45 @@
 \begin{description}[font=\normalfont]
-\item[syst\_MUONS\_ID:] This parameter accounts for the uncertainty on the
-  resolution of the track in the inner detector associated with muons.
-\item[syst\_MUONS\_MS:] This parameter accounts for variations on the resolution
-  of the muon spectrometer track associated with muons.
-\item[syst\_MUONS\_EFF\_STAT:] This parameter accounts for the scale factor
-  uncertainties of the statistical side of the muon identification.
-\item[syst\_MUONS\_EFF\_STAT\_LOWPT:] This parameter accounts for the scale
-  factor uncertainties of the statistical side of the muon identification in the
-  low $\pt$ regime.
-\item[syst\_MUONS\_SCALE:] This parameter accounts for uncertainties on the muon
-  momentum scale.
-\item[syst\_MUONS\_BADMUON\_STAT:] This parameter models bad muon statistical
-  uncertainties.
-\item[syst\_MUONS\_BADMUON\_SYS:] This parameter describes bad muon systematic
-  uncertainties.
+\item[syst\_MUON\_ID:] This nuisance parameter takes into account the impact of
+  the uncertainty from the measurement of the inner detector track momentum on
+  the final muon momentum.
+\item[syst\_MUON\_MS:] This parameter accounts for the impact of the uncertainty
+  from the measurement of the muon system track momentum on the final muon
+  momentum.
+\item[syst\_MUON\_EFF\_STAT (SYS):] This parameter accounts for the
+  statistical (systematic) uncertainty on the data to Monte Carlo muon
+  reconstruction scale factor.
+\item[syst\_MUON\_EFF\_STAT (SYS) \_LOWPT:] This parameter accounts for the
+  statistical (systematic) uncertainties on the data to Monte Carlo muon
+  reconstruction scale factor for low $\pt$ muons.
+\item[syst\_MUON\_SCALE:] This parameter accounts for the uncertainty on the
+  muon momentum scale.
+\item[syst\_MUON\_BADMUON\_STAT (SYS):] This parameter models bad muon
+  statistical (systematic) uncertainties for high $\pt$ muons (above 100~GeV)
+  due to the specific muon working point used for high $\pt$
+  muons~\cite{MuonCalib}.
+% \item[syst\_MUON\_BADMUON\_SYS:] This parameter describes bad muon systematic
+%   uncertainties.
 % \item[syst\_MUONS\_EFF\_TrigSystUncertainty:] This parameter accounts for
 %   muon trigger uncertainties.
-\item[syst\_MUONS\_SAGITTA\_REBIAS:] This parameter models variations in the
-  scale of the momentum based on the residual charge-dependent bias after
-  correction.
-\item[syst\_MUONS\_SAGITTA\_RHO:] This parameter accounts for variations in the
-  scale of the momentum based on combination of correction on combined ($Z$
-  scale) and recombination of the corrections.
-\item[syst\_MUONS\_TTVA\_STAT:] This parameter accounts for statistical
-  uncertainties on the track-to-vertex association.
-\item[syst\_MUONS\_TTVA\_SYS:] This parameter models systematic uncertainties on
-  the track-to-vertex association.
+\item[syst\_MUON\_SAGITTA\_RESBIAS (RHO):] The muon momentum measurement relies
+  on the precise knowledge of the sagitta of the muon track between muon
+  stations. The calibration constants used to calibrate the muon Monte Carlo are
+  derived from $Z \rightarrow \mu \mu$ and $J/\psi$ data in bins of $\eta$ and
+  $\phi$. These parameters model uncertainties on the calibration procedure and
+  residual charge dependent bias in muon momentum scale.
+%   This parameter models variations in the
+%   scale of the momentum based on the residual charge-dependent bias after
+%   correction.
+% \item[syst\_MUON\_SAGITTA\_RHO:] This parameter accounts for variations in the
+%   scale of the momentum based on combination of correction on combined ($Z$
+%   scale) and recombination of the corrections.
+\item[syst\_MUON\_TTVA\_STAT (SYS):] This parameter models the statistical
+  (systematic) uncertainties on the efficiency of the muon track-to-vertex
+  matching efficiency.
+  % This parameter accounts for statistical
+  % uncertainties on the track-to-vertex association.
+% \item[syst\_MUON\_TTVA\_SYS:] This parameter models systematic uncertainties on
+%   the track-to-vertex association.
 \end{description}
 %%% Local Variables:
 %%% mode: latex

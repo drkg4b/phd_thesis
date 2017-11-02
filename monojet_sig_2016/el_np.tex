@@ -5,16 +5,21 @@
   uncertainties on the electron resolution.
 % \item[syst\_EL\_EFF\_ChargeIDSel\_TOTAL:] This parameter account for the
 %   uncertainty on the electron charge.
-\item[syst\_EL\_EFF\_Reco\_TOTAL:] This parameter accounts for variations on the
-  reconstruction efficiency scale factors applied to \gls{mc} samples.
+\item[syst\_EL\_EFF\_Reco\_TOTAL:] This parameter accounts for the uncertainty
+  on the ratio of electron reconstruction efficiency in data to Monte Carlo.
 \item[syst\_EL\_EFF\_ID\_TOTAL:] This parameter models uncertainties on the
-  identification efficiency scale factors applied to \gls{mc} samples.
+  ratio of data to Monte Carlo efficiencies for the electron identification
+  selections. This refers to the ``loose'' and ``tight'' selections which define
+  the baseline and good electron introduced in \cref{sec:electrons}.
 \item[syst\_EL\_EFF\_Iso\_TOTAL:] This parameter models the uncertainties on the
-  isolation efficiency.
-\item[syst\_EL\_EFF\_TriggerEff\_TOTAL:] This parameter account for uncertainties
-  in the electron trigger efficiency of the Monte Carlo.
-\item[syst\_EL\_EFF\_Trigger\_TOTAL:] This parameter models the uncertainty in
-  the data over Monte Carlo efficiency ratio.
+  isolation efficiency, namely the LooseTrackOnly listed in \cref{tab:ele_def}.
+\item[syst\_EL\_EFF\_TriggerEff\_TOTAL:] This parameter account for the
+  uncertainty on the electron trigger efficiency for the trigger used to define
+  the electron control region in \cref{sec:ele-cr}.
+\item[syst\_EL\_EFF\_Trigger\_TOTAL:] The electron reconstruction and
+  identification efficiencies are derived using data selected with electron
+  triggers. This parameter accounts for the effect of uncertainties from the
+  trigger on these efficiencies.
 \end{description}
 %%% Local Variables:
 %%% mode: latex

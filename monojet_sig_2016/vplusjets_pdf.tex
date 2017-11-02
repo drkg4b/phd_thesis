@@ -1,14 +1,15 @@
-Different groups provide equally precise parton distribution functions, the V +
-jets Monte Carlo samples are generated choosing the \gls{pdf} with the relative
-uncertainties (or \emph{intra-\gls{pdf}} uncertainty) provided by one of these
-groups. The systematic uncertainty associated with this choice is referred to as
-\emph{inter-\gls{pdf}} uncertainty and can be evaluated with a re-weighting of
-the \gls{mc} samples (see \cref{sec:pdf-uncertainties} for a more in-depth
-explanation on the parton distribution function systematic variations). The V +
-jets samples are generated using SHERPA~\cite{SHERPAGenerator}, the
+% Different groups provide equally precise parton distribution functions, the V +
+% jets Monte Carlo samples are generated choosing the \gls{pdf} with the relative
+% uncertainties (or \emph{intra-\gls{pdf}} uncertainty) provided by one of these
+% groups. The systematic uncertainty associated with this choice is referred to as
+% \emph{inter-\gls{pdf}} uncertainty and can be evaluated with a re-weighting of
+% the \gls{mc} samples (see \cref{sec:pdf-uncertainties} for a more in-depth
+% explanation on the parton distribution function systematic variations).
+The V + jets samples are generated using SHERPA~\cite{SHERPAGenerator}, the
 intra-\gls{pdf} uncertainty is computed taking the standard deviation of the 100
-\glspl{pdf} provided by the NNPDF~\cite{NNPDF} group. Two alternative sets of
-parton distribution functions provided by the CT14~\cite{CT14PDF} and the
+\glspl{pdf} provided by the NNPDF~\cite{NNPDF} group.
+
+Two alternative sets of \glspl{pdf} provided by the CT14~\cite{CT14PDF} and the
 MMHT~\cite{MMHT} groups are also considered where the maximal difference between
 the central value of the alternative \gls{pdf} set with respect to the NNPDF one
 is taken as the inter-\gls{pdf} uncertainty.
@@ -17,12 +18,13 @@ is taken as the inter-\gls{pdf} uncertainty.
   function uncertainty on the V + jets samples evaluated as the quadratic sum of
   the inter and intra-\gls{pdf} uncertainties.
 \end{description}
-\cref{tab:bkg_pdf_2016} reports the relative systematic uncertainties of the V +
-jets backgrounds as a function of the exclusive signal region bins EM1-EM10. The
-uncertainties of the various processes are quoted in the region where that
-process is dominant. Due to the lack of alternative \glspl{pdf} (see
-\cref{sec:part-distr-funct}), the $\zmumuplusjets$ process is estimated from the
-$\zeeplusjets$.
+\cref{tab:bkg_pdf_2016} reports the resulting relative \gls{pdf} systematic
+uncertainties on the V + jets backgrounds as a function of the exclusive signal
+region bins EM1-EM10. The uncertainties of the various processes are quoted in
+the region where that process is dominant. As can be seen the \gls{pdf}
+uncertainties are of the order of 1-2\% in the lowest missing energy bins but
+rise with higher $\met$ since these regimes probe more extreme kinematic regions
+with less well known \glspl{pdf}.
 \begin{table}[!ht]
   \centering
   \resizebox{\linewidth}{!}{
@@ -36,7 +38,7 @@ $\zeeplusjets$.
                                                           & 4.2 & 6.7 \\
     $Z \rightarrow \tau\tau$ (SR) & 2.3 & 2.0 & 2.9 & 2.1 & 3.6 & 2.5 & 3.5
                                                     & 9.5 & 11.6 & 8.3 \\
-    $Z \rightarrow ee$ ($\crzmm$) & 1.7 & 1.9 & 2.2 & 2.3 & 2.8 & 3.3 & 4.0
+    $Z \rightarrow \mu\mu$ ($\crzmm$) & 1.7 & 1.9 & 2.2 & 2.3 & 2.8 & 3.3 & 4.0
                                                     & 4.2 & 5.6 & 5.2 \\
     $W \rightarrow \mu\nu$ ($\crwmn$) & 1.5 & 1.9 & 1.8 & 2.2 & 2.5 & 4.1 & 3.4
                                                     & 4.4 & 4.5 & 6.7 \\
@@ -48,9 +50,7 @@ $\zeeplusjets$.
   \end{tabular}}
 \caption{Systematic uncertainties in \% on the V + jets background as a function
   of the exclusive signal regions EM1-EM10. The uncertainties on a given process
-  are quoted in the region where this process is dominant. Due to the lack of
-  alternative \glspl{pdf} the $\zeeplusjets$ uncertainty is used for the
-  $\zmumuplusjets$ process.}
+  are quoted in the region where this process is dominant.}
   \label{tab:bkg_pdf_2016}
 \end{table}
 %%% Local Variables:

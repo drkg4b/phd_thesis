@@ -1,25 +1,36 @@
-Uncertainties due to the parton shower, initial and final state radiation,
-factorization and renormalization scales are estimated using dedicated
+Uncertainties due to a different event generator, the parton shower model and
+two models of initial and final state radiation are estimated using dedicated
 $t \bar{t}$ \gls{mc} samples and used also for single top processes. This choice
 of the Monte Carlo samples is motivated by the fact that the $t \bar{t}$ process
 contributes for approximately 80\% of the top background ($t \bar{t}$ and single
-top) in the signal region. Variation due to the matrix element generator, parton
-shower model and two different models of shower radiation with a different
-factorization and renormalization scale are considered. Except for the variation
-due to the amount of initial and final state radiation where the semi-difference
-between the higher and lower variations is considered, the remaining ones are
+top) in the signal region.
+% Variation due to the matrix element generator, parton
+% shower model and two different models of shower radiation with a different
+% factorization and renormalization scale are considered.
+Except for the variation due to the amount of initial and final state radiation
+where the semi-difference between the higher and lower variations is considered,
+the change in the \gls{mc} generator and parton shower model variations are
 symmetrized and applied considering them uncorrelated. Since similar $\met$
-shapes are observed and in order to avoid statistical fluctuations, the final
-uncertainties are evaluated in a single region obtained by summing the yields of
-the signal and control regions. To estimate the systematic uncertainty
-associated with each variation a linear fit is performed. The total systematic
-uncertainties on the top background are obtained summing in quadrature each
-variation. The results are reported in \cref{tab:top_syst_2016}.
-\begin{description}[font=\normalfont]
-\item[top\_Sys:] This parameter is used to constrain the top systematic
-  uncertainty in the fit.
-\end{description}
-\begin{table}[!ht]
+shapes are observed in signal and control regions and in order to avoid
+statistical fluctuations, the final uncertainties are evaluated in a single
+region obtained by summing the yields of the signal and control regions.
+% In order to obtain the value of the systematic uncertainty in the center of each
+% $\met$ bin used in the analysis for all three variation considered (scale,
+% parton shower and initial and final state radiation), a linear fit is performed.
+The total systematic uncertainties on the top background are obtained summing in
+quadrature each variation in each $\met$ bin.
+
+The results are reported in \cref{tab:top_syst_2016} where it can be seen that
+the uncertainty grows with the missing energy. This growth is mildly observed in
+both the parton shower and the \gls{isr} and \gls{fsr} model variations while it
+is more evident when changing the event generator. The top systematic
+uncertainty in this version of the analysis are compatible with those calculated
+in 2015.
+
+The introduction of the $\crtop$ control region (see \cref{sec:muon-cr-bjet}) is
+motivated by these large systematic uncertainties which are constrained by the
+``top\_Sys'' nuisance parameter in the global fit.
+\begin{table}[!htb]
   \centering
   \begin{tabular}{cccccccccc}
     \toprule
@@ -31,7 +42,8 @@ variation. The results are reported in \cref{tab:top_syst_2016}.
     \bottomrule
   \end{tabular}
   \caption{Total relative systematic uncertainty in \% on the top background in
-    each exclusive bin EM1-EM10 used in the analysis.}
+    each exclusive bin EM1-EM10 used in the analysis evaluated in a single
+    region obtained by summing the yields of the signal and control regions.}
   \label{tab:top_syst_2016}
 \end{table}
 %%% Local Variables:

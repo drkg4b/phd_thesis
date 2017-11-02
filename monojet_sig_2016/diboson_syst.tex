@@ -1,17 +1,24 @@
-The \textsc{sherpa}~\cite{SHERPA} and \textsc{powheg}~\cite{POWHEG} interfaced
-with \textsc{pythia8}~\cite{PYTHIA8} generators have been used to produce the
-diboson ($WW$, $WZ$ and $ZZ$ processes) \gls{mc} samples. After taking into
-account possible cross section variations of the generators the difference in
-yields in each $\met$ bin of the two generators is taken as the systematic
-uncertainty and added in quadrature with a 6\% theory uncertainty on the
-\gls{nlo} cross section.
+The \textsc{sherpa}~\cite{SHERPA} and \textsc{powheg}~\cite{POWHEG} generators
+are interfaced with \textsc{pythia8}~\cite{PYTHIA8} to produce the diboson
+($WW$, $WZ$ and $ZZ$ processes) \gls{mc} samples. After taking into account
+possible inclusive cross section differences of the two generators, the full
+difference in yields in each $\met$ bin of the two generators is taken as the
+systematic uncertainty and added in quadrature with a 6\% theory uncertainty on
+the \gls{nlo} cross section.
 \begin{description}[font=\normalfont]
 \item[diboson\_Sys:] This parameter accounts for the diboson systematic variations.
 \end{description}
 \cref{tab:diboson_sys_2016} reports the diboson uncertainties evaluated from the
 comparison between the two generators for the different exclusive regions
 EM1-EM10 defined in the analysis for the signal region and the different control
-regions.
+regions. The diboson systematic uncertainty is observed to grow at higher
+missing transverse energy, where in particular the two generators can differ by
+up to 31\% in the signal region. The generators are however in very good
+agreement at lower missing energies. In the 2015 analysis the agreement between
+the two generators ranged between 5\% and 25\% for $\met$ bins below 800~GeV
+increasing up to 50\% above 800~GeV. The diboson systematic uncertainties in
+this version of the analysis are generally lower due to the higher order of the
+Monte Carlo generators used.
 \begin{table}[!htb]
   \centering
   \resizebox{\linewidth}{!}{
@@ -32,7 +39,7 @@ regions.
   function of the exclusive bins EM1-EM10 defined in the analysis for the signal
   region and the different control regions as evaluated from the comparison
   between the generators. These values are then added in quadrature with a 6\%
-  uncertainty on the \gls{nlo} cross section.}
+  uncertainty on the \gls{nlo} diboson cross section.}
   \label{tab:diboson_sys_2016}
 \end{table}
 %%% Local Variables:

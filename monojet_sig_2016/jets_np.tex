@@ -1,16 +1,16 @@
 \begin{description}[font=\normalfont]
 \item[syst\_JET\_GroupedNP\_i ($i = 1, 2, 3$):] These parameters account for
   uncertainties in the knowledge of the \gls{jes} (see
-  \cref{sec:jet-calibration}).
-\item[syst\_JET\_JER\_SINGLE\_NP:] The \gls{jes} is distributed around a mean
-  value due to the \gls{jer}. This parameter account for the uncertainty on the
-  \gls{jer} knowledge.
+  \cref{sec:jet-calibration}) and arise from Monte Carlo modeling and
+  statistical uncertainties in in-situ \gls{jes} determination.
+\item[syst\_JET\_JER\_SINGLE\_NP:] This nuisance parameter models the
+  uncertainty on the jet energy resolution in data.
 \item[syst\_JET\_EtaIntercalibration\_NonClosure:] The \gls{atlas} jet energy
   scale calibration introduced in \cref{sec:jet-calibration} is $\pt$ and $\eta$
-  dependent. In order to have a uniform calorimeter response in different
-  pseudorapidity regions for jets with same $\pt$ an intercalibration is
-  performed~\cite{JESEMCalibration}. This parameter account for the uncertainty
-  on the knowledge on the intercalibration procedure.
+  dependent. In order to have a uniform jet response in different pseudorapidity
+  regions for jets with same $\pt$ an intercalibration is
+  performed~\cite{JESEMCalibration}. This parameter accounts for the non-closure
+  of the jet intercalibration procedure.
 \end{description}
 %%% Local Variables:
 %%% mode: latex

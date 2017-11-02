@@ -65,22 +65,29 @@
 % The NNPDF provides an ensemble of 100 \glspl{pdf} where the best value is given
 % by the mean and the uncertainty by the standard deviation.
 The \gls{add} signal sample is generated using the
-\textsc{pythia8}~\cite{PYTHIA8} generator with the NNPDF23LO \gls{pdf} set. To
+\textsc{pythia8}~\cite{PYTHIA8} generator with the NNPDF2.3LO \gls{pdf} set. To
 estimate the uncertainty deriving from the limited knowledge of the \glspl{pdf}
 the same recommendations from the PDF4LHC group used in the estimation of the
 \gls{pdf} uncertainties for the \gls{susy} compressed models and described in
 \cref{sec:part-distr-funct} are used.
 
 The \gls{pdf} uncertainties affects both the overall \gls{add} signal
-normalization or cross section and the signal acceptance (the potential number
-of events registered by the detector for a generated
-signal). \cref{fig:pdf_syst} presents the results in terms of signal yields for
-the cross section as a function of the \gls{pdf} family and its uncertainty
-source. It shows the inter-\gls{pdf} and intra-\gls{pdf} uncertainties of the
-three families. The final \gls{pdf} uncertainty is the envelope that contains
-the error bands of the three families. \cref{tab:add_pdf_2016} summarizes the
-uncertainties on cross section and acceptance.
-\begin{figure}[!h]
+normalization or cross section and the signal acceptance. \cref{fig:pdf_syst}
+presents the observed variations in the number of signal \gls{add} events for
+intra- and inter-\gls{pdf} uncertainties. The resulting relative yield
+variations gives the relative \gls{pdf} uncertainty on the \gls{add} cross
+section. The final \gls{pdf} uncertainty is the envelope that contains the error
+bands of the three families.
+
+\cref{tab:add_pdf_2016} summarizes the uncertainties on cross section and
+acceptance. The growth of the uncertainty with both the number of extra
+dimensions and the missing energy is understood with a similar argument as the
+one given in \cref{sec:valid-effect-field}. Larger numbers of extra dimensions
+require heavier gravitons (see \cref{fig:graviton_mass}) and thus a higher
+center of mass energy of the originating partons. In these kinematic regions the
+\glspl{pdf} are less well known. A similar argument can be used in the case of
+higher $\met$ bins where higher momentum gravitons are produced.
+\begin{figure}[!htb]
   \centering
   \begin{subfigure}{.48\linewidth}
     \includegraphics[width=\linewidth]{add_d2_MCut0_pdfset}
@@ -107,8 +114,9 @@ uncertainties on cross section and acceptance.
     \caption{ADD n = 6}
     \label{fig:pdf_n6}
   \end{subfigure}
-  \caption{Systematic uncertainty from choice of the \gls{pdf} set. The event
-    yield before any selection from three different \gls{pdf} families are
+  \caption{Observed variations in un-normalized number of \gls{add} events when
+    the \gls{pdf} sets are varied by the uncertainties for n = 2 to n = 6. The
+    event yield before any selection from three different \gls{pdf} families are
     compared. The final uncertainty on the \gls{add} cross section is the
     envelop that contains all three families with their error bands. The same
     procedure is also applied to the acceptances.}

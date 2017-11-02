@@ -1,15 +1,26 @@
-\begin{description}[font=\normalfont]
-\item[syst\_MET\_SoftTrk\_Scale:] This parameter accounts for soft track term
-  scale uncertainties in the $\met$ reconstruction.
-\item[syst\_MET\_SoftTrk\_ResoPara:] This parameter models variations of the
-  soft term parallel projection with respect to the hadronic recoil system
-  transverse momentum of the resolution of the soft track term of the
-  $\met$.
-\item[syst\_MET\_SoftTrk\_ResoPerp:] This parameter models variations of the
-  soft term perpendicular projection with respect to the hadronic recoil system
-  transverse momentum of the resolution of the soft track term of the
-  $\met$.
-\end{description}
+The soft missing energy ($E_\mathrm{\, x(y)}^\mathrm{\, miss,\, \text{soft}}$)
+is a component of the $\met$ calculation described in
+\cref{sec:miss-transv-energy} that relies on tracks associated to the primary
+vertex and not associated with any hard object such as electrons, muons, jets,
+taus or photons. The detector response to the soft missing energy reconstruction
+is parametrized by an energy scale, a resolution in the perpendicular direction
+to the hard scatter and a resolution along the main axis of the hard
+scatter. The Monte Carlo to data mismodeling with respect to these three
+parameters that characterize the detector response to soft missing energy is
+modeled with three systematic uncertainties: syst\_MET\_SoftTrk\_Scale,
+syst\_MET\_SoftTrk\_ResoPara and syst\_MET\_SoftTrk\_ResoPerp.
+% \begin{description}[font=\normalfont]
+% \item[syst\_MET\_SoftTrk\_Scale:] This parameter accounts for soft track term
+%   scale uncertainties in the $\met$ reconstruction.
+% \item[syst\_MET\_SoftTrk\_ResoPara:] This parameter models variations of the
+%   soft term parallel projection with respect to the hadronic recoil system
+%   transverse momentum of the resolution of the soft track term of the
+%   $\met$.
+% \item[syst\_MET\_SoftTrk\_ResoPerp:] This parameter models variations of the
+%   soft term perpendicular projection with respect to the hadronic recoil system
+%   transverse momentum of the resolution of the soft track term of the
+%   $\met$.
+% \end{description}
 %%% Local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"
