@@ -1,17 +1,17 @@
 \gls{mb} events are inelastic $pp$ collisions characterized by low momentum
 exchange, typically below approximately 2~GeV. They make up the vast majority of
 the \gls{lhc} collisions. Proper Monte Carlo modeling of \gls{mb} processes is
-therefore important for for proper prediction of event yields in signal and
-control regions. Perturbative \gls{qcd} is commonly used to describe parton
-interactions when possible and non-perturbative \gls{qcd} for low $\pt$
-processes. The free parameters of these models (\emph{tune parameters}) are
-tuned in the \gls{mc} generators in order to replicate experimental \gls{mb}
-data. The variation of these parameters may lead to different number of
-generated events in the \gls{mc} samples or different kinematic characteristics
-of the simulated events and thus to an uncertainty on the signal and background
-predictions. Following the \gls{atlas} recommendation given in
-Ref.~\cite{MCTuningRecommendations2015} five tune parameters have been varied in
-order to account for uncertainties from:
+therefore important for pile-up prediction of event yields in signal and control
+regions. Perturbative \gls{qcd} is commonly used to describe parton interactions
+when possible and non-perturbative \gls{qcd} for low $\pt$ processes. The free
+parameters of these models (\emph{tune parameters}) are tuned in the \gls{mc}
+generators in order to replicate experimental \gls{mb} data. The variation of
+these parameters may lead to different number of generated events in the
+\gls{mc} samples or different kinematic characteristics of the simulated events
+and thus to an uncertainty on the signal and background predictions. Following
+the \gls{atlas} recommendation given in Ref.~\cite{MCTuningRecommendations2015}
+five tune parameters have been varied in order to account for uncertainties
+from:
 \begin{itemize}
 \item Underlying event effects.
 \item Jet structure effects.
@@ -20,13 +20,14 @@ order to account for uncertainties from:
 
 The presence of large numbers of high $\pt$ jets in the final state could hide
 signal for new physics that involves the decay of heavy colored particles. In
-order to control this kind of events the theory calculations need to describe in
-a precise way the matrix element used to describe the hard process and the
-subsequent parton shower into jets of hadrons in the calorimeter. A particular
-N-jet event can arise from soft-radiation evolution of a N-parton final state
-(matrix element jets) or from an (N-1)-parton configuration where the extra jet
-appears from from hard emission during the shower evolution (parton shower
-jet). A \emph{matching scheme} is defined on an event-by-event basis in order to
+order to control this kind of multijet events the theory calculations need to
+describe in a precise way the matrix element used to describe the hard process
+and the subsequent parton shower into jets of hadrons in the calorimeter. A
+particular N-jet event can arise from soft-radiation evolution of a N-parton
+final state (matrix element jets) or from an (N-1)-parton configuration where
+the extra jet appears from from hard emission during the shower evolution
+(parton shower jet). A \emph{matching scheme} is applied on an event-by-event
+basis in order to
 
 avoid double counting and decide which jets should be taken from the matrix
 element and which ones should be taken from parton shower~\cite{Matching}. The
@@ -42,15 +43,15 @@ uncertainty is considered. % set of systematic uncertainties
 % \end{itemize}
 
 
-Practically the matching, tune, initial and final state uncertainties are
-estimated by first generating 16 alternative \gls{mc} samples for each squark
-mass with different settings and evaluating the relative variation in number of
-events in the signal regions as observed at the Monte Carlo truth level. For a
-given squark and neutralino mass, the different relative variations are added in
-quadrature. Finally the envelope of the systematics obtained over all squark and
-neutralino mass is derived in order to obtain a single systematic uncertainty
-for all \gls{susy} compressed mass points. The results are presented in
-\cref{tab:susy_tune}.
+Practically the matching, tune, initial and final state radiation uncertainties
+are estimated by first generating 16 alternative \gls{mc} samples for each
+squark mass with different settings and evaluating the relative variation in
+number of events in the signal regions as observed at the Monte Carlo truth
+level. For a given squark and neutralino mass, the different relative variations
+are added in quadrature. Finally the envelope of the systematics obtained over
+all squark and neutralino mass is derived in order to obtain a single systematic
+uncertainty for all \gls{susy} compressed mass points. The results are presented
+in \cref{tab:susy_tune}.
 \begin{table}[!htb]
   \centering
   \resizebox{\linewidth}{!}{\begin{tabular}{lccccccc}

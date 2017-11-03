@@ -1,18 +1,17 @@
 In this analysis only a single overall scale factor $k^\mathrm{V + jets}$ is
-considered (see \cref{sec:fit-strategy}), it scales up or down the entire W +
-jets and Z + jets predictions by the same amount in all the $\met$ bins defined
-in the analysis. This means effectively that the momentum spectrum of the vector
-boson, or its experimental proxy, the missing energy, is taken from Monte Carlo
-simulation. In the 2015 analysis one independent scale factor for each $\met$
-bin was used in order to account for the limited knowledge of the shape of the
-$\pt$ spectrum of the gauge boson. In this version of the analysis this is taken
-into account using instead theoretical nuisance parameters taken from
+considered (see \cref{sec:fit-strategy}), it scales up or down the entire $W$ +
+jets and $Z$ + jets predictions by the same amount in all the $\met$ bins
+defined in the analysis. This means effectively that the momentum spectrum of
+the vector boson or its experimental proxy, the missing energy, is taken from
+Monte Carlo simulation. In the 2015 analysis one independent scale factor for
+each $\met$ bin was used in order to account for the limited knowledge of the
+shape of the $\pt$ spectrum of the gauge boson. In this version of the analysis
+this is accounted for using instead theoretical nuisance parameters taken from
 Ref.~\cite{VplusJetsCorrections} associated with the V + jets normalization
 strategy given in \cref{sec:corrections-vjets}. These nuisance parameters allow
 the shape of the boson $\pt$ to change with respect to corrected Monte Carlo
-simulation within certain allowed theory boundaries and also allows the shapes
-of the boson $\pt$ in V + jets to vary. These results in the following nuisance
-parameters:
+simulation within certain allowed theory boundaries and in the global fit
+implemented in the analysis are labeled as:
 % In order to account for possible mismodelings associated with the higher order
 % corrections to the V + jets samples described in \cref{sec:corrections-vjets},
 % the following nuisance parameters are introduced in the statistical model and
@@ -51,7 +50,7 @@ parameters:
 \item[vjets\_d2kappa\_EW\_eej:] This parameter accounts for unknown terms in the
   \gls{nlo} approximation at high $\pt$ and for \gls{nnlo} effects that might
   become relevant when hard contributions dominate. It is used for the Z + jets
-  processes.
+  processes. \pagebreak[4]
 \item[vjets\_d2kappa\_EW\_evj:] This parameter accounts for the same effects as
   the previous one but it is used to constrain the W + jets processes.
 \item[vjets\_d3kappa\_EW\_eej:] This term accounts for the limitations of the
@@ -83,9 +82,9 @@ and shape uncertainties.
 Due to the limited Monte Carlo statistics, statistical fluctuations are possible
 in the \gls{qcd} correction evaluations. For this reason a linear fit is applied
 to the ratio of the differential cross sections in the \textsc{sherpa} \gls{mc}
-and the V + jets theory prediction. The vjets\_QCDSmoothing nuisance parameter
-is then introduced in order to take into account uncertainties coming from the
-fit.
+and the V + jets theory prediction. The ``vjets\_QCDSmoothing'' nuisance
+parameter is then introduced in order to take into account uncertainties coming
+from this fit.
 %%% local Variables:
 %%% mode: latex
 %%% TeX-master: "../search_for_DM_LED_with_ATLAS"

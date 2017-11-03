@@ -54,9 +54,9 @@ For MMHT the asymmetric Hessian method with 50 error sets is used and the
 uncertainty is given by:
 \begin{align}
   \label{eq:120}
-  \delta x^{\mathrm{up}} & = \sqrt{\sum_{k = 1}^{n_\mathrm{err}/2}
+  \delta x^{\mathrm{up}} & = \sqrt{\sum_{k = 1}^{n_\mathrm{err}}
                            \mathrm{max}(0, X_{2k} - X_0, X_{2k - 1} - X_0)^2} \\
-  \delta x^{\mathrm{dw}} & = \sqrt{\sum_{k = 1}^{n_\mathrm{err}/2}
+  \delta x^{\mathrm{dw}} & = \sqrt{\sum_{k = 1}^{n_\mathrm{err}}
                            \mathrm{max}(0, X_0 - X_{2k}, X_0 - X_{2k - 1})^2}
 \end{align}
 where $X_0$ is the number of events obtained with the best \gls{pdf} fit,
@@ -65,9 +65,9 @@ $X_{2k} (X_{2k -1})$ is the number of events calculated with the $2k$-th
 sets.
 
 The NNPDF group provides an ensemble of 100 different and equally good
-\glspl{pdf}. The one used to generate the signal samples (the \emph{nominal}) is
-then obtained by calculating the mean of the 100 error \glspl{pdf} while the
-associated intra-\gls{pdf} systematic uncertainty is given by their standard
+\glspl{pdf}. The one used to generate the signal samples (the \emph{nominal}
+set) is then obtained by calculating the mean of the 100 error \glspl{pdf} while
+the associated intra-\gls{pdf} systematic uncertainty is given by their standard
 deviation.
 
 The \gls{pdf} systematic uncertainty is decomposed in:
